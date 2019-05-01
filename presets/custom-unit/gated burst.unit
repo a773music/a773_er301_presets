@@ -1,0 +1,267 @@
+-- Persistent Data
+local shared = {
+{};
+} -- shared
+shared[1]["SimpleString"] = "0.4.11";
+shared[1]["Major"] = 0;
+shared[1]["Patch"] = 0;
+shared[1]["Status"] = "unstable";
+shared[1]["Minor"] = 4;
+shared[1]["Name"] = "Fennel (48kHz, 128smps)";
+shared[1]["Build"] = 11;
+shared[1]["String"] = "0.4.11 (unstable)";
+local obj1 = {
+	["instanceKey"] = "6c4cd7d8";
+	["controls"] = {
+	};
+	["controlOrder"] = {
+		[1] = "burst time";
+		[2] = "meter";
+	};
+	["controlBranches"] = {
+		["burst time"] = {
+			["units"] = {
+			};
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Bias"] = 0.01;
+						["Gain"] = 0.0;
+					};
+				};
+			};
+			["id"] = "burst time";
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 0;
+			};
+			["control"] = {
+				["gainEncoderState"] = "Coarse";
+				["customizations"] = {
+					["biasUnits"] = 5;
+					["name"] = "burst time";
+					["biasMin"] = 0;
+					["biasMax"] = 1;
+				};
+				["encoderState"] = "Fine";
+			};
+			["instanceKey"] = "3eababbd";
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["type"] = "GainBias";
+			["firmwareVersion"] = shared[1];
+		};
+	};
+	["lastPresetPath"] = "1:/ER-301/v0.4/presets/custom-unit";
+	["objects"] = {
+	};
+	["branches"] = {
+	};
+	["title"] = "gated burst";
+	["hasUserTitle"] = true;
+	["bypass"] = false;
+	["unitVersion"] = 1;
+	["lastPresetFilename"] = "gated burst.unit";
+	["firmwareVersion"] = shared[1];
+	["activeView"] = "expanded";
+	["bands"] = {
+		[1] = {
+			["firmwareVersion"] = shared[1];
+			["selection"] = {
+				["section"] = 2;
+				["view"] = "expanded";
+				["spot"] = 2;
+			};
+			["units"] = {
+				[1] = {
+					["controls"] = {
+						["offset"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["objects"] = {
+						["gainbias"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 0.0;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "offset";
+					};
+					["controlBranches"] = {
+					};
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "3fd62269";
+					["loadInfo"] = {
+						["keywords"] = "utility";
+						["category"] = "Essentials";
+						["title"] = "Offset";
+						["moduleName"] = "OffsetUnit";
+						["id"] = "OffsetUnit";
+						["libraryName"] = "builtins";
+					};
+					["activeView"] = "expanded";
+					["branches"] = {
+					};
+					["firmwareVersion"] = shared[1];
+				};
+				[2] = {
+					["controls"] = {
+						["level"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["objects"] = {
+						["rectify"] = {
+							["options"] = {
+								["Type"] = 1;
+							};
+						};
+						["level"] = {
+							["params"] = {
+								["Bias"] = 1.0;
+								["Gain"] = -1.0;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "level";
+					};
+					["controlBranches"] = {
+					};
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "9ad7284c";
+					["loadInfo"] = {
+						["keywords"] = "modulate, utility";
+						["category"] = "Essentials";
+						["title"] = "Linear Unipolar VCA";
+						["moduleName"] = "VCA.LinearUnipolar";
+						["id"] = "VCA.LinearUnipolar";
+						["libraryName"] = "builtins";
+					};
+					["activeView"] = "expanded";
+					["branches"] = {
+						["level"] = {
+							["selection"] = {
+								["section"] = 2;
+								["view"] = "default";
+								["spot"] = 0;
+							};
+							["instanceKey"] = "978c3155";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["channel"] = 1;
+										["name"] = "gated burst";
+										["type"] = "local";
+										["instanceKey"] = "6c4cd7d8";
+									};
+								};
+							};
+							["units"] = {
+								[1] = {
+									["controls"] = {
+										["delayL"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["feedback"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["wet"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["objects"] = {
+										["fader"] = {
+											["params"] = {
+												["Bias"] = 1.0;
+												["Gain"] = 0.0;
+											};
+										};
+										["feedback"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 0.0;
+											};
+										};
+										["secsL"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 1.0;
+											};
+										};
+									};
+									["maximumDelayTime"] = 1.002667;
+									["controlOrder"] = {
+										[1] = "delayL";
+										[2] = "feedback";
+										[3] = "wet";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "f40ad992";
+									["loadInfo"] = {
+										["keywords"] = "delay, effect";
+										["category"] = "Delays and Reverb";
+										["title"] = "Delay";
+										["moduleName"] = "Delay.DelayUnit";
+										["id"] = "Delay.DelayUnit";
+										["libraryName"] = "builtins";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+										["delayL"] = {
+											["selection"] = {
+												["section"] = 0;
+												["view"] = "default";
+												["spot"] = 1;
+											};
+											["instanceKey"] = "6f7f31e0";
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["count"] = 1;
+												["inputs"] = {
+													[1] = {
+														["name"] = "gated burst (burst time)";
+														["type"] = "local";
+														["instanceKey"] = "3eababbd";
+													};
+												};
+											};
+											["units"] = {
+											};
+										};
+									};
+									["firmwareVersion"] = shared[1];
+								};
+							};
+						};
+					};
+					["firmwareVersion"] = shared[1];
+				};
+			};
+			["instanceKey"] = "966211e6";
+		};
+	};
+	["loadInfo"] = {
+		["keywords"] = "utility, effect, source, custom";
+		["category"] = "Containers";
+		["title"] = "Custom";
+		["moduleName"] = "Custom";
+		["id"] = "Custom";
+		["libraryName"] = "builtins";
+	};
+}
+return obj1

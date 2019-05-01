@@ -1,0 +1,267 @@
+-- Persistent Data
+local shared = {
+{};
+} -- shared
+shared[1]["SimpleString"] = "0.4.11";
+shared[1]["Major"] = 0;
+shared[1]["Patch"] = 0;
+shared[1]["Status"] = "unstable";
+shared[1]["Minor"] = 4;
+shared[1]["Name"] = "Fennel (48kHz, 128smps)";
+shared[1]["Build"] = 11;
+shared[1]["String"] = "0.4.11 (unstable)";
+local obj1 = {
+	["instanceKey"] = "aa107760";
+	["controls"] = {
+	};
+	["controlOrder"] = {
+		[1] = "trigger time";
+		[2] = "meter";
+	};
+	["controlBranches"] = {
+		["trigger time"] = {
+			["units"] = {
+			};
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Bias"] = 0.001;
+						["Gain"] = 0.0;
+					};
+				};
+			};
+			["id"] = "trigger time";
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 0;
+			};
+			["control"] = {
+				["gainEncoderState"] = "Coarse";
+				["customizations"] = {
+					["biasUnits"] = 5;
+					["name"] = "trigger time";
+					["biasMin"] = 0.0009999999;
+					["biasMax"] = 1;
+				};
+				["encoderState"] = "Fine";
+			};
+			["instanceKey"] = "61271e35";
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["type"] = "GainBias";
+			["firmwareVersion"] = shared[1];
+		};
+	};
+	["lastPresetPath"] = "1:/ER-301/v0.4/presets/custom-unit";
+	["objects"] = {
+	};
+	["branches"] = {
+	};
+	["title"] = "gate to trigger";
+	["hasUserTitle"] = true;
+	["bypass"] = false;
+	["unitVersion"] = 1;
+	["lastPresetFilename"] = "gate to trigger.unit";
+	["firmwareVersion"] = shared[1];
+	["activeView"] = "expanded";
+	["bands"] = {
+		[1] = {
+			["firmwareVersion"] = shared[1];
+			["selection"] = {
+				["section"] = 2;
+				["view"] = "expanded";
+				["spot"] = 2;
+			};
+			["units"] = {
+				[1] = {
+					["controls"] = {
+						["offset"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["objects"] = {
+						["gainbias"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 0.0;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "offset";
+					};
+					["controlBranches"] = {
+					};
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "8d9c032f";
+					["loadInfo"] = {
+						["keywords"] = "utility";
+						["category"] = "Essentials";
+						["title"] = "Offset";
+						["moduleName"] = "OffsetUnit";
+						["id"] = "OffsetUnit";
+						["libraryName"] = "builtins";
+					};
+					["activeView"] = "expanded";
+					["branches"] = {
+					};
+					["firmwareVersion"] = shared[1];
+				};
+				[2] = {
+					["controls"] = {
+						["level"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["objects"] = {
+						["rectify"] = {
+							["options"] = {
+								["Type"] = 1;
+							};
+						};
+						["level"] = {
+							["params"] = {
+								["Bias"] = 1.0;
+								["Gain"] = -1.0;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "level";
+					};
+					["controlBranches"] = {
+					};
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "7fe15f3f";
+					["loadInfo"] = {
+						["keywords"] = "modulate, utility";
+						["category"] = "Essentials";
+						["title"] = "Linear Unipolar VCA";
+						["moduleName"] = "VCA.LinearUnipolar";
+						["id"] = "VCA.LinearUnipolar";
+						["libraryName"] = "builtins";
+					};
+					["activeView"] = "expanded";
+					["branches"] = {
+						["level"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["instanceKey"] = "586eb5e1";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["channel"] = 1;
+										["name"] = "Offset #1";
+										["type"] = "local";
+										["instanceKey"] = "8d9c032f";
+									};
+								};
+							};
+							["units"] = {
+								[1] = {
+									["controls"] = {
+										["delayL"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["feedback"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["wet"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["objects"] = {
+										["fader"] = {
+											["params"] = {
+												["Bias"] = 1.0;
+												["Gain"] = 0.0;
+											};
+										};
+										["feedback"] = {
+											["params"] = {
+												["Bias"] = 0.01584893;
+												["Gain"] = 0.0;
+											};
+										};
+										["secsL"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 1.0;
+											};
+										};
+									};
+									["maximumDelayTime"] = 1.002667;
+									["controlOrder"] = {
+										[1] = "delayL";
+										[2] = "feedback";
+										[3] = "wet";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "d27fce2c";
+									["loadInfo"] = {
+										["keywords"] = "delay, effect";
+										["category"] = "Delays and Reverb";
+										["title"] = "Delay";
+										["moduleName"] = "Delay.DelayUnit";
+										["id"] = "Delay.DelayUnit";
+										["libraryName"] = "builtins";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+										["delayL"] = {
+											["selection"] = {
+												["section"] = 0;
+												["view"] = "default";
+												["spot"] = 1;
+											};
+											["instanceKey"] = "63f9293a";
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["count"] = 1;
+												["inputs"] = {
+													[1] = {
+														["name"] = "gate to trigger (trigger time)";
+														["type"] = "local";
+														["instanceKey"] = "61271e35";
+													};
+												};
+											};
+											["units"] = {
+											};
+										};
+									};
+									["firmwareVersion"] = shared[1];
+								};
+							};
+						};
+					};
+					["firmwareVersion"] = shared[1];
+				};
+			};
+			["instanceKey"] = "58b0fd7d";
+		};
+	};
+	["loadInfo"] = {
+		["keywords"] = "utility, effect, source, custom";
+		["category"] = "Containers";
+		["title"] = "Custom";
+		["moduleName"] = "Custom";
+		["id"] = "Custom";
+		["libraryName"] = "builtins";
+	};
+}
+return obj1
