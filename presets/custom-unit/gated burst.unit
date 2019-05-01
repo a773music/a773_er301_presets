@@ -11,7 +11,7 @@ shared[1]["Name"] = "Fennel (48kHz, 128smps)";
 shared[1]["Build"] = 11;
 shared[1]["String"] = "0.4.11 (unstable)";
 local obj1 = {
-	["instanceKey"] = "6c4cd7d8";
+	["instanceKey"] = "d158ce9a";
 	["controls"] = {
 	};
 	["controlOrder"] = {
@@ -46,7 +46,7 @@ local obj1 = {
 				};
 				["encoderState"] = "Fine";
 			};
-			["instanceKey"] = "3eababbd";
+			["instanceKey"] = "f12ee4f0";
 			["channels"] = {
 				["count"] = 1;
 				["inputs"] = {
@@ -98,7 +98,7 @@ local obj1 = {
 					};
 					["bypass"] = false;
 					["unitVersion"] = 1;
-					["instanceKey"] = "3fd62269";
+					["instanceKey"] = "ee240660";
 					["loadInfo"] = {
 						["keywords"] = "utility";
 						["category"] = "Essentials";
@@ -138,7 +138,7 @@ local obj1 = {
 					};
 					["bypass"] = false;
 					["unitVersion"] = 1;
-					["instanceKey"] = "9ad7284c";
+					["instanceKey"] = "c3a7b9ee";
 					["loadInfo"] = {
 						["keywords"] = "modulate, utility";
 						["category"] = "Essentials";
@@ -151,11 +151,11 @@ local obj1 = {
 					["branches"] = {
 						["level"] = {
 							["selection"] = {
-								["section"] = 2;
-								["view"] = "default";
-								["spot"] = 0;
+								["section"] = 1;
+								["view"] = "expanded";
+								["spot"] = 2;
 							};
-							["instanceKey"] = "978c3155";
+							["instanceKey"] = "f4e050c4";
 							["firmwareVersion"] = shared[1];
 							["channels"] = {
 								["count"] = 1;
@@ -164,7 +164,7 @@ local obj1 = {
 										["channel"] = 1;
 										["name"] = "gated burst";
 										["type"] = "local";
-										["instanceKey"] = "6c4cd7d8";
+										["instanceKey"] = "d158ce9a";
 									};
 								};
 							};
@@ -197,7 +197,7 @@ local obj1 = {
 										["secsL"] = {
 											["params"] = {
 												["Bias"] = 0.0;
-												["Gain"] = 1.0;
+												["Gain"] = 0.5;
 											};
 										};
 									};
@@ -211,7 +211,7 @@ local obj1 = {
 									};
 									["bypass"] = false;
 									["unitVersion"] = 1;
-									["instanceKey"] = "f40ad992";
+									["instanceKey"] = "64cc3a7d";
 									["loadInfo"] = {
 										["keywords"] = "delay, effect";
 										["category"] = "Delays and Reverb";
@@ -228,7 +228,7 @@ local obj1 = {
 												["view"] = "default";
 												["spot"] = 1;
 											};
-											["instanceKey"] = "6f7f31e0";
+											["instanceKey"] = "6793dbed";
 											["firmwareVersion"] = shared[1];
 											["channels"] = {
 												["count"] = 1;
@@ -236,7 +236,7 @@ local obj1 = {
 													[1] = {
 														["name"] = "gated burst (burst time)";
 														["type"] = "local";
-														["instanceKey"] = "3eababbd";
+														["instanceKey"] = "f12ee4f0";
 													};
 												};
 											};
@@ -252,7 +252,7 @@ local obj1 = {
 					["firmwareVersion"] = shared[1];
 				};
 			};
-			["instanceKey"] = "966211e6";
+			["instanceKey"] = "1f4fed8d";
 		};
 	};
 	["loadInfo"] = {
