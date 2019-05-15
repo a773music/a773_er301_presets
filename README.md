@@ -17,7 +17,7 @@ Controls:
 
 ## 6 Bands
 ### cheap reverb.unit
-[![Cheap reverb demo on instagram](pix/mom_1.jpg?raw=true)](https://www.instagram.com/p/BxetV5FhZKT)  
+[![Cheap reverb demo on instagram](pix/cheap_reverb.jpg?raw=true)](https://www.instagram.com/p/BxetV5FhZKT)  
 CPU usage: 6.5%  
 Room size reverb that doesn't tax the CPU. Works on stereo channel, but is mono in, mono out...
 Controls:  
