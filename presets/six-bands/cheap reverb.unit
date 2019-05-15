@@ -11,7 +11,7 @@ shared[1]["Name"] = "Fennel (48kHz, 128smps)";
 shared[1]["Build"] = 11;
 shared[1]["String"] = "0.4.11 (unstable)";
 local obj1 = {
-	["instanceKey"] = "b59774ea";
+	["instanceKey"] = "4939f3fe";
 	["controls"] = {
 	};
 	["controlOrder"] = {
@@ -49,7 +49,7 @@ local obj1 = {
 				};
 				["gainEncoderState"] = "Coarse";
 			};
-			["instanceKey"] = "46222ff8";
+			["instanceKey"] = "151ea40b";
 			["channels"] = {
 				["count"] = 1;
 				["inputs"] = {
@@ -82,6 +82,9 @@ local obj1 = {
 			["units"] = {
 				[1] = {
 					["controls"] = {
+						["pan"] = {
+							["gainEncoderState"] = "Coarse";
+						};
 					};
 					["branches"] = {
 						["input"] = {
@@ -90,16 +93,22 @@ local obj1 = {
 								["view"] = "expanded";
 								["spot"] = 2;
 							};
-							["instanceKey"] = "9b3f1920";
+							["instanceKey"] = "273933c3";
 							["firmwareVersion"] = shared[1];
 							["channels"] = {
-								["count"] = 1;
+								["count"] = 2;
 								["inputs"] = {
 									[1] = {
 										["channel"] = 1;
 										["name"] = "delay";
 										["type"] = "local";
-										["instanceKey"] = "c233b65e";
+										["instanceKey"] = "b20325e6";
+									};
+									[2] = {
+										["channel"] = 2;
+										["name"] = "delay";
+										["type"] = "local";
+										["instanceKey"] = "b20325e6";
 									};
 								};
 							};
@@ -107,6 +116,9 @@ local obj1 = {
 								[1] = {
 									["controls"] = {
 										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["pan"] = {
 											["gainEncoderState"] = "Coarse";
 										};
 									};
@@ -117,15 +129,22 @@ local obj1 = {
 												["Gain"] = 0.3;
 											};
 										};
+										["pan"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 0.0;
+											};
+										};
 									};
 									["controlOrder"] = {
 										[1] = "level";
+										[2] = "pan";
 									};
 									["controlBranches"] = {
 									};
 									["bypass"] = false;
 									["unitVersion"] = 1;
-									["instanceKey"] = "9500c90d";
+									["instanceKey"] = "fc2e10bb";
 									["loadInfo"] = {
 										["keywords"] = "modulate, utility";
 										["category"] = "Essentials";
@@ -142,15 +161,15 @@ local obj1 = {
 												["view"] = "default";
 												["spot"] = 1;
 											};
-											["instanceKey"] = "383a4abe";
+											["instanceKey"] = "31737101";
 											["firmwareVersion"] = shared[1];
 											["channels"] = {
 												["count"] = 1;
 												["inputs"] = {
 													[1] = {
-														["name"] = "cheap reverb (gb1)";
+														["name"] = "cheap reverb (size)";
 														["type"] = "local";
-														["instanceKey"] = "46222ff8";
+														["instanceKey"] = "151ea40b";
 													};
 												};
 											};
@@ -177,7 +196,7 @@ local obj1 = {
 									};
 									["bypass"] = false;
 									["unitVersion"] = 1;
-									["instanceKey"] = "412c59f8";
+									["instanceKey"] = "770db696";
 									["loadInfo"] = {
 										["keywords"] = "delay, utility";
 										["category"] = "Delays and Reverb";
@@ -197,8 +216,20 @@ local obj1 = {
 					["mute"] = false;
 					["controlOrder"] = {
 						[1] = "gain";
+						[2] = "pan";
 					};
 					["objects"] = {
+						["pan"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 0.0;
+							};
+						};
+						["gain1"] = {
+							["params"] = {
+								["Gain"] = 1.0;
+							};
+						};
 						["gain"] = {
 							["params"] = {
 								["Gain"] = 1.0;
@@ -211,7 +242,7 @@ local obj1 = {
 					["title"] = "delay";
 					["bypass"] = false;
 					["unitVersion"] = 1;
-					["instanceKey"] = "c233b65e";
+					["instanceKey"] = "b20325e6";
 					["loadInfo"] = {
 						["keywords"] = "mixing, routing";
 						["category"] = "Essentials";
@@ -225,7 +256,7 @@ local obj1 = {
 					["activeView"] = "expanded";
 				};
 			};
-			["instanceKey"] = "3f80a75f";
+			["instanceKey"] = "554e8052";
 		};
 		[2] = {
 			["firmwareVersion"] = shared[1];
@@ -237,24 +268,33 @@ local obj1 = {
 			["units"] = {
 				[1] = {
 					["controls"] = {
+						["pan"] = {
+							["gainEncoderState"] = "Coarse";
+						};
 					};
 					["branches"] = {
 						["input"] = {
 							["selection"] = {
-								["section"] = 1;
-								["view"] = "expanded";
+								["section"] = 0;
+								["view"] = "default";
 								["spot"] = 2;
 							};
-							["instanceKey"] = "42b80177";
+							["instanceKey"] = "1011c902";
 							["firmwareVersion"] = shared[1];
 							["channels"] = {
-								["count"] = 1;
+								["count"] = 2;
 								["inputs"] = {
 									[1] = {
 										["channel"] = 1;
 										["name"] = "delay";
 										["type"] = "local";
-										["instanceKey"] = "bcaf2d73";
+										["instanceKey"] = "19f0a6a2";
+									};
+									[2] = {
+										["channel"] = 2;
+										["name"] = "delay";
+										["type"] = "local";
+										["instanceKey"] = "19f0a6a2";
 									};
 								};
 							};
@@ -262,6 +302,9 @@ local obj1 = {
 								[1] = {
 									["controls"] = {
 										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["pan"] = {
 											["gainEncoderState"] = "Coarse";
 										};
 									};
@@ -272,15 +315,22 @@ local obj1 = {
 												["Gain"] = 0.3;
 											};
 										};
+										["pan"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 0.0;
+											};
+										};
 									};
 									["controlOrder"] = {
 										[1] = "level";
+										[2] = "pan";
 									};
 									["controlBranches"] = {
 									};
 									["bypass"] = false;
 									["unitVersion"] = 1;
-									["instanceKey"] = "5461b654";
+									["instanceKey"] = "cfb081c2";
 									["loadInfo"] = {
 										["keywords"] = "modulate, utility";
 										["category"] = "Essentials";
@@ -297,15 +347,15 @@ local obj1 = {
 												["view"] = "default";
 												["spot"] = 1;
 											};
-											["instanceKey"] = "8102f3c1";
+											["instanceKey"] = "a6c6325d";
 											["firmwareVersion"] = shared[1];
 											["channels"] = {
 												["count"] = 1;
 												["inputs"] = {
 													[1] = {
-														["name"] = "cheap reverb (gb1)";
+														["name"] = "cheap reverb (size)";
 														["type"] = "local";
-														["instanceKey"] = "46222ff8";
+														["instanceKey"] = "151ea40b";
 													};
 												};
 											};
@@ -332,7 +382,7 @@ local obj1 = {
 									};
 									["bypass"] = false;
 									["unitVersion"] = 1;
-									["instanceKey"] = "ad7ade10";
+									["instanceKey"] = "965e553d";
 									["loadInfo"] = {
 										["keywords"] = "delay, utility";
 										["category"] = "Delays and Reverb";
@@ -352,8 +402,20 @@ local obj1 = {
 					["mute"] = false;
 					["controlOrder"] = {
 						[1] = "gain";
+						[2] = "pan";
 					};
 					["objects"] = {
+						["pan"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 0.0;
+							};
+						};
+						["gain1"] = {
+							["params"] = {
+								["Gain"] = 1.0;
+							};
+						};
 						["gain"] = {
 							["params"] = {
 								["Gain"] = 1.0;
@@ -366,7 +428,7 @@ local obj1 = {
 					["title"] = "delay";
 					["bypass"] = false;
 					["unitVersion"] = 1;
-					["instanceKey"] = "bcaf2d73";
+					["instanceKey"] = "19f0a6a2";
 					["loadInfo"] = {
 						["keywords"] = "mixing, routing";
 						["category"] = "Essentials";
@@ -380,7 +442,7 @@ local obj1 = {
 					["activeView"] = "expanded";
 				};
 			};
-			["instanceKey"] = "ec7d6f9b";
+			["instanceKey"] = "e04d4d9a";
 		};
 		[3] = {
 			["firmwareVersion"] = shared[1];
@@ -392,24 +454,33 @@ local obj1 = {
 			["units"] = {
 				[1] = {
 					["controls"] = {
+						["pan"] = {
+							["gainEncoderState"] = "Coarse";
+						};
 					};
 					["branches"] = {
 						["input"] = {
 							["selection"] = {
-								["section"] = 1;
-								["view"] = "expanded";
+								["section"] = 0;
+								["view"] = "default";
 								["spot"] = 2;
 							};
-							["instanceKey"] = "b29398eb";
+							["instanceKey"] = "9ee31627";
 							["firmwareVersion"] = shared[1];
 							["channels"] = {
-								["count"] = 1;
+								["count"] = 2;
 								["inputs"] = {
 									[1] = {
 										["channel"] = 1;
 										["name"] = "delay";
 										["type"] = "local";
-										["instanceKey"] = "263a983a";
+										["instanceKey"] = "475ffcd0";
+									};
+									[2] = {
+										["channel"] = 2;
+										["name"] = "delay";
+										["type"] = "local";
+										["instanceKey"] = "475ffcd0";
 									};
 								};
 							};
@@ -417,6 +488,9 @@ local obj1 = {
 								[1] = {
 									["controls"] = {
 										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["pan"] = {
 											["gainEncoderState"] = "Coarse";
 										};
 									};
@@ -427,15 +501,22 @@ local obj1 = {
 												["Gain"] = 0.1;
 											};
 										};
+										["pan"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 0.0;
+											};
+										};
 									};
 									["controlOrder"] = {
 										[1] = "level";
+										[2] = "pan";
 									};
 									["controlBranches"] = {
 									};
 									["bypass"] = false;
 									["unitVersion"] = 1;
-									["instanceKey"] = "edc0044e";
+									["instanceKey"] = "07c66d06";
 									["loadInfo"] = {
 										["keywords"] = "modulate, utility";
 										["category"] = "Essentials";
@@ -452,15 +533,15 @@ local obj1 = {
 												["view"] = "default";
 												["spot"] = 1;
 											};
-											["instanceKey"] = "b0d7cfd6";
+											["instanceKey"] = "58abe7f5";
 											["firmwareVersion"] = shared[1];
 											["channels"] = {
 												["count"] = 1;
 												["inputs"] = {
 													[1] = {
-														["name"] = "cheap reverb (gb1)";
+														["name"] = "cheap reverb (size)";
 														["type"] = "local";
-														["instanceKey"] = "46222ff8";
+														["instanceKey"] = "151ea40b";
 													};
 												};
 											};
@@ -487,7 +568,7 @@ local obj1 = {
 									};
 									["bypass"] = false;
 									["unitVersion"] = 1;
-									["instanceKey"] = "a0c1d0e9";
+									["instanceKey"] = "ec302538";
 									["loadInfo"] = {
 										["keywords"] = "delay, utility";
 										["category"] = "Delays and Reverb";
@@ -507,8 +588,20 @@ local obj1 = {
 					["mute"] = false;
 					["controlOrder"] = {
 						[1] = "gain";
+						[2] = "pan";
 					};
 					["objects"] = {
+						["pan"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 0.0;
+							};
+						};
+						["gain1"] = {
+							["params"] = {
+								["Gain"] = 1.0;
+							};
+						};
 						["gain"] = {
 							["params"] = {
 								["Gain"] = 1.0;
@@ -521,7 +614,7 @@ local obj1 = {
 					["title"] = "delay";
 					["bypass"] = false;
 					["unitVersion"] = 1;
-					["instanceKey"] = "263a983a";
+					["instanceKey"] = "475ffcd0";
 					["loadInfo"] = {
 						["keywords"] = "mixing, routing";
 						["category"] = "Essentials";
@@ -535,7 +628,7 @@ local obj1 = {
 					["activeView"] = "expanded";
 				};
 			};
-			["instanceKey"] = "515b52dd";
+			["instanceKey"] = "2e362741";
 		};
 		[4] = {
 			["firmwareVersion"] = shared[1];
@@ -547,24 +640,33 @@ local obj1 = {
 			["units"] = {
 				[1] = {
 					["controls"] = {
+						["pan"] = {
+							["gainEncoderState"] = "Coarse";
+						};
 					};
 					["branches"] = {
 						["input"] = {
 							["selection"] = {
-								["section"] = 1;
-								["view"] = "expanded";
+								["section"] = 0;
+								["view"] = "default";
 								["spot"] = 2;
 							};
-							["instanceKey"] = "8211647c";
+							["instanceKey"] = "fc8b35fb";
 							["firmwareVersion"] = shared[1];
 							["channels"] = {
-								["count"] = 1;
+								["count"] = 2;
 								["inputs"] = {
 									[1] = {
 										["channel"] = 1;
 										["name"] = "delay";
 										["type"] = "local";
-										["instanceKey"] = "25f24185";
+										["instanceKey"] = "79bd1d1b";
+									};
+									[2] = {
+										["channel"] = 2;
+										["name"] = "delay";
+										["type"] = "local";
+										["instanceKey"] = "79bd1d1b";
 									};
 								};
 							};
@@ -572,6 +674,9 @@ local obj1 = {
 								[1] = {
 									["controls"] = {
 										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["pan"] = {
 											["gainEncoderState"] = "Coarse";
 										};
 									};
@@ -582,15 +687,22 @@ local obj1 = {
 												["Gain"] = 0.2;
 											};
 										};
+										["pan"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 0.0;
+											};
+										};
 									};
 									["controlOrder"] = {
 										[1] = "level";
+										[2] = "pan";
 									};
 									["controlBranches"] = {
 									};
 									["bypass"] = false;
 									["unitVersion"] = 1;
-									["instanceKey"] = "4e09babd";
+									["instanceKey"] = "af29dc94";
 									["loadInfo"] = {
 										["keywords"] = "modulate, utility";
 										["category"] = "Essentials";
@@ -607,15 +719,15 @@ local obj1 = {
 												["view"] = "default";
 												["spot"] = 1;
 											};
-											["instanceKey"] = "64c6ca18";
+											["instanceKey"] = "d7ff12f2";
 											["firmwareVersion"] = shared[1];
 											["channels"] = {
 												["count"] = 1;
 												["inputs"] = {
 													[1] = {
-														["name"] = "cheap reverb (gb1)";
+														["name"] = "cheap reverb (size)";
 														["type"] = "local";
-														["instanceKey"] = "46222ff8";
+														["instanceKey"] = "151ea40b";
 													};
 												};
 											};
@@ -642,7 +754,7 @@ local obj1 = {
 									};
 									["bypass"] = false;
 									["unitVersion"] = 1;
-									["instanceKey"] = "0e341eef";
+									["instanceKey"] = "e243fa20";
 									["loadInfo"] = {
 										["keywords"] = "delay, utility";
 										["category"] = "Delays and Reverb";
@@ -662,8 +774,20 @@ local obj1 = {
 					["mute"] = false;
 					["controlOrder"] = {
 						[1] = "gain";
+						[2] = "pan";
 					};
 					["objects"] = {
+						["pan"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 0.0;
+							};
+						};
+						["gain1"] = {
+							["params"] = {
+								["Gain"] = 1.0;
+							};
+						};
 						["gain"] = {
 							["params"] = {
 								["Gain"] = 1.0;
@@ -676,7 +800,7 @@ local obj1 = {
 					["title"] = "delay";
 					["bypass"] = false;
 					["unitVersion"] = 1;
-					["instanceKey"] = "25f24185";
+					["instanceKey"] = "79bd1d1b";
 					["loadInfo"] = {
 						["keywords"] = "mixing, routing";
 						["category"] = "Essentials";
@@ -690,7 +814,7 @@ local obj1 = {
 					["activeView"] = "expanded";
 				};
 			};
-			["instanceKey"] = "9e91cd6c";
+			["instanceKey"] = "6aaf7535";
 		};
 		[5] = {
 			["firmwareVersion"] = shared[1];
@@ -702,24 +826,33 @@ local obj1 = {
 			["units"] = {
 				[1] = {
 					["controls"] = {
+						["pan"] = {
+							["gainEncoderState"] = "Coarse";
+						};
 					};
 					["branches"] = {
 						["input"] = {
 							["selection"] = {
-								["section"] = 1;
-								["view"] = "expanded";
+								["section"] = 0;
+								["view"] = "default";
 								["spot"] = 2;
 							};
-							["instanceKey"] = "4b52011b";
+							["instanceKey"] = "4c9e662e";
 							["firmwareVersion"] = shared[1];
 							["channels"] = {
-								["count"] = 1;
+								["count"] = 2;
 								["inputs"] = {
 									[1] = {
 										["channel"] = 1;
 										["name"] = "delay";
 										["type"] = "local";
-										["instanceKey"] = "7054ca32";
+										["instanceKey"] = "5128373d";
+									};
+									[2] = {
+										["channel"] = 2;
+										["name"] = "delay";
+										["type"] = "local";
+										["instanceKey"] = "5128373d";
 									};
 								};
 							};
@@ -727,6 +860,9 @@ local obj1 = {
 								[1] = {
 									["controls"] = {
 										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["pan"] = {
 											["gainEncoderState"] = "Coarse";
 										};
 									};
@@ -737,15 +873,22 @@ local obj1 = {
 												["Gain"] = 0.3;
 											};
 										};
+										["pan"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 0.0;
+											};
+										};
 									};
 									["controlOrder"] = {
 										[1] = "level";
+										[2] = "pan";
 									};
 									["controlBranches"] = {
 									};
 									["bypass"] = false;
 									["unitVersion"] = 1;
-									["instanceKey"] = "d97d73b0";
+									["instanceKey"] = "e90e671e";
 									["loadInfo"] = {
 										["keywords"] = "modulate, utility";
 										["category"] = "Essentials";
@@ -762,15 +905,15 @@ local obj1 = {
 												["view"] = "default";
 												["spot"] = 1;
 											};
-											["instanceKey"] = "e01d7303";
+											["instanceKey"] = "0fe8ed50";
 											["firmwareVersion"] = shared[1];
 											["channels"] = {
 												["count"] = 1;
 												["inputs"] = {
 													[1] = {
-														["name"] = "cheap reverb (gb1)";
+														["name"] = "cheap reverb (size)";
 														["type"] = "local";
-														["instanceKey"] = "46222ff8";
+														["instanceKey"] = "151ea40b";
 													};
 												};
 											};
@@ -800,7 +943,7 @@ local obj1 = {
 									};
 									["bypass"] = false;
 									["unitVersion"] = 1;
-									["instanceKey"] = "ded82846";
+									["instanceKey"] = "93a5af36";
 									["loadInfo"] = {
 										["keywords"] = "delay, utility";
 										["category"] = "Delays and Reverb";
@@ -820,8 +963,20 @@ local obj1 = {
 					["mute"] = false;
 					["controlOrder"] = {
 						[1] = "gain";
+						[2] = "pan";
 					};
 					["objects"] = {
+						["pan"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 0.0;
+							};
+						};
+						["gain1"] = {
+							["params"] = {
+								["Gain"] = 1.0;
+							};
+						};
 						["gain"] = {
 							["params"] = {
 								["Gain"] = 1.0;
@@ -834,7 +989,7 @@ local obj1 = {
 					["title"] = "delay";
 					["bypass"] = false;
 					["unitVersion"] = 1;
-					["instanceKey"] = "7054ca32";
+					["instanceKey"] = "5128373d";
 					["loadInfo"] = {
 						["keywords"] = "mixing, routing";
 						["category"] = "Essentials";
@@ -848,7 +1003,7 @@ local obj1 = {
 					["activeView"] = "expanded";
 				};
 			};
-			["instanceKey"] = "525dde1b";
+			["instanceKey"] = "a27d734f";
 		};
 		[6] = {
 			["firmwareVersion"] = shared[1];
@@ -860,24 +1015,33 @@ local obj1 = {
 			["units"] = {
 				[1] = {
 					["controls"] = {
+						["pan"] = {
+							["gainEncoderState"] = "Coarse";
+						};
 					};
 					["branches"] = {
 						["input"] = {
 							["selection"] = {
-								["section"] = 1;
-								["view"] = "expanded";
+								["section"] = 0;
+								["view"] = "default";
 								["spot"] = 2;
 							};
-							["instanceKey"] = "6be93dfe";
+							["instanceKey"] = "c542f46f";
 							["firmwareVersion"] = shared[1];
 							["channels"] = {
-								["count"] = 1;
+								["count"] = 2;
 								["inputs"] = {
 									[1] = {
 										["channel"] = 1;
 										["name"] = "delay";
 										["type"] = "local";
-										["instanceKey"] = "fc177b6c";
+										["instanceKey"] = "bd62f312";
+									};
+									[2] = {
+										["channel"] = 2;
+										["name"] = "delay";
+										["type"] = "local";
+										["instanceKey"] = "bd62f312";
 									};
 								};
 							};
@@ -885,6 +1049,9 @@ local obj1 = {
 								[1] = {
 									["controls"] = {
 										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["pan"] = {
 											["gainEncoderState"] = "Coarse";
 										};
 									};
@@ -895,15 +1062,22 @@ local obj1 = {
 												["Gain"] = 0.3;
 											};
 										};
+										["pan"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 0.0;
+											};
+										};
 									};
 									["controlOrder"] = {
 										[1] = "level";
+										[2] = "pan";
 									};
 									["controlBranches"] = {
 									};
 									["bypass"] = false;
 									["unitVersion"] = 1;
-									["instanceKey"] = "6777fb73";
+									["instanceKey"] = "39155520";
 									["loadInfo"] = {
 										["keywords"] = "modulate, utility";
 										["category"] = "Essentials";
@@ -920,15 +1094,15 @@ local obj1 = {
 												["view"] = "default";
 												["spot"] = 1;
 											};
-											["instanceKey"] = "6633d158";
+											["instanceKey"] = "164e213d";
 											["firmwareVersion"] = shared[1];
 											["channels"] = {
 												["count"] = 1;
 												["inputs"] = {
 													[1] = {
-														["name"] = "cheap reverb (gb1)";
+														["name"] = "cheap reverb (size)";
 														["type"] = "local";
-														["instanceKey"] = "46222ff8";
+														["instanceKey"] = "151ea40b";
 													};
 												};
 											};
@@ -955,7 +1129,7 @@ local obj1 = {
 									};
 									["bypass"] = false;
 									["unitVersion"] = 1;
-									["instanceKey"] = "54a4f317";
+									["instanceKey"] = "f09ae508";
 									["loadInfo"] = {
 										["keywords"] = "delay, utility";
 										["category"] = "Delays and Reverb";
@@ -986,7 +1160,7 @@ local obj1 = {
 									};
 									["bypass"] = false;
 									["unitVersion"] = 1;
-									["instanceKey"] = "69c1b5da";
+									["instanceKey"] = "ed0eff2f";
 									["loadInfo"] = {
 										["keywords"] = "delay, utility";
 										["category"] = "Delays and Reverb";
@@ -1006,8 +1180,20 @@ local obj1 = {
 					["mute"] = false;
 					["controlOrder"] = {
 						[1] = "gain";
+						[2] = "pan";
 					};
 					["objects"] = {
+						["pan"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 0.0;
+							};
+						};
+						["gain1"] = {
+							["params"] = {
+								["Gain"] = 1.0;
+							};
+						};
 						["gain"] = {
 							["params"] = {
 								["Gain"] = 1.0;
@@ -1020,7 +1206,7 @@ local obj1 = {
 					["title"] = "delay";
 					["bypass"] = false;
 					["unitVersion"] = 1;
-					["instanceKey"] = "fc177b6c";
+					["instanceKey"] = "bd62f312";
 					["loadInfo"] = {
 						["keywords"] = "mixing, routing";
 						["category"] = "Essentials";
@@ -1034,7 +1220,7 @@ local obj1 = {
 					["activeView"] = "expanded";
 				};
 			};
-			["instanceKey"] = "62fbd0bb";
+			["instanceKey"] = "8c42703c";
 		};
 	};
 	["loadInfo"] = {

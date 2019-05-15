@@ -18,6 +18,6 @@ Controls:
 ## 6 Bands
 ### cheap reverb.unit
 CPU usage: 6.5%  
-Room size reverb that doesn't tax the CPU  
+Room size reverb that doesn't tax the CPU. Works on stereo channel, but is mono in, mono out...
 Controls:  
 * size (0-1)
