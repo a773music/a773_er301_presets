@@ -1,7 +1,7 @@
 # Presets
 ## Custom
 ### gated burst.unit
-![gated burst screenshot](screenshots/gated_burst.png?raw=true)  
+![gated burst screenshot](pix/gated_burst.png?raw=true)  
 Emits bursts while receiving a gate. The bursts are pulses with intervals of "burst time" and length "burst time/2".
 
 Controls:  
@@ -9,7 +9,7 @@ Controls:
 
 
 ### gate to trigger.unit
-![gate to trigger screenshot](screenshots/gate_to_trigger.png?raw=true)  
+![gate to trigger screenshot](pix/gate_to_trigger.png?raw=true)  
 Converts incomming gates to triggers of selected length
 
 Controls:  
@@ -17,6 +17,7 @@ Controls:
 
 ## 6 Bands
 ### cheap reverb.unit
+[![Cheap reverb demo on instagram](pix/mom_1.jpg?raw=true)](https://www.instagram.com/p/BxetV5FhZKT)  
 CPU usage: 6.5%  
 Room size reverb that doesn't tax the CPU. Works on stereo channel, but is mono in, mono out...
 Controls:  
