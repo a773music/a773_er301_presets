@@ -1,0 +1,810 @@
+-- Persistent Data
+local shared = {
+{};
+} -- shared
+shared[1]["SimpleString"] = "0.4.11";
+shared[1]["Major"] = 0;
+shared[1]["Patch"] = 0;
+shared[1]["Status"] = "unstable";
+shared[1]["Minor"] = 4;
+shared[1]["Name"] = "Fennel (48kHz, 128smps)";
+shared[1]["Build"] = 11;
+shared[1]["String"] = "0.4.11 (unstable)";
+local obj1 = {
+	["instanceKey"] = "3aeada8e";
+	["controls"] = {
+	};
+	["controlOrder"] = {
+		[1] = "width";
+		[2] = "depth";
+		[3] = "band1";
+		[4] = "band2";
+	};
+	["controlBranches"] = {
+		["width"] = {
+			["units"] = {
+			};
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Bias"] = 1.0;
+						["Gain"] = 0.0;
+					};
+				};
+			};
+			["id"] = "width";
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 0;
+			};
+			["control"] = {
+				["customizations"] = {
+					["name"] = "width";
+					["biasMin"] = 0;
+					["biasMax"] = 1;
+				};
+				["gainEncoderState"] = "Coarse";
+			};
+			["instanceKey"] = "00fb5697";
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["type"] = "GainBias";
+			["firmwareVersion"] = shared[1];
+		};
+		["depth"] = {
+			["units"] = {
+			};
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Bias"] = 1.0;
+						["Gain"] = 0.0;
+					};
+				};
+			};
+			["id"] = "depth";
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 0;
+			};
+			["control"] = {
+				["customizations"] = {
+					["name"] = "depth";
+					["biasMin"] = 0;
+					["biasMax"] = 1;
+				};
+				["gainEncoderState"] = "Coarse";
+			};
+			["instanceKey"] = "1ec1ca5f";
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["type"] = "GainBias";
+			["firmwareVersion"] = shared[1];
+		};
+	};
+	["lastPresetPath"] = "1:/ER-301/v0.4/presets/two-bands";
+	["objects"] = {
+	};
+	["branches"] = {
+	};
+	["title"] = "mono to stereo 2";
+	["hasUserTitle"] = true;
+	["bypass"] = false;
+	["unitVersion"] = 1;
+	["lastPresetFilename"] = "mono to stereo 1.unit";
+	["firmwareVersion"] = shared[1];
+	["activeView"] = "expanded";
+	["bands"] = {
+		[1] = {
+			["firmwareVersion"] = shared[1];
+			["selection"] = {
+				["section"] = 3;
+				["view"] = "expanded";
+				["spot"] = 3;
+			};
+			["units"] = {
+				[1] = {
+					["controls"] = {
+						["midGain"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["highGain"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["lowGain"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["objects"] = {
+						["highGain"] = {
+							["params"] = {
+								["Bias"] = 1.0;
+								["Gain"] = 0.0;
+							};
+						};
+						["equalizer"] = {
+							["params"] = {
+								["Low Freq"] = 880.0;
+								["High Freq"] = 2093.005;
+							};
+						};
+						["equalizer1"] = {
+							["params"] = {
+								["Low Freq"] = 880.0;
+								["High Freq"] = 2093.005;
+							};
+						};
+						["midGain"] = {
+							["params"] = {
+								["Bias"] = 1.0;
+								["Gain"] = -0.9;
+							};
+						};
+						["lowGain"] = {
+							["params"] = {
+								["Bias"] = 1.0;
+								["Gain"] = 0.0;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "lowGain";
+						[2] = "midGain";
+						[3] = "highGain";
+						[4] = "lowFreq";
+						[5] = "highFreq";
+					};
+					["controlBranches"] = {
+					};
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "066e5784";
+					["loadInfo"] = {
+						["keywords"] = "filter, mixing";
+						["category"] = "Filtering";
+						["title"] = "EQ3";
+						["moduleName"] = "EQ3Unit";
+						["id"] = "EQ3Unit";
+						["libraryName"] = "builtins";
+					};
+					["activeView"] = "expanded";
+					["branches"] = {
+						["midGain"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["instanceKey"] = "72269a47";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["name"] = "mono to stereo 2 (depth)";
+										["type"] = "local";
+										["instanceKey"] = "1ec1ca5f";
+									};
+								};
+							};
+							["units"] = {
+							};
+						};
+					};
+					["firmwareVersion"] = shared[1];
+				};
+				[2] = {
+					["controls"] = {
+						["midGain"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["highGain"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["lowGain"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["objects"] = {
+						["highGain"] = {
+							["params"] = {
+								["Bias"] = 1.0;
+								["Gain"] = 0.0;
+							};
+						};
+						["equalizer"] = {
+							["params"] = {
+								["Low Freq"] = 4698.634;
+								["High Freq"] = 7458.614;
+							};
+						};
+						["equalizer1"] = {
+							["params"] = {
+								["Low Freq"] = 4698.634;
+								["High Freq"] = 7458.614;
+							};
+						};
+						["midGain"] = {
+							["params"] = {
+								["Bias"] = 1.0;
+								["Gain"] = -0.9;
+							};
+						};
+						["lowGain"] = {
+							["params"] = {
+								["Bias"] = 1.0;
+								["Gain"] = 0.0;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "lowGain";
+						[2] = "midGain";
+						[3] = "highGain";
+						[4] = "lowFreq";
+						[5] = "highFreq";
+					};
+					["controlBranches"] = {
+					};
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "b8f51ad2";
+					["loadInfo"] = {
+						["keywords"] = "filter, mixing";
+						["category"] = "Filtering";
+						["title"] = "EQ3";
+						["moduleName"] = "EQ3Unit";
+						["id"] = "EQ3Unit";
+						["libraryName"] = "builtins";
+					};
+					["activeView"] = "expanded";
+					["branches"] = {
+						["midGain"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["instanceKey"] = "9835be28";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["name"] = "mono to stereo 2 (depth)";
+										["type"] = "local";
+										["instanceKey"] = "1ec1ca5f";
+									};
+								};
+							};
+							["units"] = {
+							};
+						};
+					};
+					["firmwareVersion"] = shared[1];
+				};
+				[3] = {
+					["controls"] = {
+						["midGain"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["highGain"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["lowGain"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["objects"] = {
+						["highGain"] = {
+							["params"] = {
+								["Bias"] = 1.0;
+								["Gain"] = 0.0;
+							};
+						};
+						["equalizer"] = {
+							["params"] = {
+								["Low Freq"] = 9956.061;
+								["High Freq"] = 13289.75;
+							};
+						};
+						["equalizer1"] = {
+							["params"] = {
+								["Low Freq"] = 9956.061;
+								["High Freq"] = 13289.75;
+							};
+						};
+						["midGain"] = {
+							["params"] = {
+								["Bias"] = 1.0;
+								["Gain"] = -0.9;
+							};
+						};
+						["lowGain"] = {
+							["params"] = {
+								["Bias"] = 1.0;
+								["Gain"] = 0.0;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "lowGain";
+						[2] = "midGain";
+						[3] = "highGain";
+						[4] = "lowFreq";
+						[5] = "highFreq";
+					};
+					["controlBranches"] = {
+					};
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "6506d674";
+					["loadInfo"] = {
+						["keywords"] = "filter, mixing";
+						["category"] = "Filtering";
+						["title"] = "EQ3";
+						["moduleName"] = "EQ3Unit";
+						["id"] = "EQ3Unit";
+						["libraryName"] = "builtins";
+					};
+					["activeView"] = "expanded";
+					["branches"] = {
+						["midGain"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["instanceKey"] = "b5a4100c";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["name"] = "mono to stereo 2 (width)";
+										["type"] = "local";
+										["instanceKey"] = "00fb5697";
+									};
+								};
+							};
+							["units"] = {
+							};
+						};
+					};
+					["firmwareVersion"] = shared[1];
+				};
+				[4] = {
+					["controls"] = {
+						["level"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["pan"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["objects"] = {
+						["level"] = {
+							["params"] = {
+								["Bias"] = 2.0;
+								["Gain"] = 0.0;
+							};
+						};
+						["pan"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = -1.0;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "level";
+						[2] = "pan";
+					};
+					["controlBranches"] = {
+					};
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "32b62a46";
+					["loadInfo"] = {
+						["keywords"] = "modulate, utility";
+						["category"] = "Essentials";
+						["title"] = "Linear Bipolar VCA";
+						["moduleName"] = "VCA.LinearBipolar";
+						["id"] = "VCA.LinearBipolar";
+						["libraryName"] = "builtins";
+					};
+					["activeView"] = "expanded";
+					["branches"] = {
+						["pan"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["instanceKey"] = "87542ec3";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["name"] = "mono to stereo 2 (width)";
+										["type"] = "local";
+										["instanceKey"] = "00fb5697";
+									};
+								};
+							};
+							["units"] = {
+							};
+						};
+					};
+					["firmwareVersion"] = shared[1];
+				};
+			};
+			["instanceKey"] = "22eb63c0";
+		};
+		[2] = {
+			["firmwareVersion"] = shared[1];
+			["selection"] = {
+				["section"] = 3;
+				["view"] = "expanded";
+				["spot"] = 3;
+			};
+			["units"] = {
+				[1] = {
+					["controls"] = {
+						["midGain"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["highGain"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["lowGain"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["objects"] = {
+						["highGain"] = {
+							["params"] = {
+								["Bias"] = 1.0;
+								["Gain"] = 0.0;
+							};
+						};
+						["equalizer"] = {
+							["params"] = {
+								["Low Freq"] = 293.665;
+								["High Freq"] = 880.0001;
+							};
+						};
+						["equalizer1"] = {
+							["params"] = {
+								["Low Freq"] = 293.665;
+								["High Freq"] = 880.0001;
+							};
+						};
+						["midGain"] = {
+							["params"] = {
+								["Bias"] = 1.0;
+								["Gain"] = -0.9;
+							};
+						};
+						["lowGain"] = {
+							["params"] = {
+								["Bias"] = 1.0;
+								["Gain"] = 0.0;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "lowGain";
+						[2] = "midGain";
+						[3] = "highGain";
+						[4] = "lowFreq";
+						[5] = "highFreq";
+					};
+					["controlBranches"] = {
+					};
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "0d4d4eb7";
+					["loadInfo"] = {
+						["keywords"] = "filter, mixing";
+						["category"] = "Filtering";
+						["title"] = "EQ3";
+						["moduleName"] = "EQ3Unit";
+						["id"] = "EQ3Unit";
+						["libraryName"] = "builtins";
+					};
+					["activeView"] = "expanded";
+					["branches"] = {
+						["midGain"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["instanceKey"] = "d2ae3f1e";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["name"] = "mono to stereo 2 (depth)";
+										["type"] = "local";
+										["instanceKey"] = "1ec1ca5f";
+									};
+								};
+							};
+							["units"] = {
+							};
+						};
+					};
+					["firmwareVersion"] = shared[1];
+				};
+				[2] = {
+					["controls"] = {
+						["midGain"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["highGain"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["lowGain"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["objects"] = {
+						["highGain"] = {
+							["params"] = {
+								["Bias"] = 1.0;
+								["Gain"] = 0.0;
+							};
+						};
+						["equalizer"] = {
+							["params"] = {
+								["Low Freq"] = 1864.656;
+								["High Freq"] = 4434.92;
+							};
+						};
+						["equalizer1"] = {
+							["params"] = {
+								["Low Freq"] = 1864.656;
+								["High Freq"] = 4434.92;
+							};
+						};
+						["midGain"] = {
+							["params"] = {
+								["Bias"] = 1.0;
+								["Gain"] = -0.9;
+							};
+						};
+						["lowGain"] = {
+							["params"] = {
+								["Bias"] = 1.0;
+								["Gain"] = 0.0;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "lowGain";
+						[2] = "midGain";
+						[3] = "highGain";
+						[4] = "lowFreq";
+						[5] = "highFreq";
+					};
+					["controlBranches"] = {
+					};
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "2bfaf333";
+					["loadInfo"] = {
+						["keywords"] = "filter, mixing";
+						["category"] = "Filtering";
+						["title"] = "EQ3";
+						["moduleName"] = "EQ3Unit";
+						["id"] = "EQ3Unit";
+						["libraryName"] = "builtins";
+					};
+					["activeView"] = "expanded";
+					["branches"] = {
+						["midGain"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["instanceKey"] = "c28a6f12";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["name"] = "mono to stereo 2 (depth)";
+										["type"] = "local";
+										["instanceKey"] = "1ec1ca5f";
+									};
+								};
+							};
+							["units"] = {
+							};
+						};
+					};
+					["firmwareVersion"] = shared[1];
+				};
+				[3] = {
+					["controls"] = {
+						["midGain"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["highGain"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["lowGain"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["objects"] = {
+						["highGain"] = {
+							["params"] = {
+								["Bias"] = 1.0;
+								["Gain"] = 0.0;
+							};
+						};
+						["equalizer"] = {
+							["params"] = {
+								["Low Freq"] = 7458.614;
+								["High Freq"] = 13289.75;
+							};
+						};
+						["equalizer1"] = {
+							["params"] = {
+								["Low Freq"] = 7458.614;
+								["High Freq"] = 13289.75;
+							};
+						};
+						["midGain"] = {
+							["params"] = {
+								["Bias"] = 1.0;
+								["Gain"] = -0.9;
+							};
+						};
+						["lowGain"] = {
+							["params"] = {
+								["Bias"] = 1.0;
+								["Gain"] = 0.0;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "lowGain";
+						[2] = "midGain";
+						[3] = "highGain";
+						[4] = "lowFreq";
+						[5] = "highFreq";
+					};
+					["controlBranches"] = {
+					};
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "6e2c562c";
+					["loadInfo"] = {
+						["keywords"] = "filter, mixing";
+						["category"] = "Filtering";
+						["title"] = "EQ3";
+						["moduleName"] = "EQ3Unit";
+						["id"] = "EQ3Unit";
+						["libraryName"] = "builtins";
+					};
+					["activeView"] = "expanded";
+					["branches"] = {
+						["midGain"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["instanceKey"] = "39913e94";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["name"] = "mono to stereo 2 (depth)";
+										["type"] = "local";
+										["instanceKey"] = "1ec1ca5f";
+									};
+								};
+							};
+							["units"] = {
+							};
+						};
+					};
+					["firmwareVersion"] = shared[1];
+				};
+				[4] = {
+					["controls"] = {
+						["level"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["pan"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["objects"] = {
+						["level"] = {
+							["params"] = {
+								["Bias"] = 2.0;
+								["Gain"] = 0.0;
+							};
+						};
+						["pan"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 1.0;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "level";
+						[2] = "pan";
+					};
+					["controlBranches"] = {
+					};
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "6890721b";
+					["loadInfo"] = {
+						["keywords"] = "modulate, utility";
+						["category"] = "Essentials";
+						["title"] = "Linear Bipolar VCA";
+						["moduleName"] = "VCA.LinearBipolar";
+						["id"] = "VCA.LinearBipolar";
+						["libraryName"] = "builtins";
+					};
+					["activeView"] = "expanded";
+					["branches"] = {
+						["pan"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["instanceKey"] = "da009bb8";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["name"] = "mono to stereo 2 (width)";
+										["type"] = "local";
+										["instanceKey"] = "00fb5697";
+									};
+								};
+							};
+							["units"] = {
+							};
+						};
+					};
+					["firmwareVersion"] = shared[1];
+				};
+			};
+			["instanceKey"] = "13959994";
+		};
+	};
+	["loadInfo"] = {
+		["keywords"] = "utility, effect, source, custom";
+		["category"] = "Containers";
+		["title"] = "2 Bands";
+		["moduleName"] = "Custom.TwoBands";
+		["id"] = "Custom.TwoBands";
+		["libraryName"] = "builtins";
+	};
+}
+return obj1

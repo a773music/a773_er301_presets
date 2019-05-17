@@ -1,0 +1,269 @@
+-- Persistent Data
+local shared = {
+{};
+} -- shared
+shared[1]["SimpleString"] = "0.4.11";
+shared[1]["Major"] = 0;
+shared[1]["Patch"] = 0;
+shared[1]["Status"] = "unstable";
+shared[1]["Minor"] = 4;
+shared[1]["Name"] = "Fennel (48kHz, 128smps)";
+shared[1]["Build"] = 11;
+shared[1]["String"] = "0.4.11 (unstable)";
+local obj1 = {
+	["instanceKey"] = "3aeada8e";
+	["controls"] = {
+	};
+	["controlOrder"] = {
+		[1] = "width";
+		[2] = "band1";
+		[3] = "band2";
+	};
+	["controlBranches"] = {
+		["width"] = {
+			["units"] = {
+			};
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Bias"] = 0.8;
+						["Gain"] = 0.0;
+					};
+				};
+			};
+			["id"] = "width";
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 0;
+			};
+			["control"] = {
+				["customizations"] = {
+					["name"] = "width";
+					["biasMin"] = 0;
+					["biasMax"] = 1;
+				};
+				["gainEncoderState"] = "Coarse";
+			};
+			["instanceKey"] = "00fb5697";
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["type"] = "GainBias";
+			["firmwareVersion"] = shared[1];
+		};
+	};
+	["lastPresetPath"] = "1:/ER-301/v0.4/presets/two-bands";
+	["objects"] = {
+	};
+	["branches"] = {
+	};
+	["title"] = "mono to stereo 1";
+	["hasUserTitle"] = true;
+	["bypass"] = false;
+	["unitVersion"] = 1;
+	["lastPresetFilename"] = "mono to stereo 1.unit";
+	["firmwareVersion"] = shared[1];
+	["activeView"] = "expanded";
+	["bands"] = {
+		[1] = {
+			["firmwareVersion"] = shared[1];
+			["selection"] = {
+				["section"] = 2;
+				["view"] = "expanded";
+				["spot"] = 3;
+			};
+			["units"] = {
+				[1] = {
+					["controls"] = {
+						["delay"] = {
+							["encoderState"] = "Fine";
+						};
+					};
+					["objects"] = {
+						["delayL"] = {
+							["params"] = {
+								["Delay"] = 0.019;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "delay";
+					};
+					["controlBranches"] = {
+					};
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "8b91c8d9";
+					["loadInfo"] = {
+						["keywords"] = "delay, utility";
+						["category"] = "Delays and Reverb";
+						["title"] = "Micro Delay";
+						["moduleName"] = "Delay.MicroDelay";
+						["id"] = "Delay.MicroDelay";
+						["libraryName"] = "builtins";
+					};
+					["activeView"] = "expanded";
+					["branches"] = {
+					};
+					["firmwareVersion"] = shared[1];
+				};
+				[2] = {
+					["controls"] = {
+						["level"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["pan"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["objects"] = {
+						["level"] = {
+							["params"] = {
+								["Bias"] = 2.0;
+								["Gain"] = 0.0;
+							};
+						};
+						["pan"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = -1.0;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "level";
+						[2] = "pan";
+					};
+					["controlBranches"] = {
+					};
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "32b62a46";
+					["loadInfo"] = {
+						["keywords"] = "modulate, utility";
+						["category"] = "Essentials";
+						["title"] = "Linear Bipolar VCA";
+						["moduleName"] = "VCA.LinearBipolar";
+						["id"] = "VCA.LinearBipolar";
+						["libraryName"] = "builtins";
+					};
+					["activeView"] = "expanded";
+					["branches"] = {
+						["pan"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["instanceKey"] = "87542ec3";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["name"] = "mono to stereo 1 (width)";
+										["type"] = "local";
+										["instanceKey"] = "00fb5697";
+									};
+								};
+							};
+							["units"] = {
+							};
+						};
+					};
+					["firmwareVersion"] = shared[1];
+				};
+			};
+			["instanceKey"] = "22eb63c0";
+		};
+		[2] = {
+			["firmwareVersion"] = shared[1];
+			["selection"] = {
+				["section"] = 1;
+				["view"] = "expanded";
+				["spot"] = 3;
+			};
+			["units"] = {
+				[1] = {
+					["controls"] = {
+						["level"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["pan"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["objects"] = {
+						["level"] = {
+							["params"] = {
+								["Bias"] = 2.0;
+								["Gain"] = 0.0;
+							};
+						};
+						["pan"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 1.0;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "level";
+						[2] = "pan";
+					};
+					["controlBranches"] = {
+					};
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "6890721b";
+					["loadInfo"] = {
+						["keywords"] = "modulate, utility";
+						["category"] = "Essentials";
+						["title"] = "Linear Bipolar VCA";
+						["moduleName"] = "VCA.LinearBipolar";
+						["id"] = "VCA.LinearBipolar";
+						["libraryName"] = "builtins";
+					};
+					["activeView"] = "expanded";
+					["branches"] = {
+						["pan"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["instanceKey"] = "da009bb8";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["name"] = "mono to stereo 1 (width)";
+										["type"] = "local";
+										["instanceKey"] = "00fb5697";
+									};
+								};
+							};
+							["units"] = {
+							};
+						};
+					};
+					["firmwareVersion"] = shared[1];
+				};
+			};
+			["instanceKey"] = "13959994";
+		};
+	};
+	["loadInfo"] = {
+		["keywords"] = "utility, effect, source, custom";
+		["category"] = "Containers";
+		["title"] = "2 Bands";
+		["moduleName"] = "Custom.TwoBands";
+		["id"] = "Custom.TwoBands";
+		["libraryName"] = "builtins";
+	};
+}
+return obj1
