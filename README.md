@@ -19,12 +19,16 @@ Controls:
 ### mono to stereo 1.unit
 Delays one channel, very simple/stupid, will flange in mono  
 CPU (on stereo channel): 3.2%  
-
+Controls:
+* width (0-1)
 
 ### mono to stereo 2.unit
 More sophisticated (using comb filters), better mono compatibility, but more
 expensive on the CPU  
 CPU (on stereo channel): 18%  
+Controls:
+* width (0-1)
+* depth (0-1)
 
 ## 6 Bands
 ### cheap reverb 1.unit + cheap reverb 2.unit
