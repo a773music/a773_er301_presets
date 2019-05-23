@@ -1,5 +1,26 @@
 # Presets
 ## Custom
+### ad.unit
+AD envelope with variable attack and decay, works with short triggers as input.  
+CPU: 3.3%  
+Controls:
+* attack (0-5s)
+* decay (0-5s)
+
+### ad exp.unit
+AD envelope (exponential response) with variable attack and decay, works with short triggers as input.  
+CPU: 4.8%  
+Controls:
+* attack (0-5s)
+* decay (0-5s)
+
+### ad exp var.unit
+AD envelope (variable exponential response) with variable attack and decay, works with short triggers as input.  
+CPU: 5.6%  
+Controls:
+* attack (0-5s)
+* decay (0-5s)
+* exp (0-1)
 ### gated burst.unit
 ![gated burst screenshot](pix/gated_burst.png?raw=true)  
 Emits bursts while receiving a gate. The bursts are pulses with intervals of "burst time" and length "burst time/2".
