@@ -11,16 +11,17 @@ shared[1]["Name"] = "Fennel (48kHz, 128smps)";
 shared[1]["Build"] = 11;
 shared[1]["String"] = "0.4.11 (unstable)";
 local obj1 = {
-	["instanceKey"] = "6a95a320";
+	["instanceKey"] = "087015d2";
 	["controls"] = {
 	};
 	["controlOrder"] = {
 		[1] = "length";
 		[2] = "speed";
-		[3] = "dry";
-		[4] = "wet";
-		[5] = "band1";
-		[6] = "band2";
+		[3] = "v/oct";
+		[4] = "dry";
+		[5] = "wet";
+		[6] = "band1";
+		[7] = "band2";
 	};
 	["controlBranches"] = {
 		["length"] = {
@@ -29,7 +30,7 @@ local obj1 = {
 			["objects"] = {
 				[1] = {
 					["params"] = {
-						["Bias"] = 0.6900001;
+						["Bias"] = 0.18;
 						["Gain"] = 0.0;
 					};
 				};
@@ -44,50 +45,16 @@ local obj1 = {
 				["customizations"] = {
 					["biasSuperCoarseStep"] = 0.09999999;
 					["biasSuperFineStep"] = 0.0001;
-					["biasCoarseStep"] = 0.01;
-					["biasMax"] = 1;
 					["biasUnits"] = 5;
+					["biasMax"] = 1;
+					["biasCoarseStep"] = 0.01;
 					["name"] = "length";
 					["biasMin"] = 0;
 					["biasFineStep"] = 0.0009999999;
 				};
 				["gainEncoderState"] = "Coarse";
 			};
-			["instanceKey"] = "42df3c69";
-			["channels"] = {
-				["count"] = 1;
-				["inputs"] = {
-				};
-			};
-			["type"] = "GainBias";
-			["firmwareVersion"] = shared[1];
-		};
-		["dry"] = {
-			["units"] = {
-			};
-			["objects"] = {
-				[1] = {
-					["params"] = {
-						["Bias"] = 1.0;
-						["Gain"] = 0.0;
-					};
-				};
-			};
-			["id"] = "dry";
-			["selection"] = {
-				["section"] = 0;
-				["view"] = "default";
-				["spot"] = 0;
-			};
-			["control"] = {
-				["customizations"] = {
-					["name"] = "dry";
-					["biasMin"] = 0;
-					["biasMax"] = 1;
-				};
-				["gainEncoderState"] = "Coarse";
-			};
-			["instanceKey"] = "19f900ce";
+			["instanceKey"] = "8698e9e3";
 			["channels"] = {
 				["count"] = 1;
 				["inputs"] = {
@@ -102,7 +69,7 @@ local obj1 = {
 			["objects"] = {
 				[1] = {
 					["params"] = {
-						["Bias"] = 440.0;
+						["Bias"] = 369.9999;
 						["Gain"] = 0.0;
 					};
 				};
@@ -117,16 +84,16 @@ local obj1 = {
 				["customizations"] = {
 					["name"] = "speed";
 					["biasSuperFineStep"] = 0.09999999;
-					["biasUnits"] = 2;
-					["biasMax"] = 500;
 					["biasCoarseStep"] = 10;
+					["biasMax"] = 500;
+					["biasUnits"] = 2;
 					["biasSuperCoarseStep"] = 100;
 					["biasMin"] = 10;
 					["biasFineStep"] = 1;
 				};
 				["gainEncoderState"] = "Coarse";
 			};
-			["instanceKey"] = "07fb12f5";
+			["instanceKey"] = "6c118462";
 			["channels"] = {
 				["count"] = 1;
 				["inputs"] = {
@@ -141,7 +108,7 @@ local obj1 = {
 			["objects"] = {
 				[1] = {
 					["params"] = {
-						["Bias"] = 0.5;
+						["Bias"] = 1.0;
 						["Gain"] = 0.0;
 					};
 				};
@@ -160,13 +127,78 @@ local obj1 = {
 				};
 				["gainEncoderState"] = "Coarse";
 			};
-			["instanceKey"] = "03f4729d";
+			["instanceKey"] = "1f01c01b";
 			["channels"] = {
 				["count"] = 1;
 				["inputs"] = {
 				};
 			};
 			["type"] = "GainBias";
+			["firmwareVersion"] = shared[1];
+		};
+		["dry"] = {
+			["units"] = {
+			};
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Bias"] = 0.0;
+						["Gain"] = 0.0;
+					};
+				};
+			};
+			["id"] = "dry";
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 0;
+			};
+			["control"] = {
+				["customizations"] = {
+					["name"] = "dry";
+					["biasMin"] = 0;
+					["biasMax"] = 1;
+				};
+				["gainEncoderState"] = "Coarse";
+			};
+			["instanceKey"] = "1b5e486c";
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["type"] = "GainBias";
+			["firmwareVersion"] = shared[1];
+		};
+		["v/oct"] = {
+			["units"] = {
+			};
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Offset"] = 0.1;
+					};
+				};
+			};
+			["id"] = "v/oct";
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 0;
+			};
+			["control"] = {
+				["customizations"] = {
+					["name"] = "v/oct";
+				};
+				["gainEncoderState"] = "Neutral";
+			};
+			["instanceKey"] = "051b41ff";
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["type"] = "Pitch";
 			["firmwareVersion"] = shared[1];
 		};
 	};
@@ -179,7 +211,7 @@ local obj1 = {
 	["hasUserTitle"] = true;
 	["bypass"] = false;
 	["unitVersion"] = 1;
-	["lastPresetFilename"] = "poor mans reverb 2 stereo.unit";
+	["lastPresetFilename"] = "poor mans reverb 2.unit";
 	["firmwareVersion"] = shared[1];
 	["activeView"] = "expanded";
 	["bands"] = {
@@ -188,7 +220,7 @@ local obj1 = {
 			["selection"] = {
 				["section"] = 2;
 				["view"] = "expanded";
-				["spot"] = 1;
+				["spot"] = 3;
 			};
 			["units"] = {
 				[1] = {
@@ -209,11 +241,11 @@ local obj1 = {
 					};
 					["sample"] = {
 						["opts"] = {
-							["channels"] = 1;
+							["channels"] = 2;
 							["secs"] = 2.0;
 							["type"] = "buffer";
 						};
-						["path"] = "tmp/buffer-0184-03";
+						["path"] = "tmp/buffer-0184-01";
 						["slices"] = {
 							["rate"] = 48000.0;
 						};
@@ -227,7 +259,7 @@ local obj1 = {
 						};
 						["wet"] = {
 							["params"] = {
-								["Bias"] = 0.05;
+								["Bias"] = 0.0;
 								["Gain"] = 0.0;
 							};
 						};
@@ -265,7 +297,7 @@ local obj1 = {
 						};
 						["head"] = {
 							["params"] = {
-								["Fade Time"] = 0.03;
+								["Fade Time"] = 0.25;
 							};
 						};
 					};
@@ -282,7 +314,7 @@ local obj1 = {
 					};
 					["bypass"] = false;
 					["unitVersion"] = 1;
-					["instanceKey"] = "4bdb08db";
+					["instanceKey"] = "ca0c4a98";
 					["loadInfo"] = {
 						["keywords"] = "sampling, effect";
 						["category"] = "Recording and Looping";
@@ -326,11 +358,11 @@ local obj1 = {
 					};
 					["sample"] = {
 						["opts"] = {
-							["channels"] = 1;
+							["channels"] = 2;
 							["secs"] = 2.0;
 							["type"] = "buffer";
 						};
-						["path"] = "tmp/buffer-0184-03";
+						["path"] = "tmp/buffer-0184-01";
 						["slices"] = {
 							["rate"] = 48000.0;
 						};
@@ -361,7 +393,7 @@ local obj1 = {
 						};
 						["trig"] = {
 							["options"] = {
-								["State"] = 0;
+								["State"] = 1;
 							};
 							["params"] = {
 								["Threshold"] = 0.1;
@@ -370,7 +402,7 @@ local obj1 = {
 						["start"] = {
 							["params"] = {
 								["Bias"] = 0.5;
-								["Gain"] = 0.11;
+								["Gain"] = 0.3;
 							};
 						};
 						["squash"] = {
@@ -400,7 +432,7 @@ local obj1 = {
 					};
 					["bypass"] = false;
 					["unitVersion"] = 1;
-					["instanceKey"] = "ddb38ef3";
+					["instanceKey"] = "e296592c";
 					["loadInfo"] = {
 						["keywords"] = "sampling, source";
 						["category"] = "Granular Playback";
@@ -411,34 +443,13 @@ local obj1 = {
 					};
 					["activeView"] = "expanded";
 					["branches"] = {
-						["duration"] = {
-							["selection"] = {
-								["section"] = 0;
-								["view"] = "default";
-								["spot"] = 1;
-							};
-							["instanceKey"] = "0e561bff";
-							["firmwareVersion"] = shared[1];
-							["channels"] = {
-								["count"] = 1;
-								["inputs"] = {
-									[1] = {
-										["name"] = "poor mans reverb 2 (length)";
-										["type"] = "local";
-										["instanceKey"] = "42df3c69";
-									};
-								};
-							};
-							["units"] = {
-							};
-						};
 						["start"] = {
 							["selection"] = {
 								["section"] = 1;
 								["view"] = "expanded";
 								["spot"] = 0;
 							};
-							["instanceKey"] = "36340d7c";
+							["instanceKey"] = "cd75a88c";
 							["firmwareVersion"] = shared[1];
 							["channels"] = {
 								["count"] = 1;
@@ -457,7 +468,7 @@ local obj1 = {
 									};
 									["bypass"] = false;
 									["unitVersion"] = 1;
-									["instanceKey"] = "71fc6068";
+									["instanceKey"] = "0c6dffe6";
 									["loadInfo"] = {
 										["keywords"] = "source, noise";
 										["category"] = "Noise";
@@ -479,7 +490,7 @@ local obj1 = {
 								["view"] = "expanded";
 								["spot"] = 3;
 							};
-							["instanceKey"] = "72ea75ad";
+							["instanceKey"] = "5294cc24";
 							["firmwareVersion"] = shared[1];
 							["channels"] = {
 								["count"] = 1;
@@ -520,7 +531,7 @@ local obj1 = {
 										};
 										["osc"] = {
 											["params"] = {
-												["Internal Phase"] = 0.09671998;
+												["Internal Phase"] = 0.07769501;
 											};
 										};
 										["level"] = {
@@ -561,7 +572,7 @@ local obj1 = {
 									};
 									["bypass"] = false;
 									["unitVersion"] = 1;
-									["instanceKey"] = "664c5342";
+									["instanceKey"] = "22eb052f";
 									["loadInfo"] = {
 										["keywords"] = "source, pitch, modulate";
 										["category"] = "Oscillators";
@@ -578,7 +589,7 @@ local obj1 = {
 												["view"] = "default";
 												["spot"] = 1;
 											};
-											["instanceKey"] = "f01d872c";
+											["instanceKey"] = "34f2311c";
 											["firmwareVersion"] = shared[1];
 											["channels"] = {
 												["count"] = 1;
@@ -586,7 +597,7 @@ local obj1 = {
 													[1] = {
 														["name"] = "poor mans reverb 2 (speed)";
 														["type"] = "local";
-														["instanceKey"] = "07fb12f5";
+														["instanceKey"] = "6c118462";
 													};
 												};
 											};
@@ -598,21 +609,63 @@ local obj1 = {
 								};
 							};
 						};
+						["tune"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["instanceKey"] = "106b866b";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["name"] = "poor mans reverb 2 (v/oct)";
+										["type"] = "local";
+										["instanceKey"] = "051b41ff";
+									};
+								};
+							};
+							["units"] = {
+							};
+						};
+						["duration"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["instanceKey"] = "a71c2980";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["name"] = "poor mans reverb 2 (length)";
+										["type"] = "local";
+										["instanceKey"] = "8698e9e3";
+									};
+								};
+							};
+							["units"] = {
+							};
+						};
 						["gain"] = {
 							["selection"] = {
 								["section"] = 0;
 								["view"] = "default";
 								["spot"] = 1;
 							};
-							["instanceKey"] = "c59f37e3";
+							["instanceKey"] = "0169bb10";
 							["firmwareVersion"] = shared[1];
 							["channels"] = {
 								["count"] = 1;
 								["inputs"] = {
 									[1] = {
-										["name"] = "poor mans reverb 2 (dry/wet)";
+										["name"] = "poor mans reverb 2 (wet)";
 										["type"] = "local";
-										["instanceKey"] = "03f4729d";
+										["instanceKey"] = "1f01c01b";
 									};
 								};
 							};
@@ -623,7 +676,7 @@ local obj1 = {
 					["firmwareVersion"] = shared[1];
 				};
 			};
-			["instanceKey"] = "b2aeec4b";
+			["instanceKey"] = "eea43306";
 		};
 		[2] = {
 			["firmwareVersion"] = shared[1];
@@ -664,7 +717,7 @@ local obj1 = {
 					};
 					["bypass"] = false;
 					["unitVersion"] = 1;
-					["instanceKey"] = "10e03a71";
+					["instanceKey"] = "7501cad8";
 					["loadInfo"] = {
 						["keywords"] = "modulate, utility";
 						["category"] = "Essentials";
@@ -681,7 +734,7 @@ local obj1 = {
 								["view"] = "default";
 								["spot"] = 1;
 							};
-							["instanceKey"] = "70d69ced";
+							["instanceKey"] = "97fc7ae5";
 							["firmwareVersion"] = shared[1];
 							["channels"] = {
 								["count"] = 1;
@@ -689,7 +742,7 @@ local obj1 = {
 									[1] = {
 										["name"] = "poor mans reverb 2 (dry)";
 										["type"] = "local";
-										["instanceKey"] = "19f900ce";
+										["instanceKey"] = "1b5e486c";
 									};
 								};
 							};
@@ -700,7 +753,7 @@ local obj1 = {
 					["firmwareVersion"] = shared[1];
 				};
 			};
-			["instanceKey"] = "bb79c335";
+			["instanceKey"] = "ae8b9e96";
 		};
 	};
 	["loadInfo"] = {
