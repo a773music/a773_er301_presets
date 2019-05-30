@@ -5,12 +5,15 @@ All presets are compatible with firmware 0.4.11
 * [ad.unit](#ad)
 * [ad ext.unit](#ad_exp)
 * [ad exp var.unit](#ad_exp_var)
+
 ##### Trigger/gate
 * [gated burst.unit](#gates_burst)
 * [gate to trigger.unit](#gate_to_trigger)
+
 ##### Audio mangling
 * [buffer player.unit](#buffer_player)
 * [stutter.unit](#stutter)
+
 ##### Effects
 * [cheap reverb 1.unit](#cheap_reverb_1)
 * [cheap reverb 2.unit](#cheap_reverb_2)
