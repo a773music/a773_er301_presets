@@ -23,61 +23,62 @@ All presets are compatible with firmware 0.4.11
 ## Synth
 ### ad.unit <a name="ad"></a>
 AD envelope with variable attack and decay, works with short triggers as input.  
+Unit type: custom-unit  
 CPU: 3.3%  
 Controls:
 * attack (0-5s)
 * decay (0-5s)
 
-Installation: place in folder presets/custom-unit/  
 
 ### ad exp.unit <a name="ad_exp"></a>
 AD envelope (exponential response) with variable attack and decay, works with short triggers as input.  
+Unit type: custom-unit  
 CPU: 4.8%  
 Controls:
 * attack (0-5s)
 * decay (0-5s)
 
-Installation: place in folder presets/custom-unit/  
 
 ### ad exp var.unit<a name="ad_exp_var"></a>
 AAD envelope (variable exponential response) with variable attack and decay, works with short triggers as input.  
+Unit type: custom-unit  
 CPU: 5.6%  
 Controls:
 * attack (0-5s)
 * decay (0-5s)
 * exp (0-1)
 
-Installation: place in folder presets/custom-unit/  
 
 ## Trigger/gate
 ### gated burst.unit<a name="gated_burst"></a>
 ![gated burst screenshot](pix/gated_burst.png?raw=true)  
 Emits bursts while receiving a gate. The bursts are pulses with intervals of "burst time" and length "burst time/2".  
+Unit type: custom-unit  
 Controls:  
 * burst time: 0-1000 ms  
 
-Installation: place in folder presets/custom-unit/  
 
 ### gate to trigger.unit<a name="gate_to_trigger"></a>
 ![gate to trigger screenshot](pix/gate_to_trigger.png?raw=true)  
 Converts incomming gates to triggers of selected length.  
+Unit type: custom-unit  
 Controls:  
 * trigger time (1-1000ms)
 
-Installation: place in folder presets/custom-unit/  
 
 ## Audio mangling
 ### buffer player.unit<a name="buffer_player"></a>
 Grabs audio and play it pitched.  
+Unit type: two-bands  
 Controls:
 * v/oct
 * grab
 * dry/wet
 
-Installation: place in folder presets/two-bands/
 
 ### stutter.unit<a name="stutter"></a>
 Repeats snip of audio on gate high.  
+Unit type: custom-unit  
 CPU: 7.2%  
 Controls:
 * clock
@@ -85,40 +86,40 @@ Controls:
 * mult
 * div
 
-Installation: place in folder presets/custom-unit/ 
 
 ## Effects
 ### cheap reverb 1.unit + cheap reverb 2.unit<a name="cheap_reverb_1"></a><a name="cheap_reverb_2"></a>
 [![Cheap reverb demo on instagram](pix/cheap_reverb.jpg?raw=true)](https://www.instagram.com/p/BxetV5FhZKT)  
+Unit type: six-bands  
 CPU usage: 7.2%  
 Room size reverb that doesn't tax the CPU. Works on stereo channel, but is mono in, mono out.  
 Controls:
 * size (0-1)  
 
-Installation: place in folder presets/six-bands/  
 
 ### mono to stereo 1.unit<a name="mono_to_stereo_1"></a>
 Delays one channel, very simple/stupid, will flange in mono.  
+Unit type: two-bands  
 CPU (on stereo channel): 3.2%  
 Controls:
 * width (0-1)
 
-Installation: place in folder presets/two-bands/
 
 ### mono to stereo 2.unit<a name="mono_to_stereo_2"></a>
 More sophisticated (using comb filters), better mono compatibility, but more
 expensive on the CPU.  
+Unit type: two-bands  
 CPU (on stereo channel): 18%  
 Controls:
 * width (0-1)
 * depth (0-1)
 
-Installation: place in folder presets/two-bands/
 
 ### poor mans reverb 1.unit<a name="poor_mans_reverb_1"></a>
 
 [![Poor mans reverb demo on instagram](pix/poor_mans_reverb_1.jpg?raw=true)](https://www.instagram.com/p/BvUDRwlF5Ic)  
 Granular reverb based on [Neil Parfitts reverb idea](https://www.youtube.com/watch?v=swXpnqot4-Q), recording with a Dub Looper, with dub controlled by incoming signal.  
+Unit type: two-bands  
 CPU (mono version on mono channel): ~24%  
 CPU (stereo version on stereo channel): ~23%  
 Controls:  
@@ -128,10 +129,10 @@ Controls:
 * dry (0-1)
 * wet (0-1)
 
-Installation: place in folder presets/two-bands/  
 
 ### poor mans reverb 2.unit<a name="poor_mans_reverb_1"></a>
 Variation of [poor mans reverb 1.unit](#poor_mans_reverb_1), but recording with a Feedback Looper for a different flavor.  
+Unit type: two-bands
 CPU (on stereo channel): ~26%  
 Controls:  
 * length (0-1s): length of grains
@@ -140,4 +141,4 @@ Controls:
 * dry (0-1)
 * wet (0-1)
 
-Installation: place in folder presets/two-bands/  
+
