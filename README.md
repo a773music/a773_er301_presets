@@ -55,7 +55,7 @@ Controls:
 
 ### decay env.unit<a name="decay_env"></a>
 Very cheap decay envelope with exponential decay. This is just a slew-limiter with feedback (no fancy GUI) to keep it cheap. Adjusting time, might require adjusting the negative gain on the feedback. A bit unstable in a charming way.  
-Unit type: slew-limiter
+Unit type: slew-limiter  
 CPU: 0.24%  
 Controls:  
 * time: 3ms-786.32s  
