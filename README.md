@@ -1,10 +1,11 @@
 # Presets
 
-All presets are compatible with firmware 0.4.11
+All presets are compatible with firmware 0.4.17
 ##### Synth
 * [ad.unit](#ad)
 * [ad ext.unit](#ad_exp)
 * [ad exp var.unit](#ad_exp_var)
+* [ad decay env.unit](#decay_env)
 
 ##### Trigger/gate
 * [gated burst.unit](#gates_burst)
@@ -43,7 +44,7 @@ Controls:
 
 
 ### ad exp var.unit<a name="ad_exp_var"></a>
-AAD envelope (variable exponential response) with variable attack and decay, works with short triggers as input.  
+AD envelope (variable exponential response) with variable attack and decay, works with short triggers as input.  
 Unit type: custom-unit  
 CPU: 5.6%  
 Controls:
@@ -51,6 +52,13 @@ Controls:
 * decay (0-5s)
 * exp (0-1)
 
+
+### decay env.unit<a name="decay_env"></a>
+Very cheap decay envelope with exponential decay. This is just a slew-limiter with feedback (no fancy GUI) to keep it cheap. Adjusting time, might require adjusting the negative gain on the feedback. A bit unstable in a charming way.  
+Unit type: slew-limiter
+CPU: 0.24%  
+Controls:  
+* time: 3ms-786.32s  
 
 ## Trigger/gate
 ### gated burst.unit<a name="gated_burst"></a>

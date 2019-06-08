@@ -1,0 +1,79 @@
+-- Persistent Data
+local shared = {
+{};
+} -- shared
+shared[1]["Major"] = 0;
+shared[1]["SimpleString"] = "0.4.17";
+shared[1]["Status"] = "unstable";
+shared[1]["Patch"] = 0;
+shared[1]["Name"] = "Fennel (48kHz, 128smps)";
+shared[1]["Build"] = 17;
+shared[1]["String"] = "0.4.17 (unstable)";
+shared[1]["Minor"] = 4;
+local obj1 = {
+	["firmwareVersion"] = shared[1];
+	["unitVersion"] = 1;
+	["activeView"] = "expanded";
+	["controlBranches"] = {
+	};
+	["bypass"] = false;
+	["branches"] = {
+		["time"] = {
+			["firmwareVersion"] = shared[1];
+			["instanceKey"] = "74badde4";
+			["units"] = {
+			};
+			["channels"] = {
+				["inputs"] = {
+					[1] = {
+						["name"] = "decay env";
+						["channel"] = 1;
+						["instanceKey"] = "fd75be0a";
+						["type"] = "local";
+					};
+				};
+				["count"] = 1;
+			};
+			["selection"] = {
+				["view"] = "default";
+				["spot"] = 1;
+				["section"] = 0;
+			};
+		};
+	};
+	["controlOrder"] = {
+		[1] = "time";
+		[2] = "dir";
+	};
+	["instanceKey"] = "fd75be0a";
+	["objects"] = {
+		["slew1"] = {
+			["options"] = {
+				["Direction"] = 3;
+			};
+		};
+		["time"] = {
+			["params"] = {
+				["Bias"] = 0.096;
+				["Gain"] = -0.07;
+			};
+		};
+	};
+	["controls"] = {
+		["time"] = {
+			["gainEncoderState"] = "Fine";
+			["encoderState"] = "Fine";
+		};
+	};
+	["title"] = "decay env";
+	["loadInfo"] = {
+		["category"] = "Filtering";
+		["libraryName"] = "builtins";
+		["id"] = "SlewLimiter";
+		["title"] = "Slew Limiter";
+		["keywords"] = "filter, utility";
+		["moduleName"] = "SlewLimiter";
+	};
+	["hasUserTitle"] = true;
+}
+return obj1
