@@ -5,7 +5,7 @@ All presets are compatible with firmware 0.4.17
 * [ad.unit](#ad)
 * [ad ext.unit](#ad_exp)
 * [ad exp var.unit](#ad_exp_var)
-* [ad decay env.unit](#decay_env)
+* [decay env.unit](#decay_env)
 
 ##### Trigger/gate
 * [gated burst.unit](#gates_burst)
