@@ -1,7 +1,7 @@
 # Presets
 
 All presets are compatible with firmware 0.4.18
-##### Synth 
+##### Synth building blocks
 * [ad.unit](#ad)
 * [ad ext.unit](#ad_exp)
 * [ad exp var.unit](#ad_exp_var)
@@ -29,7 +29,7 @@ All presets are compatible with firmware 0.4.18
 * [poor mans reverb 2.unit](#poor_mans_reverb_2)
 
 
-## Synth
+## Synth building blocks
 ### ad.unit <a name="ad"></a>
 AD envelope with variable attack and decay, works with short triggers as input.  
 Unit type: custom-unit  
