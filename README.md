@@ -1,11 +1,16 @@
 # Presets
 
-All presets are compatible with firmware 0.4.17
-##### Synth
+All presets are compatible with firmware 0.4.18
+##### Synth 
 * [ad.unit](#ad)
 * [ad ext.unit](#ad_exp)
 * [ad exp var.unit](#ad_exp_var)
 * [decay env.unit](#decay_env)
+
+##### Drums
+* [bd1.unit](#bd1)
+* [bd2.unit](#bd2)
+
 
 ##### Trigger/gate
 * [gated burst.unit](#gates_burst)
@@ -59,6 +64,31 @@ Unit type: slew-limiter
 CPU: 0.24%  
 Controls:  
 * time: 3ms-786.32s  
+
+
+
+## Drums
+### bd1.unit<a name="bd1"></a>
+No so versatile kick drum.  
+Unit type: mixer-channel  
+CPU: 8%  
+Controls:
+* amp rel (amplitude decay time)
+* pitch amt (pitch amount)
+* pitch rel (amplitude decay time)
+
+
+### bd2.unit<a name="bd2"></a>
+Quite versatile kick drum, with lots of sweet spots.  
+Unit type: mixer-channel  
+CPU: 10%  
+Controls:
+* freq 0-1 (frequency env amount)
+* decay 0-1s
+* feedback 0-1
+
+
+
 
 ## Trigger/gate
 ### gated burst.unit<a name="gated_burst"></a>
