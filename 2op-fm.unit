@@ -1,0 +1,782 @@
+-- Persistent Data
+local shared = {
+{};
+} -- shared
+shared[1]["Minor"] = 4;
+shared[1]["Major"] = 0;
+shared[1]["String"] = "0.4.19 (unstable)";
+shared[1]["Build"] = 19;
+shared[1]["Name"] = "Fennel (48kHz, 128smps)";
+shared[1]["Status"] = "unstable";
+shared[1]["Patch"] = 0;
+shared[1]["SimpleString"] = "0.4.19";
+local obj1 = {
+	["lastPresetFilename"] = "2op-fm.unit";
+	["bypass"] = false;
+	["controlOrder"] = {
+		[1] = "v/oct";
+		[2] = "index";
+		[3] = "gate";
+		[4] = "release";
+		[5] = "gain";
+	};
+	["controls"] = {
+	};
+	["solo"] = false;
+	["title"] = "2op-fm";
+	["activeView"] = "expanded";
+	["unitVersion"] = 1;
+	["controlBranches"] = {
+		["v/oct"] = {
+			["selection"] = {
+				["view"] = "expanded";
+				["spot"] = 0;
+				["section"] = 1;
+			};
+			["id"] = "v/oct";
+			["units"] = {
+			};
+			["firmwareVersion"] = shared[1];
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Offset"] = 0.1;
+					};
+				};
+			};
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["control"] = {
+				["customizations"] = {
+					["name"] = "v/oct";
+					["min"] = 0;
+				};
+				["gainEncoderState"] = "Neutral";
+			};
+			["type"] = "Pitch";
+			["instanceKey"] = "36447826";
+		};
+		["index"] = {
+			["selection"] = {
+				["view"] = "expanded";
+				["spot"] = 0;
+				["section"] = 1;
+			};
+			["id"] = "index";
+			["units"] = {
+			};
+			["firmwareVersion"] = shared[1];
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Gain"] = 0.0;
+						["Bias"] = 1.0;
+					};
+				};
+			};
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["control"] = {
+				["customizations"] = {
+					["biasUnits"] = 4;
+					["biasSuperFineStep"] = 0.0009999999;
+					["biasSuperCoarseStep"] = 1;
+					["biasMax"] = 20;
+					["name"] = "index";
+					["biasMin"] = 0;
+					["biasCoarseStep"] = 0.09999999;
+					["biasFineStep"] = 0.01;
+				};
+				["gainEncoderState"] = "Coarse";
+			};
+			["type"] = "GainBias";
+			["instanceKey"] = "6b62f439";
+		};
+		["gate"] = {
+			["selection"] = {
+				["view"] = "expanded";
+				["spot"] = 0;
+				["section"] = 1;
+			};
+			["id"] = "gate";
+			["units"] = {
+			};
+			["firmwareVersion"] = shared[1];
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Threshold"] = 0.1;
+					};
+					["options"] = {
+						["State"] = 0;
+					};
+				};
+			};
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["control"] = {
+				["customizations"] = {
+					["name"] = "gate";
+					["outputMode"] = 2;
+				};
+			};
+			["type"] = "Gate";
+			["instanceKey"] = "0f2f99d0";
+		};
+		["release"] = {
+			["selection"] = {
+				["view"] = "expanded";
+				["spot"] = 0;
+				["section"] = 1;
+			};
+			["id"] = "release";
+			["units"] = {
+			};
+			["firmwareVersion"] = shared[1];
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Gain"] = 0.0;
+						["Bias"] = 0.49;
+					};
+				};
+			};
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["control"] = {
+				["customizations"] = {
+					["biasUnits"] = 5;
+					["biasSuperCoarseStep"] = 0.09999999;
+					["biasMax"] = 1;
+					["name"] = "release";
+					["biasMin"] = 0;
+					["biasCoarseStep"] = 0.01;
+					["biasFineStep"] = 0.0009999999;
+				};
+				["gainEncoderState"] = "Fine";
+			};
+			["type"] = "GainBias";
+			["instanceKey"] = "160cd8dd";
+		};
+	};
+	["firmwareVersion"] = shared[1];
+	["objects"] = {
+		["gain"] = {
+			["params"] = {
+				["Gain"] = 1.0;
+			};
+		};
+	};
+	["mute"] = false;
+	["lastPresetPath"] = "1:/ER-301/v0.4/presets";
+	["instanceKey"] = "83d30889";
+	["hasUserTitle"] = true;
+	["loadInfo"] = {
+		["category"] = "Essentials";
+		["title"] = "Mixer Channel";
+		["libraryName"] = "builtins";
+		["id"] = "MixerUnit";
+		["moduleName"] = "MixerUnit";
+		["keywords"] = "mixing, routing";
+	};
+	["branches"] = {
+		["input"] = {
+			["selection"] = {
+				["view"] = "expanded";
+				["spot"] = 7;
+				["section"] = 1;
+			};
+			["instanceKey"] = "4e14ab06";
+			["units"] = {
+				[1] = {
+					["activeView"] = "expanded";
+					["unitVersion"] = 1;
+					["bypass"] = false;
+					["instanceKey"] = "f0871b48";
+					["controlOrder"] = {
+						[1] = "tune";
+						[2] = "freq";
+						[3] = "phase";
+						[4] = "feedback";
+						[5] = "sync";
+						[6] = "level";
+					};
+					["firmwareVersion"] = shared[1];
+					["controls"] = {
+						["tune"] = {
+							["gainEncoderState"] = "Neutral";
+						};
+						["level"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["phase"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["freq"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["feedback"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["loadInfo"] = {
+						["category"] = "Oscillators";
+						["title"] = "Sine Osc";
+						["libraryName"] = "builtins";
+						["id"] = "Oscillators.Sine";
+						["moduleName"] = "Oscillators.Sine";
+						["keywords"] = "source, pitch, modulate";
+					};
+					["branches"] = {
+						["level"] = {
+							["selection"] = {
+								["view"] = "expanded";
+								["spot"] = 6;
+								["section"] = 1;
+							};
+							["instanceKey"] = "98d67155";
+							["units"] = {
+								[1] = {
+									["activeView"] = "expanded";
+									["unitVersion"] = 1;
+									["bypass"] = false;
+									["instanceKey"] = "aab5156b";
+									["controlOrder"] = {
+										[1] = "input";
+										[2] = "attack";
+										[3] = "decay";
+										[4] = "sustain";
+										[5] = "release";
+									};
+									["firmwareVersion"] = shared[1];
+									["controls"] = {
+										["sustain"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["decay"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["attack"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["release"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["loadInfo"] = {
+										["category"] = "Envelopes";
+										["title"] = "ADSR";
+										["libraryName"] = "builtins";
+										["id"] = "Envelopes.ADSR";
+										["moduleName"] = "Envelopes.ADSR";
+										["keywords"] = "modulate, source, utility";
+									};
+									["branches"] = {
+										["release"] = {
+											["selection"] = {
+												["view"] = "default";
+												["spot"] = 1;
+												["section"] = 0;
+											};
+											["instanceKey"] = "c2c0233f";
+											["units"] = {
+											};
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["count"] = 1;
+												["inputs"] = {
+													[1] = {
+														["name"] = "2op-fm (release)";
+														["type"] = "local";
+														["instanceKey"] = "160cd8dd";
+													};
+												};
+											};
+										};
+									};
+									["controlBranches"] = {
+									};
+									["objects"] = {
+										["release"] = {
+											["params"] = {
+												["Gain"] = 1.0;
+												["Bias"] = 0.0;
+											};
+										};
+										["gate"] = {
+											["params"] = {
+												["Threshold"] = 0.1;
+											};
+											["options"] = {
+												["State"] = 0;
+											};
+										};
+										["decay"] = {
+											["params"] = {
+												["Gain"] = 0.0;
+												["Bias"] = 0.0;
+											};
+										};
+										["attack"] = {
+											["params"] = {
+												["Gain"] = 0.0;
+												["Bias"] = 0.0;
+											};
+										};
+										["sustain"] = {
+											["params"] = {
+												["Gain"] = 0.0;
+												["Bias"] = 1.0;
+											};
+										};
+									};
+								};
+							};
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["name"] = "2op-fm (gate)";
+										["type"] = "local";
+										["instanceKey"] = "0f2f99d0";
+									};
+								};
+							};
+						};
+						["tune"] = {
+							["selection"] = {
+								["view"] = "default";
+								["spot"] = 1;
+								["section"] = 0;
+							};
+							["instanceKey"] = "cd4415a2";
+							["units"] = {
+							};
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["name"] = "2op-fm (v/oct)";
+										["type"] = "local";
+										["instanceKey"] = "36447826";
+									};
+								};
+							};
+						};
+						["f0"] = {
+							["selection"] = {
+								["view"] = "expanded";
+								["spot"] = 2;
+								["section"] = 1;
+							};
+							["instanceKey"] = "af265d66";
+							["units"] = {
+								[1] = {
+									["activeView"] = "expanded";
+									["unitVersion"] = 1;
+									["bypass"] = false;
+									["instanceKey"] = "0b32667c";
+									["controlOrder"] = {
+										[1] = "tune";
+										[2] = "freq";
+										[3] = "phase";
+										[4] = "feedback";
+										[5] = "sync";
+										[6] = "level";
+									};
+									["firmwareVersion"] = shared[1];
+									["controls"] = {
+										["tune"] = {
+											["gainEncoderState"] = "Neutral";
+										};
+										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["phase"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["freq"] = {
+											["gainEncoderState"] = "Fine";
+										};
+										["feedback"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["loadInfo"] = {
+										["category"] = "Oscillators";
+										["title"] = "Sine Osc";
+										["libraryName"] = "builtins";
+										["id"] = "Oscillators.Sine";
+										["moduleName"] = "Oscillators.Sine";
+										["keywords"] = "source, pitch, modulate";
+									};
+									["branches"] = {
+										["level"] = {
+											["selection"] = {
+												["view"] = "expanded";
+												["spot"] = 6;
+												["section"] = 1;
+											};
+											["instanceKey"] = "bcb2a992";
+											["units"] = {
+												[1] = {
+													["activeView"] = "expanded";
+													["unitVersion"] = 1;
+													["bypass"] = false;
+													["instanceKey"] = "3f2e17f6";
+													["controlOrder"] = {
+														[1] = "input";
+														[2] = "attack";
+														[3] = "decay";
+														[4] = "sustain";
+														[5] = "release";
+													};
+													["firmwareVersion"] = shared[1];
+													["controls"] = {
+														["sustain"] = {
+															["gainEncoderState"] = "Coarse";
+														};
+														["decay"] = {
+															["gainEncoderState"] = "Coarse";
+														};
+														["attack"] = {
+															["gainEncoderState"] = "Coarse";
+														};
+														["release"] = {
+															["gainEncoderState"] = "Coarse";
+														};
+													};
+													["loadInfo"] = {
+														["category"] = "Envelopes";
+														["title"] = "ADSR";
+														["libraryName"] = "builtins";
+														["id"] = "Envelopes.ADSR";
+														["moduleName"] = "Envelopes.ADSR";
+														["keywords"] = "modulate, source, utility";
+													};
+													["branches"] = {
+														["release"] = {
+															["selection"] = {
+																["view"] = "default";
+																["spot"] = 1;
+																["section"] = 0;
+															};
+															["instanceKey"] = "93394674";
+															["units"] = {
+															};
+															["firmwareVersion"] = shared[1];
+															["channels"] = {
+																["count"] = 1;
+																["inputs"] = {
+																	[1] = {
+																		["name"] = "2op-fm (release)";
+																		["type"] = "local";
+																		["instanceKey"] = "160cd8dd";
+																	};
+																};
+															};
+														};
+													};
+													["controlBranches"] = {
+													};
+													["objects"] = {
+														["release"] = {
+															["params"] = {
+																["Gain"] = 1.0;
+																["Bias"] = 0.0;
+															};
+														};
+														["gate"] = {
+															["params"] = {
+																["Threshold"] = 0.1;
+															};
+															["options"] = {
+																["State"] = 0;
+															};
+														};
+														["decay"] = {
+															["params"] = {
+																["Gain"] = 0.0;
+																["Bias"] = 0.0;
+															};
+														};
+														["attack"] = {
+															["params"] = {
+																["Gain"] = 0.0;
+																["Bias"] = 0.0;
+															};
+														};
+														["sustain"] = {
+															["params"] = {
+																["Gain"] = 0.0;
+																["Bias"] = 1.0;
+															};
+														};
+													};
+												};
+											};
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["count"] = 1;
+												["inputs"] = {
+													[1] = {
+														["name"] = "2op-fm (gate)";
+														["type"] = "local";
+														["instanceKey"] = "0f2f99d0";
+													};
+												};
+											};
+										};
+										["tune"] = {
+											["selection"] = {
+												["view"] = "expanded";
+												["spot"] = 2;
+												["section"] = 1;
+											};
+											["instanceKey"] = "91032e37";
+											["units"] = {
+												[1] = {
+													["activeView"] = "expanded";
+													["unitVersion"] = 1;
+													["bypass"] = false;
+													["instanceKey"] = "96fbca67";
+													["controlOrder"] = {
+														[1] = "level";
+													};
+													["firmwareVersion"] = shared[1];
+													["controls"] = {
+														["level"] = {
+															["gainEncoderState"] = "Coarse";
+														};
+													};
+													["loadInfo"] = {
+														["category"] = "Essentials";
+														["title"] = "Linear Unipolar VCA";
+														["libraryName"] = "builtins";
+														["id"] = "VCA.LinearUnipolar";
+														["moduleName"] = "VCA.LinearUnipolar";
+														["keywords"] = "modulate, utility";
+													};
+													["branches"] = {
+														["level"] = {
+															["selection"] = {
+																["view"] = "default";
+																["spot"] = 1;
+																["section"] = 0;
+															};
+															["instanceKey"] = "c6cb39cc";
+															["units"] = {
+															};
+															["firmwareVersion"] = shared[1];
+															["channels"] = {
+																["count"] = 1;
+																["inputs"] = {
+																	[1] = {
+																		["name"] = "2op-fm (index)";
+																		["type"] = "local";
+																		["instanceKey"] = "6b62f439";
+																	};
+																};
+															};
+														};
+													};
+													["controlBranches"] = {
+													};
+													["objects"] = {
+														["level"] = {
+															["params"] = {
+																["Gain"] = 1.0;
+																["Bias"] = 0.0;
+															};
+														};
+														["rectify"] = {
+															["options"] = {
+																["Type"] = 1;
+															};
+														};
+													};
+												};
+											};
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["count"] = 1;
+												["inputs"] = {
+													[1] = {
+														["name"] = "2op-fm (v/oct)";
+														["type"] = "local";
+														["instanceKey"] = "36447826";
+													};
+												};
+											};
+										};
+										["sync"] = {
+											["selection"] = {
+												["view"] = "default";
+												["spot"] = 1;
+												["section"] = 0;
+											};
+											["instanceKey"] = "efbb167f";
+											["units"] = {
+											};
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["count"] = 1;
+												["inputs"] = {
+													[1] = {
+														["name"] = "2op-fm (gate)";
+														["type"] = "local";
+														["instanceKey"] = "0f2f99d0";
+													};
+												};
+											};
+										};
+									};
+									["controlBranches"] = {
+									};
+									["objects"] = {
+										["tune"] = {
+											["params"] = {
+												["Offset"] = 0.1;
+											};
+										};
+										["feedback"] = {
+											["params"] = {
+												["Gain"] = 0.0;
+												["Bias"] = 0.0;
+											};
+										};
+										["phase"] = {
+											["params"] = {
+												["Gain"] = 0.0;
+												["Bias"] = 0.0;
+											};
+										};
+										["level"] = {
+											["params"] = {
+												["Gain"] = 1.0;
+												["Bias"] = 0.0;
+											};
+										};
+										["f0"] = {
+											["params"] = {
+												["Gain"] = 0.0;
+												["Bias"] = 32.703;
+											};
+										};
+										["osc"] = {
+											["params"] = {
+												["Internal Phase"] = 0.3098792;
+											};
+										};
+										["sync"] = {
+											["params"] = {
+												["Threshold"] = 0.1;
+											};
+											["options"] = {
+												["State"] = 0;
+											};
+										};
+									};
+								};
+							};
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+								};
+							};
+						};
+						["sync"] = {
+							["selection"] = {
+								["view"] = "default";
+								["spot"] = 1;
+								["section"] = 0;
+							};
+							["instanceKey"] = "4b7cb98d";
+							["units"] = {
+							};
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["name"] = "2op-fm (gate)";
+										["type"] = "local";
+										["instanceKey"] = "0f2f99d0";
+									};
+								};
+							};
+						};
+					};
+					["controlBranches"] = {
+					};
+					["objects"] = {
+						["tune"] = {
+							["params"] = {
+								["Offset"] = 0.0;
+							};
+						};
+						["feedback"] = {
+							["params"] = {
+								["Gain"] = 0.0;
+								["Bias"] = 0.0;
+							};
+						};
+						["phase"] = {
+							["params"] = {
+								["Gain"] = 0.0;
+								["Bias"] = 0.0;
+							};
+						};
+						["level"] = {
+							["params"] = {
+								["Gain"] = 0.5;
+								["Bias"] = 0.0;
+							};
+						};
+						["f0"] = {
+							["params"] = {
+								["Gain"] = 100.0;
+								["Bias"] = 32.703;
+							};
+						};
+						["osc"] = {
+							["params"] = {
+								["Internal Phase"] = 0.2302643;
+							};
+						};
+						["sync"] = {
+							["params"] = {
+								["Threshold"] = 0.1;
+							};
+							["options"] = {
+								["State"] = 0;
+							};
+						};
+					};
+				};
+			};
+			["firmwareVersion"] = shared[1];
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+		};
+	};
+}
+return obj1

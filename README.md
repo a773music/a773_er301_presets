@@ -1,11 +1,15 @@
 # Presets
 
-All presets are compatible with firmware 0.4.18
+All presets (should be) compatible with firmware 0.4.19
 ##### Synth building blocks
 * [ad.unit](#ad)
 * [ad ext.unit](#ad_exp)
 * [ad exp var.unit](#ad_exp_var)
 * [decay env.unit](#decay_env)
+* [stepped random.unit](#stepped_random)
+
+##### Voices
+* [2op-fm](#2op-fm)
 
 ##### Drums
 * [bd1.unit](#bd1)
@@ -65,6 +69,24 @@ CPU: 0.24%
 Controls:  
 * time: 3ms-786.32s  
 
+
+### stepped random.unit<a name="stepped_random"></a>
+Generte random value on trigger.  
+Unit type: mixer-channel  
+CPU: 1.95%  
+Controls:  
+* trigger
+
+## Voices
+### 2op-fm.unit<a name="2op-fm"></a>
+Percussive FM voice inspired by [the 2opfm module by Super Synthesis](https://www.supersynthesis.com/products/2opfm?variant=3710980620328)  
+Unit type: mixer-channel  
+CPU: 8.75  
+Controls:
+* v/oct
+* index (0-20)
+* gate
+* release (0-1s)
 
 
 ## Drums

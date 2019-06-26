@@ -1,0 +1,256 @@
+-- Persistent Data
+local shared = {
+{};
+} -- shared
+shared[1]["Minor"] = 4;
+shared[1]["Major"] = 0;
+shared[1]["String"] = "0.4.19 (unstable)";
+shared[1]["Build"] = 19;
+shared[1]["Name"] = "Fennel (48kHz, 128smps)";
+shared[1]["Status"] = "unstable";
+shared[1]["Patch"] = 0;
+shared[1]["SimpleString"] = "0.4.19";
+local obj1 = {
+	["lastPresetFilename"] = "stepped random.unit";
+	["bypass"] = false;
+	["controlOrder"] = {
+		[1] = "trigger";
+		[2] = "gain";
+	};
+	["controls"] = {
+	};
+	["solo"] = false;
+	["title"] = "stepped random";
+	["activeView"] = "expanded";
+	["unitVersion"] = 1;
+	["controlBranches"] = {
+		["trigger"] = {
+			["selection"] = {
+				["view"] = "default";
+				["spot"] = 1;
+				["section"] = 0;
+			};
+			["id"] = "trigger";
+			["units"] = {
+			};
+			["firmwareVersion"] = shared[1];
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Threshold"] = 0.1;
+					};
+					["options"] = {
+						["State"] = 0;
+					};
+				};
+			};
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["control"] = {
+				["customizations"] = {
+					["name"] = "trigger";
+				};
+			};
+			["type"] = "Gate";
+			["instanceKey"] = "91515499";
+		};
+	};
+	["firmwareVersion"] = shared[1];
+	["objects"] = {
+		["gain"] = {
+			["params"] = {
+				["Gain"] = 1.0;
+			};
+		};
+	};
+	["mute"] = false;
+	["lastPresetPath"] = "1:/ER-301/v0.4/presets/mixer-channel";
+	["instanceKey"] = "44d8c0fd";
+	["hasUserTitle"] = true;
+	["loadInfo"] = {
+		["category"] = "Essentials";
+		["title"] = "Mixer Channel";
+		["libraryName"] = "builtins";
+		["id"] = "MixerUnit";
+		["moduleName"] = "MixerUnit";
+		["keywords"] = "mixing, routing";
+	};
+	["branches"] = {
+		["input"] = {
+			["selection"] = {
+				["view"] = "expanded";
+				["spot"] = 3;
+				["section"] = 2;
+			};
+			["instanceKey"] = "e3849883";
+			["units"] = {
+				[1] = {
+					["activeView"] = "expanded";
+					["unitVersion"] = 1;
+					["bypass"] = false;
+					["instanceKey"] = "05fa6724";
+					["controlOrder"] = {
+					};
+					["firmwareVersion"] = shared[1];
+					["controls"] = {
+					};
+					["loadInfo"] = {
+						["category"] = "Noise";
+						["title"] = "White Noise";
+						["libraryName"] = "builtins";
+						["id"] = "Noise.White";
+						["moduleName"] = "Noise.White";
+						["keywords"] = "source, noise";
+					};
+					["branches"] = {
+					};
+					["controlBranches"] = {
+					};
+					["objects"] = {
+					};
+				};
+				[2] = {
+					["activeView"] = "expanded";
+					["unitVersion"] = 1;
+					["bypass"] = false;
+					["instanceKey"] = "54c163d1";
+					["controlOrder"] = {
+						[1] = "trigger";
+						[2] = "value";
+					};
+					["firmwareVersion"] = shared[1];
+					["controls"] = {
+					};
+					["loadInfo"] = {
+						["category"] = "Mapping and Control";
+						["title"] = "Sample & Hold";
+						["libraryName"] = "builtins";
+						["id"] = "SampleHoldUnit";
+						["moduleName"] = "SampleHoldUnit";
+						["keywords"] = "utility, effect, modulate";
+					};
+					["branches"] = {
+						["trig"] = {
+							["selection"] = {
+								["view"] = "default";
+								["spot"] = 1;
+								["section"] = 0;
+							};
+							["instanceKey"] = "0eb488d4";
+							["units"] = {
+							};
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["name"] = "stepped random (trigger)";
+										["type"] = "local";
+										["instanceKey"] = "91515499";
+									};
+								};
+							};
+						};
+					};
+					["controlBranches"] = {
+					};
+					["objects"] = {
+						["comparator"] = {
+							["params"] = {
+								["Threshold"] = 0.1;
+							};
+							["options"] = {
+								["State"] = 0;
+							};
+						};
+						["holdL"] = {
+							["params"] = {
+								["Value"] = -0.3036992;
+							};
+						};
+					};
+				};
+				[3] = {
+					["activeView"] = "expanded";
+					["unitVersion"] = 1;
+					["bypass"] = false;
+					["instanceKey"] = "ed94cfda";
+					["controlOrder"] = {
+						[1] = "offset";
+					};
+					["firmwareVersion"] = shared[1];
+					["controls"] = {
+						["offset"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["loadInfo"] = {
+						["category"] = "Essentials";
+						["title"] = "Offset";
+						["libraryName"] = "builtins";
+						["id"] = "OffsetUnit";
+						["moduleName"] = "OffsetUnit";
+						["keywords"] = "utility";
+					};
+					["branches"] = {
+					};
+					["controlBranches"] = {
+					};
+					["objects"] = {
+						["gainbias"] = {
+							["params"] = {
+								["Gain"] = 0.0;
+								["Bias"] = 1.0;
+							};
+						};
+					};
+				};
+				[4] = {
+					["activeView"] = "expanded";
+					["unitVersion"] = 1;
+					["bypass"] = false;
+					["instanceKey"] = "72d3d03d";
+					["controlOrder"] = {
+						[1] = "level";
+					};
+					["firmwareVersion"] = shared[1];
+					["controls"] = {
+						["level"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["loadInfo"] = {
+						["category"] = "Essentials";
+						["title"] = "Linear Bipolar VCA";
+						["libraryName"] = "builtins";
+						["id"] = "VCA.LinearBipolar";
+						["moduleName"] = "VCA.LinearBipolar";
+						["keywords"] = "modulate, utility";
+					};
+					["branches"] = {
+					};
+					["controlBranches"] = {
+					};
+					["objects"] = {
+						["level"] = {
+							["params"] = {
+								["Gain"] = 0.0;
+								["Bias"] = 0.5;
+							};
+						};
+					};
+				};
+			};
+			["firmwareVersion"] = shared[1];
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+		};
+	};
+}
+return obj1
