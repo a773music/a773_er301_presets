@@ -1,6 +1,7 @@
 # Presets
+All presets (should be) compatible with firmware 0.4.19  
+Discussion thread: https://forum.orthogonaldevices.com/t/a773-presets-unit-files
 
-All presets (should be) compatible with firmware 0.4.19
 ##### Synth building blocks
 * [ad.unit](#ad)
 * [ad ext.unit](#ad_exp)
