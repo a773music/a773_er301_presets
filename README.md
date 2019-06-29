@@ -1,21 +1,21 @@
 # Presets
-All presets (should be) compatible with firmware 0.4.19  
+All presets (should be) compatible with firmware 0.4.20  
 Discussion thread: https://forum.orthogonaldevices.com/t/a773-presets-unit-files
 
 
 ##### Synth building blocks
 * [ad](#ad) - AD envelope
 * [ad exp](#ad_exp) - Exponential AD envelope
-* [ad exp var](#ad_exp_var) AD envelope with variable exponential response
-* [decay env](#decay_env) Decay envelope
+* [ad exp var](#ad_exp_var) - AD envelope with variable exponential response
+* [decay env](#decay_env) - Decay envelope
 * [stepped random](#stepped_random)
 
 ##### Voices
-* [2op-fm](#2op-fm)
+* [2op-fm](#2op-fm) - Two operator fm voice
 
 ##### Drums
-* [bd1](#bd1)
-* [bd2](#bd2)
+* [bd1](#bd1) - Decent kick drum
+* [bd2](#bd2) - Better kick drum
 
 
 ##### Trigger/gate
