@@ -12,6 +12,7 @@ Discussion thread: https://forum.orthogonaldevices.com/t/a773-presets-unit-files
 
 ##### Voices
 * [2op-fm](#2op-fm) - Two operator fm voice
+* [bass pluck ](#bass_pluck) - Simple plucky bass voice
 
 ##### Drums
 * [bd1](#bd1) - Decent kick drum
@@ -84,13 +85,23 @@ Controls:
 [![Poor mans reverb demo on instagram](pix/2op-fm.png)](https://www.instagram.com/p/BzLa0WuBjBB)  
 Percussive FM voice inspired by [the 2opfm module by Super Synthesis](https://www.supersynthesis.com/products/2opfm?variant=3710980620328)  
 Unit type: mixer-channel  
-CPU: 8.4  
+CPU: 8.4%  
 Controls:
 * v/oct
 * ratio (0-1)
 * index (0-20)
 * release (0-1s)
 * gate
+
+### bass pluck<a name="bass_pluck"></a>
+Simple plucky bass voice.  
+Unit type: mixer-channel  
+CPU: 8.4%  
+Controls:
+* v/oct
+* trigger
+* release (0-61s)
+* feedback (0-1)
 
 
 ## Drums
