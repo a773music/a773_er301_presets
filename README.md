@@ -84,12 +84,13 @@ Controls:
 [![Poor mans reverb demo on instagram](pix/2op-fm.png)](https://www.instagram.com/p/BzLa0WuBjBB)  
 Percussive FM voice inspired by [the 2opfm module by Super Synthesis](https://www.supersynthesis.com/products/2opfm?variant=3710980620328)  
 Unit type: mixer-channel  
-CPU: 8.75  
+CPU: 8.4  
 Controls:
 * v/oct
+* ratio (0-1)
 * index (0-20)
-* gate
 * release (0-1s)
+* gate
 
 
 ## Drums
