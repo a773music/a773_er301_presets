@@ -1,0 +1,314 @@
+-- Persistent Data
+local shared = {
+{};
+} -- shared
+shared[1]["Patch"] = 0;
+shared[1]["String"] = "0.4.20 (unstable)";
+shared[1]["Status"] = "unstable";
+shared[1]["Minor"] = 4;
+shared[1]["SimpleString"] = "0.4.20";
+shared[1]["Major"] = 0;
+shared[1]["Build"] = 20;
+shared[1]["Name"] = "Fennel (48kHz, 128smps)";
+local obj1 = {
+	["hasUserTitle"] = true;
+	["firmwareVersion"] = shared[1];
+	["objects"] = {
+	};
+	["bypass"] = false;
+	["bands"] = {
+		[1] = {
+			["instanceKey"] = "cadb2d90";
+			["selection"] = {
+				["section"] = 1;
+				["view"] = "expanded";
+				["spot"] = 2;
+			};
+			["firmwareVersion"] = shared[1];
+			["units"] = {
+				[1] = {
+					["firmwareVersion"] = shared[1];
+					["objects"] = {
+						["holdL"] = {
+							["params"] = {
+								["Value"] = -0.09490277;
+							};
+						};
+						["comparator"] = {
+							["options"] = {
+								["State"] = 0;
+							};
+							["params"] = {
+								["Threshold"] = 0.1;
+							};
+						};
+					};
+					["bypass"] = false;
+					["loadInfo"] = {
+						["libraryName"] = "builtins";
+						["category"] = "Mapping and Control";
+						["keywords"] = "utility, effect, modulate";
+						["id"] = "SampleHoldUnit";
+						["title"] = "Sample & Hold";
+						["moduleName"] = "SampleHoldUnit";
+					};
+					["controlOrder"] = {
+						[1] = "trigger";
+						[2] = "value";
+					};
+					["branches"] = {
+						["trig"] = {
+							["selection"] = {
+								["section"] = 1;
+								["view"] = "expanded";
+								["spot"] = 2;
+							};
+							["channels"] = {
+								["inputs"] = {
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+								[1] = {
+									["firmwareVersion"] = shared[1];
+									["objects"] = {
+										["level"] = {
+											["params"] = {
+												["Bias"] = 0.5;
+												["Gain"] = 0.0;
+											};
+										};
+										["feedback"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 0.0;
+											};
+										};
+										["f0"] = {
+											["params"] = {
+												["Bias"] = 32.703;
+												["Gain"] = 1.0;
+											};
+										};
+										["phase"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 0.0;
+											};
+										};
+										["tune"] = {
+											["params"] = {
+												["Offset"] = -0.3;
+											};
+										};
+										["osc"] = {
+											["params"] = {
+												["Internal Phase"] = 0.2149549;
+											};
+										};
+										["sync"] = {
+											["options"] = {
+												["State"] = 0;
+											};
+											["params"] = {
+												["Threshold"] = 0.1;
+											};
+										};
+									};
+									["bypass"] = false;
+									["loadInfo"] = {
+										["libraryName"] = "builtins";
+										["category"] = "Oscillators";
+										["keywords"] = "source, pitch, modulate";
+										["id"] = "Oscillators.Sine";
+										["title"] = "Sine Osc";
+										["moduleName"] = "Oscillators.Sine";
+									};
+									["controlOrder"] = {
+										[1] = "tune";
+										[2] = "freq";
+										[3] = "phase";
+										[4] = "feedback";
+										[5] = "sync";
+										[6] = "level";
+									};
+									["branches"] = {
+										["f0"] = {
+											["selection"] = {
+												["section"] = 0;
+												["view"] = "default";
+												["spot"] = 1;
+											};
+											["channels"] = {
+												["inputs"] = {
+													[1] = {
+														["type"] = "local";
+														["instanceKey"] = "d84d7905";
+														["name"] = "tuned resample (offset)";
+													};
+												};
+												["count"] = 1;
+											};
+											["units"] = {
+											};
+											["instanceKey"] = "b96fac3f";
+											["firmwareVersion"] = shared[1];
+										};
+										["tune"] = {
+											["selection"] = {
+												["section"] = 0;
+												["view"] = "default";
+												["spot"] = 1;
+											};
+											["channels"] = {
+												["inputs"] = {
+													[1] = {
+														["type"] = "local";
+														["instanceKey"] = "f1c3ed0b";
+														["name"] = "tuned resample (v/oct)";
+													};
+												};
+												["count"] = 1;
+											};
+											["units"] = {
+											};
+											["instanceKey"] = "bfb07115";
+											["firmwareVersion"] = shared[1];
+										};
+									};
+									["controlBranches"] = {
+									};
+									["instanceKey"] = "107f13ec";
+									["unitVersion"] = 1;
+									["controls"] = {
+										["freq"] = {
+											["gainEncoderState"] = "Fine";
+										};
+										["feedback"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["phase"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["tune"] = {
+											["gainEncoderState"] = "Neutral";
+										};
+										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["activeView"] = "expanded";
+								};
+							};
+							["instanceKey"] = "16a9ff43";
+							["firmwareVersion"] = shared[1];
+						};
+					};
+					["controlBranches"] = {
+					};
+					["instanceKey"] = "27acb490";
+					["unitVersion"] = 1;
+					["controls"] = {
+					};
+					["activeView"] = "expanded";
+				};
+			};
+		};
+	};
+	["loadInfo"] = {
+		["libraryName"] = "builtins";
+		["category"] = "Containers";
+		["keywords"] = "utility, effect, container";
+		["id"] = "Container.Effect";
+		["title"] = "Custom Effect";
+		["moduleName"] = "Container.Effect";
+	};
+	["controlOrder"] = {
+		[1] = "v/oct";
+		[2] = "offset";
+		[3] = "meter";
+	};
+	["controlBranches"] = {
+		["offset"] = {
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 0;
+			};
+			["channels"] = {
+				["inputs"] = {
+				};
+				["count"] = 1;
+			};
+			["firmwareVersion"] = shared[1];
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Bias"] = 13800.0;
+						["Gain"] = 0.0;
+					};
+				};
+			};
+			["id"] = "offset";
+			["control"] = {
+				["customizations"] = {
+					["biasSuperCoarseStep"] = 1000;
+					["biasSuperFineStep"] = 1;
+					["biasCoarseStep"] = 100;
+					["biasUnits"] = 2;
+					["biasFineStep"] = 10;
+					["biasMin"] = 0;
+					["biasMax"] = 20000;
+					["name"] = "offset";
+				};
+				["gainEncoderState"] = "Coarse";
+			};
+			["units"] = {
+			};
+			["type"] = "GainBias";
+			["instanceKey"] = "d84d7905";
+		};
+		["v/oct"] = {
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 0;
+			};
+			["channels"] = {
+				["inputs"] = {
+				};
+				["count"] = 1;
+			};
+			["firmwareVersion"] = shared[1];
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Offset"] = 0.0;
+					};
+				};
+			};
+			["id"] = "v/oct";
+			["control"] = {
+				["customizations"] = {
+					["max"] = 14400;
+					["min"] = 0;
+					["name"] = "v/oct";
+				};
+				["gainEncoderState"] = "Neutral";
+			};
+			["units"] = {
+			};
+			["type"] = "Pitch";
+			["instanceKey"] = "f1c3ed0b";
+		};
+	};
+	["branches"] = {
+	};
+	["controls"] = {
+	};
+	["instanceKey"] = "222fea9c";
+	["unitVersion"] = 1;
+	["title"] = "tuned resample";
+	["activeView"] = "expanded";
+}
+return obj1

@@ -34,6 +34,7 @@ Discussion thread: https://forum.orthogonaldevices.com/t/a773-presets-unit-files
 * [mono to stereo 2](#mono_to_stereo_2)
 * [poor mans reverb 1](#poor_mans_reverb_1)
 * [poor mans reverb 2](#poor_mans_reverb_2)
+* [tuned resample](#tuned_resample)
 
 
 ## Synth building blocks
@@ -82,7 +83,7 @@ Controls:
 
 ## Voices
 ### 2op-fm<a name="2op-fm"></a>
-[![Poor mans reverb demo on instagram](pix/2op-fm.png)](https://www.instagram.com/p/BzLa0WuBjBB)  
+[![2op-fm demo on instagram](pix/2op-fm.png)](https://www.instagram.com/p/BzLa0WuBjBB)  
 Percussive FM voice inspired by [the 2opfm module by Super Synthesis](https://www.supersynthesis.com/products/2opfm?variant=3710980620328)  
 Unit type: mixer-channel  
 CPU: 8.4%  
@@ -210,7 +211,7 @@ Controls:
 
 ### poor mans reverb 2<a name="poor_mans_reverb_1"></a>
 Variation of [poor mans reverb 1](#poor_mans_reverb_1), but recording with a Feedback Looper for a different flavor.  
-Unit type: two-bands
+Unit type: two-bands  
 CPU (on stereo channel): ~26%  
 Controls:  
 * length (0-1s): length of grains
@@ -220,3 +221,10 @@ Controls:
 * wet (0-1)
 
 
+### tuned resample<a name="tuned_resample"></a>
+Sample rate reduction, with pitch tracking.  
+Unit type: Custom Effect  
+CPU: 3.6%  
+Controls:
+* v/oct (0-14400cents)
+* offset (0-20000Hz)
