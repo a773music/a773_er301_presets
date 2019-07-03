@@ -1,0 +1,377 @@
+-- Persistent Data
+local shared = {
+{};
+} -- shared
+shared[1]["Patch"] = 0;
+shared[1]["String"] = "0.4.20 (unstable)";
+shared[1]["Status"] = "unstable";
+shared[1]["Minor"] = 4;
+shared[1]["SimpleString"] = "0.4.20";
+shared[1]["Major"] = 0;
+shared[1]["Build"] = 20;
+shared[1]["Name"] = "Fennel (48kHz, 128smps)";
+local obj1 = {
+	["bands"] = {
+		[1] = {
+			["instanceKey"] = "1237a9b8";
+			["selection"] = {
+				["section"] = 3;
+				["view"] = "expanded";
+				["spot"] = 2;
+			};
+			["firmwareVersion"] = shared[1];
+			["units"] = {
+				[1] = {
+					["firmwareVersion"] = shared[1];
+					["objects"] = {
+					};
+					["bypass"] = false;
+					["loadInfo"] = {
+						["libraryName"] = "builtins";
+						["category"] = "Noise";
+						["keywords"] = "source, noise";
+						["id"] = "Noise.White";
+						["title"] = "White Noise";
+						["moduleName"] = "Noise.White";
+					};
+					["controlOrder"] = {
+					};
+					["branches"] = {
+					};
+					["controlBranches"] = {
+					};
+					["instanceKey"] = "54195aad";
+					["unitVersion"] = 1;
+					["controls"] = {
+					};
+					["activeView"] = "expanded";
+				};
+				[2] = {
+					["firmwareVersion"] = shared[1];
+					["objects"] = {
+						["holdL"] = {
+							["params"] = {
+								["Value"] = -0.7196067;
+							};
+						};
+						["comparator"] = {
+							["options"] = {
+								["State"] = 0;
+							};
+							["params"] = {
+								["Threshold"] = 0.1;
+							};
+						};
+					};
+					["bypass"] = false;
+					["loadInfo"] = {
+						["libraryName"] = "builtins";
+						["category"] = "Mapping and Control";
+						["keywords"] = "utility, effect, modulate";
+						["id"] = "SampleHoldUnit";
+						["title"] = "Sample & Hold";
+						["moduleName"] = "SampleHoldUnit";
+					};
+					["controlOrder"] = {
+						[1] = "trigger";
+						[2] = "value";
+					};
+					["branches"] = {
+						["trig"] = {
+							["selection"] = {
+								["section"] = 1;
+								["view"] = "expanded";
+								["spot"] = 3;
+							};
+							["channels"] = {
+								["inputs"] = {
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+								[1] = {
+									["firmwareVersion"] = shared[1];
+									["objects"] = {
+										["level"] = {
+											["params"] = {
+												["Bias"] = 0.5;
+												["Gain"] = 0.0;
+											};
+										};
+										["feedback"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 0.0;
+											};
+										};
+										["f0"] = {
+											["params"] = {
+												["Bias"] = 27.068;
+												["Gain"] = -27.0;
+											};
+										};
+										["phase"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 0.0;
+											};
+										};
+										["tune"] = {
+											["params"] = {
+												["Offset"] = 0.0;
+											};
+										};
+										["osc"] = {
+											["params"] = {
+												["Internal Phase"] = 0.7845377;
+											};
+										};
+										["sync"] = {
+											["options"] = {
+												["State"] = 0;
+											};
+											["params"] = {
+												["Threshold"] = 0.1;
+											};
+										};
+									};
+									["bypass"] = false;
+									["loadInfo"] = {
+										["libraryName"] = "builtins";
+										["category"] = "Oscillators";
+										["keywords"] = "source, pitch, modulate";
+										["id"] = "Oscillators.Sine";
+										["title"] = "Sine Osc";
+										["moduleName"] = "Oscillators.Sine";
+									};
+									["controlOrder"] = {
+										[1] = "tune";
+										[2] = "freq";
+										[3] = "phase";
+										[4] = "feedback";
+										[5] = "sync";
+										[6] = "level";
+									};
+									["branches"] = {
+										["f0"] = {
+											["selection"] = {
+												["section"] = 0;
+												["view"] = "default";
+												["spot"] = 1;
+											};
+											["channels"] = {
+												["inputs"] = {
+													[1] = {
+														["type"] = "local";
+														["instanceKey"] = "48c02269";
+														["name"] = "sloth (slowness)";
+													};
+												};
+												["count"] = 1;
+											};
+											["units"] = {
+											};
+											["instanceKey"] = "0a16497c";
+											["firmwareVersion"] = shared[1];
+										};
+									};
+									["controlBranches"] = {
+									};
+									["instanceKey"] = "7d5624e4";
+									["unitVersion"] = 1;
+									["controls"] = {
+										["freq"] = {
+											["gainEncoderState"] = "Fine";
+											["encoderState"] = "Fine";
+										};
+										["feedback"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["phase"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["tune"] = {
+											["gainEncoderState"] = "Neutral";
+										};
+										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["activeView"] = "expanded";
+								};
+							};
+							["instanceKey"] = "f99dd8d9";
+							["firmwareVersion"] = shared[1];
+						};
+					};
+					["controlBranches"] = {
+					};
+					["instanceKey"] = "0c143021";
+					["unitVersion"] = 1;
+					["controls"] = {
+					};
+					["activeView"] = "expanded";
+				};
+				[3] = {
+					["firmwareVersion"] = shared[1];
+					["objects"] = {
+						["slew1"] = {
+							["options"] = {
+								["Direction"] = 2;
+							};
+						};
+						["time"] = {
+							["params"] = {
+								["Bias"] = 0.003;
+								["Gain"] = 22.0;
+							};
+						};
+					};
+					["bypass"] = false;
+					["loadInfo"] = {
+						["libraryName"] = "builtins";
+						["category"] = "Filtering";
+						["keywords"] = "filter, utility";
+						["id"] = "SlewLimiter";
+						["title"] = "Slew Limiter";
+						["moduleName"] = "SlewLimiter";
+					};
+					["controlOrder"] = {
+						[1] = "time";
+						[2] = "dir";
+					};
+					["branches"] = {
+						["time"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["type"] = "local";
+										["instanceKey"] = "48c02269";
+										["name"] = "sloth (slowness)";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+							};
+							["instanceKey"] = "2fcbef1b";
+							["firmwareVersion"] = shared[1];
+						};
+					};
+					["controlBranches"] = {
+					};
+					["instanceKey"] = "7de96bfa";
+					["unitVersion"] = 1;
+					["controls"] = {
+						["time"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["activeView"] = "expanded";
+				};
+				[4] = {
+					["firmwareVersion"] = shared[1];
+					["objects"] = {
+						["rectify"] = {
+							["options"] = {
+								["Type"] = 3;
+							};
+						};
+					};
+					["bypass"] = false;
+					["loadInfo"] = {
+						["libraryName"] = "builtins";
+						["category"] = "Mapping and Control";
+						["keywords"] = "utility";
+						["id"] = "RectifierUnit";
+						["title"] = "Rectify";
+						["moduleName"] = "RectifierUnit";
+					};
+					["controlOrder"] = {
+						[1] = "type";
+					};
+					["branches"] = {
+					};
+					["controlBranches"] = {
+					};
+					["instanceKey"] = "10cabea8";
+					["unitVersion"] = 1;
+					["controls"] = {
+					};
+					["activeView"] = "expanded";
+				};
+			};
+		};
+	};
+	["lastPresetFilename"] = "sloth.unit";
+	["activeView"] = "expanded";
+	["hasUserTitle"] = true;
+	["objects"] = {
+	};
+	["bypass"] = false;
+	["controlBranches"] = {
+		["slowness"] = {
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 0;
+			};
+			["channels"] = {
+				["inputs"] = {
+				};
+				["count"] = 1;
+			};
+			["firmwareVersion"] = shared[1];
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Bias"] = 0.3;
+						["Gain"] = 0.0;
+					};
+				};
+			};
+			["id"] = "slowness";
+			["control"] = {
+				["customizations"] = {
+					["biasSuperCoarseStep"] = 1;
+					["biasMin"] = 0;
+					["name"] = "slowness";
+					["biasMax"] = 1;
+					["biasCoarseStep"] = 0.09999999;
+				};
+				["gainEncoderState"] = "Coarse";
+			};
+			["units"] = {
+			};
+			["type"] = "GainBias";
+			["instanceKey"] = "48c02269";
+		};
+	};
+	["loadInfo"] = {
+		["libraryName"] = "builtins";
+		["category"] = "Containers";
+		["keywords"] = "utility, source, container";
+		["id"] = "Container.Source";
+		["title"] = "Custom Source";
+		["moduleName"] = "Container.Source";
+	};
+	["controlOrder"] = {
+		[1] = "slowness";
+		[2] = "meter";
+	};
+	["controls"] = {
+	};
+	["branches"] = {
+	};
+	["lastPresetPath"] = "1:/ER-301/v0.4/presets";
+	["instanceKey"] = "89183ea2";
+	["unitVersion"] = 1;
+	["title"] = "sloth";
+	["firmwareVersion"] = shared[1];
+}
+return obj1

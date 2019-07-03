@@ -8,6 +8,7 @@ Discussion thread: https://forum.orthogonaldevices.com/t/a773-presets-unit-files
 * [ad exp](#ad_exp) - Exponential AD envelope
 * [ad exp var](#ad_exp_var) - AD envelope with variable exponential response
 * [decay env](#decay_env) - Decay envelope
+* [sloth](#sloth) - Slow random/chaos
 * [stepped random](#stepped_random)
 
 ##### Voices
@@ -70,15 +71,26 @@ Controls:
 Very cheap decay envelope with exponential decay. This is just a slew-limiter with feedback (no fancy GUI) to keep it cheap. Adjusting time, might require adjusting the negative gain on the feedback. A bit unstable in a charming way.  
 Unit type: slew-limiter  
 CPU: 0.24%  
-Controls:  
-* time: 3ms-786.32s  
+Controls:
+* time: 3ms-786.32s
+
+### sloth<a name="sloth"></a>
+Inspired by the non-linear circuits
+[sloth chaos](http://nonlinearcircuits.blogspot.com/2014/09/sloth-chaos.html)
+eurorack module.  
+Unit-type: Custom Source  
+CPU: 3.84%  
+Controls:
+* slowness: (0-1)
+
+
 
 
 ### stepped random<a name="stepped_random"></a>
 Generte random value on trigger.  
 Unit type: mixer-channel  
 CPU: 1.95%  
-Controls:  
+Controls:
 * trigger
 
 ## Voices
@@ -101,7 +113,7 @@ CPU: 8.4%
 Controls:
 * v/oct
 * trigger
-* release (0-61s)
+* release (0-6s)
 * feedback (0-1)
 
 
@@ -133,7 +145,7 @@ Controls:
 ![gated burst screenshot](pix/gated_burst.png?raw=true)  
 Emits bursts while receiving a gate. The bursts are pulses with intervals of "burst time" and length "burst time/2".  
 Unit type: custom-unit  
-Controls:  
+Controls:
 * burst time: 0-1000 ms  
 
 
@@ -141,7 +153,7 @@ Controls:
 ![gate to trigger screenshot](pix/gate_to_trigger.png?raw=true)  
 Converts incomming gates to triggers of selected length.  
 Unit type: custom-unit  
-Controls:  
+Controls:
 * trigger time (1-1000ms)
 
 
@@ -173,7 +185,7 @@ Unit type: six-bands
 CPU usage: 7.2%  
 Room size reverb that doesn't tax the CPU. Works on stereo channel, but is mono in, mono out.  
 Controls:
-* size (0-1)  
+* size (0-1)
 
 
 ### mono to stereo 1<a name="mono_to_stereo_1"></a>
@@ -201,7 +213,7 @@ Granular reverb based on [Neil Parfitts reverb idea](https://www.youtube.com/wat
 Unit type: two-bands  
 CPU (mono version on mono channel): ~24%  
 CPU (stereo version on stereo channel): ~23%  
-Controls:  
+Controls:
 * length (10ms-1s): length of grains
 * speed (10-500Hz): speed of grains
 * scrub (0-1): random scrubbing of playhead
@@ -213,10 +225,10 @@ Controls:
 Variation of [poor mans reverb 1](#poor_mans_reverb_1), but recording with a Feedback Looper for a different flavor.  
 Unit type: two-bands  
 CPU (on stereo channel): ~26%  
-Controls:  
+Controls:
 * length (0-1s): length of grains
 * speed (10-500Hz): speed of grains
-* v/oct: pitch of reverb  
+* v/oct: pitch of reverb
 * dry (0-1)
 * wet (0-1)
 
