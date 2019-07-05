@@ -18,7 +18,7 @@ local obj1 = {
 	["bypass"] = false;
 	["bands"] = {
 		[1] = {
-			["instanceKey"] = "cadb2d90";
+			["instanceKey"] = "da74478b";
 			["selection"] = {
 				["section"] = 1;
 				["view"] = "expanded";
@@ -29,9 +29,132 @@ local obj1 = {
 				[1] = {
 					["firmwareVersion"] = shared[1];
 					["objects"] = {
+						["level"] = {
+							["params"] = {
+								["Bias"] = 2.0;
+								["Gain"] = -2.0;
+							};
+						};
+					};
+					["bypass"] = false;
+					["loadInfo"] = {
+						["libraryName"] = "builtins";
+						["category"] = "Essentials";
+						["keywords"] = "modulate, utility";
+						["id"] = "VCA.LinearBipolar";
+						["title"] = "Linear Bipolar VCA";
+						["moduleName"] = "VCA.LinearBipolar";
+					};
+					["controlOrder"] = {
+						[1] = "level";
+					};
+					["branches"] = {
+						["level"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["type"] = "local";
+										["instanceKey"] = "bac25664";
+										["name"] = "tuned resample (dry/wet)";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+							};
+							["instanceKey"] = "34836c69";
+							["firmwareVersion"] = shared[1];
+						};
+					};
+					["controlBranches"] = {
+					};
+					["instanceKey"] = "222ae388";
+					["unitVersion"] = 1;
+					["controls"] = {
+						["level"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["activeView"] = "expanded";
+				};
+			};
+		};
+		[2] = {
+			["instanceKey"] = "633974cd";
+			["selection"] = {
+				["section"] = 3;
+				["view"] = "default";
+				["spot"] = 0;
+			};
+			["firmwareVersion"] = shared[1];
+			["units"] = {
+				[1] = {
+					["firmwareVersion"] = shared[1];
+					["objects"] = {
+						["level"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 2.0;
+							};
+						};
+					};
+					["bypass"] = false;
+					["loadInfo"] = {
+						["libraryName"] = "builtins";
+						["category"] = "Essentials";
+						["keywords"] = "modulate, utility";
+						["id"] = "VCA.LinearBipolar";
+						["title"] = "Linear Bipolar VCA";
+						["moduleName"] = "VCA.LinearBipolar";
+					};
+					["controlOrder"] = {
+						[1] = "level";
+					};
+					["branches"] = {
+						["level"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["type"] = "local";
+										["instanceKey"] = "bac25664";
+										["name"] = "tuned resample (dry/wet)";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+							};
+							["instanceKey"] = "efb98567";
+							["firmwareVersion"] = shared[1];
+						};
+					};
+					["controlBranches"] = {
+					};
+					["instanceKey"] = "0cf02875";
+					["unitVersion"] = 1;
+					["controls"] = {
+						["level"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["activeView"] = "expanded";
+				};
+				[2] = {
+					["firmwareVersion"] = shared[1];
+					["objects"] = {
 						["holdL"] = {
 							["params"] = {
-								["Value"] = -0.09490277;
+								["Value"] = 0.06099375;
 							};
 						};
 						["comparator"] = {
@@ -59,9 +182,9 @@ local obj1 = {
 					["branches"] = {
 						["trig"] = {
 							["selection"] = {
-								["section"] = 1;
-								["view"] = "expanded";
-								["spot"] = 2;
+								["section"] = 2;
+								["view"] = "default";
+								["spot"] = 0;
 							};
 							["channels"] = {
 								["inputs"] = {
@@ -78,34 +201,6 @@ local obj1 = {
 												["Gain"] = 0.0;
 											};
 										};
-										["feedback"] = {
-											["params"] = {
-												["Bias"] = 0.0;
-												["Gain"] = 0.0;
-											};
-										};
-										["f0"] = {
-											["params"] = {
-												["Bias"] = 32.703;
-												["Gain"] = 1.0;
-											};
-										};
-										["phase"] = {
-											["params"] = {
-												["Bias"] = 0.0;
-												["Gain"] = 0.0;
-											};
-										};
-										["tune"] = {
-											["params"] = {
-												["Offset"] = -0.3;
-											};
-										};
-										["osc"] = {
-											["params"] = {
-												["Internal Phase"] = 0.2149549;
-											};
-										};
 										["sync"] = {
 											["options"] = {
 												["State"] = 0;
@@ -114,80 +209,121 @@ local obj1 = {
 												["Threshold"] = 0.1;
 											};
 										};
+										["osc"] = {
+											["params"] = {
+												["Phase"] = 0.3232746;
+											};
+										};
+										["tune"] = {
+											["params"] = {
+												["Offset"] = 0.0;
+											};
+										};
+										["f0"] = {
+											["params"] = {
+												["Bias"] = 32.703;
+												["Gain"] = 0.0;
+											};
+										};
 									};
 									["bypass"] = false;
 									["loadInfo"] = {
 										["libraryName"] = "builtins";
 										["category"] = "Oscillators";
 										["keywords"] = "source, pitch, modulate";
-										["id"] = "Oscillators.Sine";
-										["title"] = "Sine Osc";
-										["moduleName"] = "Oscillators.Sine";
+										["id"] = "Oscillators.AliasingSaw";
+										["title"] = "Aliasing Saw";
+										["moduleName"] = "Oscillators.AliasingSaw";
 									};
 									["controlOrder"] = {
 										[1] = "tune";
 										[2] = "freq";
-										[3] = "phase";
-										[4] = "feedback";
-										[5] = "sync";
-										[6] = "level";
+										[3] = "sync";
+										[4] = "level";
 									};
 									["branches"] = {
-										["f0"] = {
-											["selection"] = {
-												["section"] = 0;
-												["view"] = "default";
-												["spot"] = 1;
-											};
-											["channels"] = {
-												["inputs"] = {
-													[1] = {
-														["type"] = "local";
-														["instanceKey"] = "d84d7905";
-														["name"] = "tuned resample (offset)";
-													};
-												};
-												["count"] = 1;
-											};
-											["units"] = {
-											};
-											["instanceKey"] = "b96fac3f";
-											["firmwareVersion"] = shared[1];
-										};
 										["tune"] = {
 											["selection"] = {
-												["section"] = 0;
-												["view"] = "default";
-												["spot"] = 1;
+												["section"] = 1;
+												["view"] = "expanded";
+												["spot"] = 2;
 											};
 											["channels"] = {
 												["inputs"] = {
 													[1] = {
 														["type"] = "local";
-														["instanceKey"] = "f1c3ed0b";
+														["instanceKey"] = "c8380d60";
 														["name"] = "tuned resample (v/oct)";
 													};
 												};
 												["count"] = 1;
 											};
 											["units"] = {
+												[1] = {
+													["firmwareVersion"] = shared[1];
+													["mute"] = false;
+													["objects"] = {
+														["gain"] = {
+															["params"] = {
+																["Gain"] = 1.0;
+															};
+														};
+													};
+													["bypass"] = false;
+													["loadInfo"] = {
+														["libraryName"] = "builtins";
+														["category"] = "Essentials";
+														["keywords"] = "mixing, routing";
+														["id"] = "MixerUnit";
+														["title"] = "Mixer Channel";
+														["moduleName"] = "MixerUnit";
+													};
+													["controlOrder"] = {
+														[1] = "gain";
+													};
+													["solo"] = false;
+													["branches"] = {
+														["input"] = {
+															["selection"] = {
+																["section"] = 0;
+																["view"] = "default";
+																["spot"] = 1;
+															};
+															["channels"] = {
+																["inputs"] = {
+																	[1] = {
+																		["type"] = "local";
+																		["instanceKey"] = "df051665";
+																		["name"] = "tuned resample (offset)";
+																	};
+																};
+																["count"] = 1;
+															};
+															["units"] = {
+															};
+															["instanceKey"] = "e1cab888";
+															["firmwareVersion"] = shared[1];
+														};
+													};
+													["controlBranches"] = {
+													};
+													["instanceKey"] = "7813958d";
+													["unitVersion"] = 1;
+													["controls"] = {
+													};
+													["activeView"] = "expanded";
+												};
 											};
-											["instanceKey"] = "bfb07115";
+											["instanceKey"] = "0af8095a";
 											["firmwareVersion"] = shared[1];
 										};
 									};
 									["controlBranches"] = {
 									};
-									["instanceKey"] = "107f13ec";
+									["instanceKey"] = "3703e4f9";
 									["unitVersion"] = 1;
 									["controls"] = {
 										["freq"] = {
-											["gainEncoderState"] = "Fine";
-										};
-										["feedback"] = {
-											["gainEncoderState"] = "Coarse";
-										};
-										["phase"] = {
 											["gainEncoderState"] = "Coarse";
 										};
 										["tune"] = {
@@ -200,13 +336,13 @@ local obj1 = {
 									["activeView"] = "expanded";
 								};
 							};
-							["instanceKey"] = "16a9ff43";
+							["instanceKey"] = "18fdaaa7";
 							["firmwareVersion"] = shared[1];
 						};
 					};
 					["controlBranches"] = {
 					};
-					["instanceKey"] = "27acb490";
+					["instanceKey"] = "181c66ab";
 					["unitVersion"] = 1;
 					["controls"] = {
 					};
@@ -219,20 +355,22 @@ local obj1 = {
 		["libraryName"] = "builtins";
 		["category"] = "Containers";
 		["keywords"] = "utility, effect, container";
-		["id"] = "Container.Effect";
-		["title"] = "Custom Effect";
-		["moduleName"] = "Container.Effect";
+		["id"] = "Container.TwoBands";
+		["title"] = "2 Bands";
+		["moduleName"] = "Container.TwoBands";
 	};
 	["controlOrder"] = {
 		[1] = "v/oct";
 		[2] = "offset";
-		[3] = "meter";
+		[3] = "dry/wet";
+		[4] = "band1";
+		[5] = "band2";
 	};
 	["controlBranches"] = {
 		["offset"] = {
 			["selection"] = {
-				["section"] = 0;
-				["view"] = "default";
+				["section"] = 1;
+				["view"] = "expanded";
 				["spot"] = 0;
 			};
 			["channels"] = {
@@ -244,31 +382,25 @@ local obj1 = {
 			["objects"] = {
 				[1] = {
 					["params"] = {
-						["Bias"] = 13800.0;
-						["Gain"] = 0.0;
+						["Offset"] = 0.1;
 					};
 				};
 			};
 			["id"] = "offset";
 			["control"] = {
 				["customizations"] = {
-					["biasSuperCoarseStep"] = 1000;
-					["biasSuperFineStep"] = 1;
-					["biasCoarseStep"] = 100;
-					["biasUnits"] = 2;
-					["biasFineStep"] = 10;
-					["biasMin"] = 0;
-					["biasMax"] = 20000;
+					["min"] = -7200;
+					["max"] = 7200;
 					["name"] = "offset";
 				};
-				["gainEncoderState"] = "Coarse";
+				["gainEncoderState"] = "Neutral";
 			};
 			["units"] = {
 			};
-			["type"] = "GainBias";
-			["instanceKey"] = "d84d7905";
+			["type"] = "Pitch";
+			["instanceKey"] = "df051665";
 		};
-		["v/oct"] = {
+		["dry/wet"] = {
 			["selection"] = {
 				["section"] = 0;
 				["view"] = "default";
@@ -283,15 +415,53 @@ local obj1 = {
 			["objects"] = {
 				[1] = {
 					["params"] = {
-						["Offset"] = 0.0;
+						["Bias"] = 1.0;
+						["Gain"] = 0.0;
+					};
+				};
+			};
+			["id"] = "dry/wet";
+			["control"] = {
+				["customizations"] = {
+					["biasSuperCoarseStep"] = 0.09999999;
+					["biasCoarseStep"] = 0.01;
+					["biasMin"] = 0;
+					["biasFineStep"] = 0.0009999999;
+					["biasMax"] = 1;
+					["biasPrecision"] = 3;
+					["name"] = "dry/wet";
+				};
+				["gainEncoderState"] = "Coarse";
+			};
+			["units"] = {
+			};
+			["type"] = "GainBias";
+			["instanceKey"] = "bac25664";
+		};
+		["v/oct"] = {
+			["selection"] = {
+				["section"] = 1;
+				["view"] = "expanded";
+				["spot"] = 0;
+			};
+			["channels"] = {
+				["inputs"] = {
+				};
+				["count"] = 1;
+			};
+			["firmwareVersion"] = shared[1];
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Offset"] = 0.6;
 					};
 				};
 			};
 			["id"] = "v/oct";
 			["control"] = {
 				["customizations"] = {
-					["max"] = 14400;
 					["min"] = 0;
+					["max"] = 7200;
 					["name"] = "v/oct";
 				};
 				["gainEncoderState"] = "Neutral";
@@ -299,14 +469,14 @@ local obj1 = {
 			["units"] = {
 			};
 			["type"] = "Pitch";
-			["instanceKey"] = "f1c3ed0b";
+			["instanceKey"] = "c8380d60";
 		};
 	};
 	["branches"] = {
 	};
 	["controls"] = {
 	};
-	["instanceKey"] = "222fea9c";
+	["instanceKey"] = "bca6e344";
 	["unitVersion"] = 1;
 	["title"] = "tuned resample";
 	["activeView"] = "expanded";

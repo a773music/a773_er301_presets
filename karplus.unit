@@ -1,0 +1,515 @@
+-- Persistent Data
+local shared = {
+{};
+} -- shared
+shared[1]["Patch"] = 0;
+shared[1]["String"] = "0.4.20 (unstable)";
+shared[1]["Status"] = "unstable";
+shared[1]["Minor"] = 4;
+shared[1]["SimpleString"] = "0.4.20";
+shared[1]["Major"] = 0;
+shared[1]["Build"] = 20;
+shared[1]["Name"] = "Fennel (48kHz, 128smps)";
+local obj1 = {
+	["controls"] = {
+	};
+	["objects"] = {
+		["gain"] = {
+			["params"] = {
+				["Gain"] = 1.0;
+			};
+		};
+	};
+	["loadInfo"] = {
+		["libraryName"] = "builtins";
+		["category"] = "Essentials";
+		["keywords"] = "mixing, routing";
+		["id"] = "MixerUnit";
+		["title"] = "Mixer Channel";
+		["moduleName"] = "MixerUnit";
+	};
+	["solo"] = false;
+	["branches"] = {
+		["input"] = {
+			["selection"] = {
+				["section"] = 3;
+				["view"] = "expanded";
+				["spot"] = 3;
+			};
+			["channels"] = {
+				["inputs"] = {
+					[1] = {
+						["type"] = "local";
+						["instanceKey"] = "363d864e";
+						["name"] = "karplus (trigger)";
+					};
+				};
+				["count"] = 1;
+			};
+			["units"] = {
+				[1] = {
+					["firmwareVersion"] = shared[1];
+					["objects"] = {
+						["filter"] = {
+							["params"] = {
+								["Cutoff"] = 1567.982;
+							};
+						};
+					};
+					["bypass"] = false;
+					["loadInfo"] = {
+						["libraryName"] = "builtins";
+						["category"] = "Filtering";
+						["keywords"] = "filter, utility";
+						["id"] = "FixedHPFUnit";
+						["title"] = "Fixed HPF";
+						["moduleName"] = "FixedHPFUnit";
+					};
+					["controlOrder"] = {
+						[1] = "freq";
+					};
+					["branches"] = {
+					};
+					["controlBranches"] = {
+					};
+					["instanceKey"] = "56ee8ea0";
+					["unitVersion"] = 1;
+					["controls"] = {
+					};
+					["activeView"] = "expanded";
+				};
+				[2] = {
+					["firmwareVersion"] = shared[1];
+					["objects"] = {
+						["delayL"] = {
+							["params"] = {
+								["Delay"] = 0.013;
+							};
+						};
+					};
+					["bypass"] = false;
+					["loadInfo"] = {
+						["libraryName"] = "builtins";
+						["category"] = "Delays and Reverb";
+						["keywords"] = "delay, utility";
+						["id"] = "Delay.MicroDelay";
+						["title"] = "Micro Delay";
+						["moduleName"] = "Delay.MicroDelay";
+					};
+					["controlOrder"] = {
+						[1] = "delay";
+					};
+					["branches"] = {
+					};
+					["controlBranches"] = {
+					};
+					["instanceKey"] = "c9903b4c";
+					["unitVersion"] = 1;
+					["controls"] = {
+						["delay"] = {
+							["encoderState"] = "Fine";
+						};
+					};
+					["activeView"] = "expanded";
+				};
+				[3] = {
+					["maximumDelayTime"] = 1.002667;
+					["firmwareVersion"] = shared[1];
+					["objects"] = {
+						["feedback"] = {
+							["params"] = {
+								["Bias"] = 0.9919733;
+								["Gain"] = -0.3;
+							};
+						};
+						["secsL"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 1.0;
+							};
+						};
+						["fader"] = {
+							["params"] = {
+								["Bias"] = 1.0;
+								["Gain"] = 0.0;
+							};
+						};
+					};
+					["bypass"] = false;
+					["loadInfo"] = {
+						["libraryName"] = "builtins";
+						["category"] = "Delays and Reverb";
+						["keywords"] = "delay, effect";
+						["id"] = "Delay.DelayUnit";
+						["title"] = "Delay";
+						["moduleName"] = "Delay.DelayUnit";
+					};
+					["controlOrder"] = {
+						[1] = "delayL";
+						[2] = "feedback";
+						[3] = "wet";
+					};
+					["branches"] = {
+						["feedback"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["type"] = "local";
+										["instanceKey"] = "6f3a6d72";
+										["name"] = "karplus (damping)";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+							};
+							["instanceKey"] = "08ec53a2";
+							["firmwareVersion"] = shared[1];
+						};
+						["delayL"] = {
+							["selection"] = {
+								["section"] = 1;
+								["view"] = "expanded";
+								["spot"] = 2;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["type"] = "local";
+										["instanceKey"] = "4e8905e2";
+										["name"] = "karplus (v/oct)";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+								[1] = {
+									["firmwareVersion"] = shared[1];
+									["objects"] = {
+										["p0"] = {
+											["params"] = {
+												["Bias"] = 0.018;
+												["Gain"] = 0.0;
+											};
+										};
+										["tune"] = {
+											["params"] = {
+												["Offset"] = 0.02333333;
+											};
+										};
+									};
+									["bypass"] = false;
+									["loadInfo"] = {
+										["libraryName"] = "builtins";
+										["category"] = "Measurement and Conversion";
+										["keywords"] = "pitch";
+										["id"] = "Converters.VoltPerOctaveToSeconds";
+										["title"] = "V/oct to Seconds";
+										["moduleName"] = "Converters.VoltPerOctaveToSeconds";
+									};
+									["controlOrder"] = {
+										[1] = "tune";
+										[2] = "p0";
+									};
+									["branches"] = {
+									};
+									["controlBranches"] = {
+									};
+									["instanceKey"] = "2b18b70e";
+									["unitVersion"] = 1;
+									["controls"] = {
+										["p0"] = {
+											["gainEncoderState"] = "Coarse";
+											["encoderState"] = "Fine";
+										};
+										["tune"] = {
+											["encoderState"] = "Fine";
+										};
+									};
+									["activeView"] = "expanded";
+								};
+							};
+							["instanceKey"] = "2d748ae9";
+							["firmwareVersion"] = shared[1];
+						};
+					};
+					["controlBranches"] = {
+					};
+					["instanceKey"] = "2510393a";
+					["unitVersion"] = 1;
+					["controls"] = {
+						["delayL"] = {
+							["gainEncoderState"] = "Coarse";
+							["encoderState"] = "Fine";
+						};
+						["wet"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["feedback"] = {
+							["gainEncoderState"] = "Coarse";
+							["encoderState"] = "Fine";
+						};
+					};
+					["activeView"] = "expanded";
+				};
+				[4] = {
+					["firmwareVersion"] = shared[1];
+					["objects"] = {
+						["tune"] = {
+							["params"] = {
+								["Offset"] = 0.0;
+							};
+						};
+						["f0"] = {
+							["params"] = {
+								["Bias"] = 659.255;
+								["Gain"] = 1000.0;
+							};
+						};
+						["res"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 0.0;
+							};
+						};
+					};
+					["bypass"] = false;
+					["loadInfo"] = {
+						["libraryName"] = "builtins";
+						["category"] = "Filtering";
+						["keywords"] = "filter, pitch";
+						["id"] = "LadderFilterUnit";
+						["title"] = "Ladder LPF";
+						["moduleName"] = "LadderFilterUnit";
+					};
+					["controlOrder"] = {
+						[1] = "tune";
+						[2] = "freq";
+						[3] = "resonance";
+					};
+					["branches"] = {
+						["f0"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["type"] = "local";
+										["instanceKey"] = "6f7dd27b";
+										["name"] = "karplus (bightness)";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+							};
+							["instanceKey"] = "8db4f4a4";
+							["firmwareVersion"] = shared[1];
+						};
+						["tune"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["type"] = "local";
+										["instanceKey"] = "4e8905e2";
+										["name"] = "karplus (v/oct)";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+							};
+							["instanceKey"] = "72f19020";
+							["firmwareVersion"] = shared[1];
+						};
+					};
+					["controlBranches"] = {
+					};
+					["instanceKey"] = "c7b30ed9";
+					["unitVersion"] = 1;
+					["controls"] = {
+						["freq"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["tune"] = {
+							["gainEncoderState"] = "Neutral";
+						};
+						["resonance"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["activeView"] = "expanded";
+				};
+			};
+			["instanceKey"] = "086387fa";
+			["firmwareVersion"] = shared[1];
+		};
+	};
+	["lastPresetPath"] = "1:/ER-301/v0.4/presets";
+	["lastPresetFilename"] = "karplus 3.unit";
+	["firmwareVersion"] = shared[1];
+	["mute"] = false;
+	["bypass"] = false;
+	["controlOrder"] = {
+		[1] = "v/oct";
+		[2] = "trigger";
+		[3] = "bightness";
+		[4] = "damping";
+		[5] = "gain";
+	};
+	["hasUserTitle"] = true;
+	["activeView"] = "expanded";
+	["instanceKey"] = "fdbbd261";
+	["unitVersion"] = 1;
+	["title"] = "karplus";
+	["controlBranches"] = {
+		["damping"] = {
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 0;
+			};
+			["channels"] = {
+				["inputs"] = {
+				};
+				["count"] = 1;
+			};
+			["firmwareVersion"] = shared[1];
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Bias"] = 0.0;
+						["Gain"] = 0.0;
+					};
+				};
+			};
+			["id"] = "damping";
+			["control"] = {
+				["customizations"] = {
+					["biasMin"] = 0;
+					["biasMax"] = 1;
+					["name"] = "damping";
+				};
+				["gainEncoderState"] = "Coarse";
+			};
+			["units"] = {
+			};
+			["type"] = "GainBias";
+			["instanceKey"] = "6f3a6d72";
+		};
+		["trigger"] = {
+			["selection"] = {
+				["section"] = 1;
+				["view"] = "expanded";
+				["spot"] = 0;
+			};
+			["channels"] = {
+				["inputs"] = {
+				};
+				["count"] = 1;
+			};
+			["firmwareVersion"] = shared[1];
+			["objects"] = {
+				[1] = {
+					["options"] = {
+						["State"] = 0;
+					};
+					["params"] = {
+						["Threshold"] = 0.1;
+					};
+				};
+			};
+			["id"] = "trigger";
+			["control"] = {
+				["customizations"] = {
+					["outputMode"] = 2;
+					["name"] = "trigger";
+				};
+			};
+			["units"] = {
+			};
+			["type"] = "Gate";
+			["instanceKey"] = "363d864e";
+		};
+		["v/oct"] = {
+			["selection"] = {
+				["section"] = 1;
+				["view"] = "expanded";
+				["spot"] = 0;
+			};
+			["channels"] = {
+				["inputs"] = {
+				};
+				["count"] = 1;
+			};
+			["firmwareVersion"] = shared[1];
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Offset"] = 0.1;
+					};
+				};
+			};
+			["id"] = "v/oct";
+			["control"] = {
+				["customizations"] = {
+					["name"] = "v/oct";
+				};
+				["gainEncoderState"] = "Neutral";
+			};
+			["units"] = {
+			};
+			["type"] = "Pitch";
+			["instanceKey"] = "4e8905e2";
+		};
+		["bightness"] = {
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 0;
+			};
+			["channels"] = {
+				["inputs"] = {
+				};
+				["count"] = 1;
+			};
+			["firmwareVersion"] = shared[1];
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Bias"] = 0.0;
+						["Gain"] = 0.0;
+					};
+				};
+			};
+			["id"] = "bightness";
+			["control"] = {
+				["customizations"] = {
+					["name"] = "bightness";
+					["biasMin"] = 0;
+					["biasMax"] = 1;
+					["biasUnits"] = 4;
+				};
+				["gainEncoderState"] = "Coarse";
+			};
+			["units"] = {
+			};
+			["type"] = "GainBias";
+			["instanceKey"] = "6f7dd27b";
+		};
+	};
+}
+return obj1

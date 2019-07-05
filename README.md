@@ -13,7 +13,8 @@ Discussion thread: https://forum.orthogonaldevices.com/t/a773-presets-unit-files
 
 ##### Voices
 * [2op-fm](#2op-fm) - Two operator fm voice
-* [bass pluck ](#bass_pluck) - Simple plucky bass voice
+* [bass pluck](#bass_pluck) - Simple plucky bass voice
+* [karplus](#karplus) - Karplus strong voice
 
 ##### Drums
 * [bd1](#bd1) - Decent kick drum
@@ -117,6 +118,17 @@ Controls:
 * feedback (0-1)
 
 
+### karplus<a name="karplus"></a>
+Karplus strong voice.  
+Unit type: mixer-channel  
+CPU: 6.2%  
+Controls:????
+* v/oct
+* trigger
+* brightness (0-1)
+* damping (0-1)
+
+
 ## Drums
 ### bd1<a name="bd1"></a>
 No so versatile kick drum.  
@@ -169,8 +181,8 @@ Controls:
 
 ### stutter<a name="stutter"></a>
 Repeats snip of audio on gate high.  
-Unit type: custom-unit  
-CPU: 7.2%  
+Unit type: Custom Effect  
+CPU: 7.0%  
 Controls:
 * clock
 * gate
@@ -235,8 +247,9 @@ Controls:
 
 ### tuned resample<a name="tuned_resample"></a>
 Sample rate reduction, with pitch tracking.  
-Unit type: Custom Effect  
-CPU: 3.6%  
+Unit type: Two Bands  
+CPU: 4%  
 Controls:
-* v/oct (0-14400cents)
-* offset (0-20000Hz)
+* v/oct
+* offset in v/oct
+* dry/wet (0-1)
