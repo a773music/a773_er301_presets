@@ -2,6 +2,12 @@
 All presets (should be) compatible with firmware 0.4.20  
 Discussion thread: https://forum.orthogonaldevices.com/t/a773-presets-unit-files
 
+Loading in the ER-301 (without having to worry about which unit was
+used as container):
+1) press “insert”
+1) press S3 again (“Presets”)
+1) browse to the file
+1) press “enter” to load
 
 ##### Synth building blocks
 * [ad](#ad) - AD envelope
