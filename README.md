@@ -38,6 +38,7 @@ used as container):
 ##### Effects
 * [cheap reverb 1](#cheap_reverb_1)
 * [cheap reverb 2](#cheap_reverb_2)
+* [cheap reverb 3](#cheap_reverb_3)
 * [mono to stereo 1](#mono_to_stereo_1)
 * [mono to stereo 2](#mono_to_stereo_2)
 * [poor mans reverb 1](#poor_mans_reverb_1)
@@ -205,6 +206,12 @@ Room size reverb that doesn't tax the CPU. Works on stereo channel, but is mono 
 Controls:
 * size (0-1)
 
+### cheap reverb 3<a name="cheap_reverb_3"></a>
+Unit type: Custom Effect  
+CPU usage: 3.25%  
+Wonky delay based reverb, very light on the CPU.  
+Controls:
+* wet (0-1)
 
 ### mono to stereo 1<a name="mono_to_stereo_1"></a>
 Delays one channel, very simple/stupid, will flange in mono.  

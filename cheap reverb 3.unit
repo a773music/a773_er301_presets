@@ -1,0 +1,335 @@
+-- Persistent Data
+local shared = {
+{};
+} -- shared
+shared[1]["Patch"] = 0;
+shared[1]["String"] = "0.4.20 (unstable)";
+shared[1]["Status"] = "unstable";
+shared[1]["Minor"] = 4;
+shared[1]["SimpleString"] = "0.4.20";
+shared[1]["Major"] = 0;
+shared[1]["Build"] = 20;
+shared[1]["Name"] = "Fennel (48kHz, 128smps)";
+local obj1 = {
+	["hasUserTitle"] = true;
+	["firmwareVersion"] = shared[1];
+	["objects"] = {
+	};
+	["bypass"] = false;
+	["bands"] = {
+		[1] = {
+			["instanceKey"] = "e532587e";
+			["selection"] = {
+				["section"] = 1;
+				["view"] = "expanded";
+				["spot"] = 2;
+			};
+			["firmwareVersion"] = shared[1];
+			["units"] = {
+				[1] = {
+					["maximumDelayTime"] = 1.002667;
+					["firmwareVersion"] = shared[1];
+					["objects"] = {
+						["secsL"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 3.5;
+							};
+						};
+						["feedback"] = {
+							["params"] = {
+								["Bias"] = 1.0;
+								["Gain"] = -1.8;
+							};
+						};
+						["fader"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 1.0;
+							};
+						};
+						["secsR"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 3.5;
+							};
+						};
+					};
+					["bypass"] = false;
+					["loadInfo"] = {
+						["libraryName"] = "builtins";
+						["category"] = "Delays and Reverb";
+						["keywords"] = "delay, effect";
+						["id"] = "Delay.DelayUnit";
+						["title"] = "Delay";
+						["moduleName"] = "Delay.DelayUnit";
+					};
+					["controlOrder"] = {
+						[1] = "delayL";
+						[2] = "delayR";
+						[3] = "feedback";
+						[4] = "wet";
+					};
+					["branches"] = {
+						["delayR"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["type"] = "local";
+										["channel"] = 1;
+										["instanceKey"] = "372eaa26";
+										["name"] = "Envelope Follower #1";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+							};
+							["instanceKey"] = "3c4aeddb";
+							["firmwareVersion"] = shared[1];
+						};
+						["delayL"] = {
+							["selection"] = {
+								["section"] = 1;
+								["view"] = "expanded";
+								["spot"] = 3;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["type"] = "local";
+										["channel"] = 1;
+										["instanceKey"] = "96abdfa8";
+										["name"] = "Delay #1";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+								[1] = {
+									["firmwareVersion"] = shared[1];
+									["objects"] = {
+										["release"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 0.0;
+											};
+										};
+										["attack"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 0.0;
+											};
+										};
+									};
+									["bypass"] = false;
+									["loadInfo"] = {
+										["libraryName"] = "builtins";
+										["category"] = "Envelopes";
+										["keywords"] = "modulate, measure";
+										["id"] = "Envelopes.Follower";
+										["title"] = "Envelope Follower";
+										["moduleName"] = "Envelopes.Follower";
+									};
+									["controlOrder"] = {
+										[1] = "attack";
+										[2] = "release";
+									};
+									["branches"] = {
+									};
+									["controlBranches"] = {
+									};
+									["instanceKey"] = "372eaa26";
+									["unitVersion"] = 1;
+									["controls"] = {
+										["release"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["attack"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["activeView"] = "expanded";
+								};
+							};
+							["instanceKey"] = "6ee884f7";
+							["firmwareVersion"] = shared[1];
+						};
+						["wet"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["type"] = "local";
+										["instanceKey"] = "62b20a34";
+										["name"] = "cheap reverb 3 (wet)";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+							};
+							["instanceKey"] = "a5957847";
+							["firmwareVersion"] = shared[1];
+						};
+						["feedback"] = {
+							["selection"] = {
+								["section"] = 1;
+								["view"] = "expanded";
+								["spot"] = 3;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["type"] = "local";
+										["channel"] = 1;
+										["instanceKey"] = "96abdfa8";
+										["name"] = "Delay #1";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+								[1] = {
+									["firmwareVersion"] = shared[1];
+									["objects"] = {
+										["release"] = {
+											["params"] = {
+												["Bias"] = 0.05;
+												["Gain"] = 0.0;
+											};
+										};
+										["attack"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 0.0;
+											};
+										};
+									};
+									["bypass"] = false;
+									["loadInfo"] = {
+										["libraryName"] = "builtins";
+										["category"] = "Envelopes";
+										["keywords"] = "modulate, measure";
+										["id"] = "Envelopes.Follower";
+										["title"] = "Envelope Follower";
+										["moduleName"] = "Envelopes.Follower";
+									};
+									["controlOrder"] = {
+										[1] = "attack";
+										[2] = "release";
+									};
+									["branches"] = {
+									};
+									["controlBranches"] = {
+									};
+									["instanceKey"] = "4fd81fc1";
+									["unitVersion"] = 1;
+									["controls"] = {
+										["release"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["attack"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["activeView"] = "expanded";
+								};
+							};
+							["instanceKey"] = "35a4cd83";
+							["firmwareVersion"] = shared[1];
+						};
+					};
+					["controlBranches"] = {
+					};
+					["instanceKey"] = "96abdfa8";
+					["unitVersion"] = 1;
+					["controls"] = {
+						["delayR"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["delayL"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["wet"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["feedback"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["activeView"] = "expanded";
+				};
+			};
+		};
+	};
+	["loadInfo"] = {
+		["libraryName"] = "builtins";
+		["category"] = "Containers";
+		["keywords"] = "utility, effect, container";
+		["id"] = "Container.Effect";
+		["title"] = "Custom Effect";
+		["moduleName"] = "Container.Effect";
+	};
+	["controlOrder"] = {
+		[1] = "wet";
+		[2] = "meter";
+	};
+	["controlBranches"] = {
+		["wet"] = {
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 0;
+			};
+			["channels"] = {
+				["inputs"] = {
+				};
+				["count"] = 1;
+			};
+			["firmwareVersion"] = shared[1];
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Bias"] = 0.13;
+						["Gain"] = 0.0;
+					};
+				};
+			};
+			["id"] = "wet";
+			["control"] = {
+				["customizations"] = {
+					["biasSuperCoarseStep"] = 0.09999999;
+					["biasMin"] = 0;
+					["biasFineStep"] = 0.0009999999;
+					["biasCoarseStep"] = 0.01;
+					["biasMax"] = 1;
+					["name"] = "wet";
+				};
+				["gainEncoderState"] = "Coarse";
+			};
+			["units"] = {
+			};
+			["type"] = "GainBias";
+			["instanceKey"] = "62b20a34";
+		};
+	};
+	["branches"] = {
+	};
+	["controls"] = {
+	};
+	["instanceKey"] = "aa754f66";
+	["unitVersion"] = 1;
+	["title"] = "cheap reverb 3";
+	["activeView"] = "expanded";
+}
+return obj1
