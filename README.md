@@ -219,13 +219,12 @@ Controls:
 
 
 ### poor mans reverb 1<a name="poor_mans_reverb_1"></a>
-
 [![Poor mans reverb demo on instagram](pix/poor_mans_reverb_1.jpg?raw=true)](https://www.instagram.com/p/BvUDRwlF5Ic)  
 Granular reverb based on [Neil Parfitts reverb idea](https://www.youtube.com/watch?v=swXpnqot4-Q), recording with a Dub Looper, with dub controlled by incoming signal.  
 Unit type: two-bands  
-CPU (mono version on mono channel): ~24%  
-CPU (stereo version on stereo channel): ~23%  
+CPU: ~24%  
 Controls:
+* sense
 * length (10ms-1s): length of grains
 * speed (10-500Hz): speed of grains
 * scrub (0-1): random scrubbing of playhead
@@ -236,7 +235,7 @@ Controls:
 ### poor mans reverb 2<a name="poor_mans_reverb_1"></a>
 Variation of [poor mans reverb 1](#poor_mans_reverb_1), but recording with a Feedback Looper for a different flavor.  
 Unit type: two-bands  
-CPU (on stereo channel): ~26%  
+CPU: ~16%  
 Controls:
 * length (0-1s): length of grains
 * speed (10-500Hz): speed of grains
