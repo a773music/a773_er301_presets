@@ -10,6 +10,7 @@ used as container):
 1) press “enter” to load
 
 ##### Synth building blocks
+* 
 * [ad](#ad) - AD envelope
 * [ad exp](#ad_exp) - Exponential AD envelope
 * [ad exp var](#ad_exp_var) - AD envelope with variable exponential response
@@ -110,8 +111,8 @@ Controls:
 
 ### stepped random<a name="stepped_random"></a>
 Generte random value on trigger.  
-Unit type: mixer-channel  
-CPU: 1.95%  
+Unit type: Custom Source  
+CPU: 0.78%  
 Controls:
 * trigger
 
