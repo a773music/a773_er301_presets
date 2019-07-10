@@ -14,6 +14,7 @@ used as container):
 * [ad exp](#ad_exp) - Exponential AD envelope
 * [ad exp var](#ad_exp_var) - AD envelope with variable exponential response
 * [decay env](#decay_env) - Decay envelope
+* [glitch osc](#glitch_osc) - Glitchy, circuit bend style oscillator
 * [sloth](#sloth) - Slow random/chaos
 * [stepped random](#stepped_random)
 
@@ -81,6 +82,19 @@ Unit type: slew-limiter
 CPU: 0.24%  
 Controls:
 * time: 3ms-786.32s
+
+
+### glitch osc<a name="glitch_osc"></a>
+Glitchy, circuit bend style oscillator  
+Unit type: Custom Source  
+CPU: 4.6%
+Controls:
+* v/oct
+* gate (silent when gate low)
+* center (0-1)
+* width (0-1)
+* fade (0-1)
+
 
 ### sloth<a name="sloth"></a>
 Inspired by the non-linear circuits

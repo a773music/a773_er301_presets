@@ -1,0 +1,562 @@
+-- Persistent Data
+local shared = {
+{};
+} -- shared
+shared[1]["Patch"] = 0;
+shared[1]["String"] = "0.4.20 (unstable)";
+shared[1]["Status"] = "unstable";
+shared[1]["Minor"] = 4;
+shared[1]["SimpleString"] = "0.4.20";
+shared[1]["Major"] = 0;
+shared[1]["Build"] = 20;
+shared[1]["Name"] = "Fennel (48kHz, 128smps)";
+local obj1 = {
+	["hasUserTitle"] = true;
+	["firmwareVersion"] = shared[1];
+	["objects"] = {
+	};
+	["bypass"] = false;
+	["bands"] = {
+		[1] = {
+			["instanceKey"] = "469a6693";
+			["selection"] = {
+				["section"] = 3;
+				["view"] = "expanded";
+				["spot"] = 0;
+			};
+			["firmwareVersion"] = shared[1];
+			["units"] = {
+				[1] = {
+					["firmwareVersion"] = shared[1];
+					["objects"] = {
+						["level"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 0.8;
+							};
+						};
+						["sync"] = {
+							["options"] = {
+								["State"] = 0;
+							};
+							["params"] = {
+								["Threshold"] = 0.1;
+							};
+						};
+						["osc"] = {
+							["params"] = {
+								["Phase"] = 0.3375539;
+							};
+						};
+						["tune"] = {
+							["params"] = {
+								["Offset"] = 0.0;
+							};
+						};
+						["f0"] = {
+							["params"] = {
+								["Bias"] = 32.703;
+								["Gain"] = 0.0;
+							};
+						};
+					};
+					["bypass"] = false;
+					["loadInfo"] = {
+						["libraryName"] = "builtins";
+						["category"] = "Oscillators";
+						["keywords"] = "source, pitch, modulate";
+						["id"] = "Oscillators.AliasingTriangle";
+						["title"] = "Aliasing Triangle";
+						["moduleName"] = "Oscillators.AliasingTriangle";
+					};
+					["controlOrder"] = {
+						[1] = "tune";
+						[2] = "freq";
+						[3] = "sync";
+						[4] = "level";
+					};
+					["branches"] = {
+						["level"] = {
+							["selection"] = {
+								["section"] = 1;
+								["view"] = "expanded";
+								["spot"] = 0;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["type"] = "local";
+										["instanceKey"] = "2db99cda";
+										["name"] = "glitch osc (gate)";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+							};
+							["instanceKey"] = "d34ced0f";
+							["firmwareVersion"] = shared[1];
+						};
+						["tune"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["type"] = "local";
+										["instanceKey"] = "81e549c1";
+										["name"] = "glitch osc (v/oct)";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+							};
+							["instanceKey"] = "f870a692";
+							["firmwareVersion"] = shared[1];
+						};
+						["sync"] = {
+							["selection"] = {
+								["section"] = 1;
+								["view"] = "expanded";
+								["spot"] = 1;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["type"] = "local";
+										["channel"] = 1;
+										["instanceKey"] = "7f2fd61a";
+										["name"] = "Bump Scanner #1";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+								[1] = {
+									["firmwareVersion"] = shared[1];
+									["objects"] = {
+										["level"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 0.0;
+											};
+										};
+									};
+									["bypass"] = false;
+									["loadInfo"] = {
+										["libraryName"] = "builtins";
+										["category"] = "Essentials";
+										["keywords"] = "modulate, utility";
+										["id"] = "VCA.LinearBipolar";
+										["title"] = "Linear Bipolar VCA";
+										["moduleName"] = "VCA.LinearBipolar";
+									};
+									["controlOrder"] = {
+										[1] = "level";
+									};
+									["branches"] = {
+									};
+									["controlBranches"] = {
+									};
+									["instanceKey"] = "99e59260";
+									["unitVersion"] = 1;
+									["controls"] = {
+										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["activeView"] = "expanded";
+								};
+							};
+							["instanceKey"] = "e91f61f5";
+							["firmwareVersion"] = shared[1];
+						};
+					};
+					["controlBranches"] = {
+					};
+					["instanceKey"] = "f8001e13";
+					["unitVersion"] = 1;
+					["controls"] = {
+						["freq"] = {
+							["gainEncoderState"] = "Fine";
+						};
+						["tune"] = {
+							["gainEncoderState"] = "Neutral";
+						};
+						["level"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["activeView"] = "expanded";
+				};
+				[2] = {
+					["firmwareVersion"] = shared[1];
+					["objects"] = {
+						["center"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 1.0;
+							};
+						};
+						["height"] = {
+							["params"] = {
+								["Bias"] = 0.5;
+								["Gain"] = 0.0;
+							};
+						};
+						["fade"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 1.6;
+							};
+						};
+						["width"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 0.3;
+							};
+						};
+					};
+					["bypass"] = false;
+					["loadInfo"] = {
+						["libraryName"] = "builtins";
+						["category"] = "Mapping and Control";
+						["keywords"] = "utility, effect";
+						["id"] = "BumpMap";
+						["title"] = "Bump Scanner";
+						["moduleName"] = "BumpMap";
+					};
+					["controlOrder"] = {
+						[1] = "center";
+						[2] = "width";
+						[3] = "height";
+						[4] = "fade";
+					};
+					["branches"] = {
+						["center"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["type"] = "local";
+										["instanceKey"] = "1659eea8";
+										["name"] = "glitch osc (center)";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+							};
+							["instanceKey"] = "4a98c77d";
+							["firmwareVersion"] = shared[1];
+						};
+						["fade"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["type"] = "local";
+										["instanceKey"] = "61dcaf10";
+										["name"] = "glitch osc (fade)";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+							};
+							["instanceKey"] = "f43f0f42";
+							["firmwareVersion"] = shared[1];
+						};
+						["width"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["type"] = "local";
+										["instanceKey"] = "9527ffd3";
+										["name"] = "glitch osc (width)";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+							};
+							["instanceKey"] = "0c3b60fd";
+							["firmwareVersion"] = shared[1];
+						};
+					};
+					["controlBranches"] = {
+					};
+					["instanceKey"] = "7f2fd61a";
+					["unitVersion"] = 1;
+					["controls"] = {
+						["center"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["width"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["fade"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["height"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["activeView"] = "expanded";
+				};
+				[3] = {
+					["firmwareVersion"] = shared[1];
+					["objects"] = {
+						["filter"] = {
+							["params"] = {
+								["Cutoff"] = 27.5;
+							};
+						};
+					};
+					["bypass"] = false;
+					["loadInfo"] = {
+						["libraryName"] = "builtins";
+						["category"] = "Filtering";
+						["keywords"] = "filter, utility";
+						["id"] = "FixedHPFUnit";
+						["title"] = "Fixed HPF";
+						["moduleName"] = "FixedHPFUnit";
+					};
+					["controlOrder"] = {
+						[1] = "freq";
+					};
+					["branches"] = {
+					};
+					["controlBranches"] = {
+					};
+					["instanceKey"] = "e67e45b5";
+					["unitVersion"] = 1;
+					["controls"] = {
+					};
+					["activeView"] = "expanded";
+				};
+			};
+		};
+	};
+	["loadInfo"] = {
+		["libraryName"] = "builtins";
+		["category"] = "Containers";
+		["keywords"] = "utility, source, container";
+		["id"] = "Container.Source";
+		["title"] = "Custom Source";
+		["moduleName"] = "Container.Source";
+	};
+	["controlOrder"] = {
+		[1] = "v/oct";
+		[2] = "gate";
+		[3] = "center";
+		[4] = "width";
+		[5] = "fade";
+		[6] = "meter";
+	};
+	["controlBranches"] = {
+		["center"] = {
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 0;
+			};
+			["channels"] = {
+				["inputs"] = {
+				};
+				["count"] = 1;
+			};
+			["firmwareVersion"] = shared[1];
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Bias"] = 0.0;
+						["Gain"] = 0.0;
+					};
+				};
+			};
+			["id"] = "center";
+			["control"] = {
+				["customizations"] = {
+					["biasSuperCoarseStep"] = 0.09999999;
+					["biasMin"] = 0;
+					["biasFineStep"] = 0.0009999999;
+					["biasCoarseStep"] = 0.01;
+					["biasMax"] = 1;
+					["name"] = "center";
+				};
+				["gainEncoderState"] = "Coarse";
+			};
+			["units"] = {
+			};
+			["type"] = "GainBias";
+			["instanceKey"] = "1659eea8";
+		};
+		["v/oct"] = {
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 0;
+			};
+			["channels"] = {
+				["inputs"] = {
+				};
+				["count"] = 1;
+			};
+			["firmwareVersion"] = shared[1];
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Offset"] = 0.0;
+					};
+				};
+			};
+			["id"] = "v/oct";
+			["control"] = {
+				["customizations"] = {
+					["name"] = "v/oct";
+				};
+				["gainEncoderState"] = "Neutral";
+			};
+			["units"] = {
+			};
+			["type"] = "Pitch";
+			["instanceKey"] = "81e549c1";
+		};
+		["fade"] = {
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 0;
+			};
+			["channels"] = {
+				["inputs"] = {
+				};
+				["count"] = 1;
+			};
+			["firmwareVersion"] = shared[1];
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Bias"] = 0.0;
+						["Gain"] = 0.0;
+					};
+				};
+			};
+			["id"] = "fade";
+			["control"] = {
+				["customizations"] = {
+					["biasSuperCoarseStep"] = 0.09999999;
+					["biasMin"] = 0;
+					["biasFineStep"] = 0.0009999999;
+					["biasCoarseStep"] = 0.01;
+					["biasMax"] = 1;
+					["name"] = "fade";
+				};
+				["gainEncoderState"] = "Coarse";
+			};
+			["units"] = {
+			};
+			["type"] = "GainBias";
+			["instanceKey"] = "61dcaf10";
+		};
+		["gate"] = {
+			["selection"] = {
+				["section"] = 1;
+				["view"] = "expanded";
+				["spot"] = 0;
+			};
+			["channels"] = {
+				["inputs"] = {
+				};
+				["count"] = 1;
+			};
+			["firmwareVersion"] = shared[1];
+			["objects"] = {
+				[1] = {
+					["options"] = {
+						["State"] = 0;
+					};
+					["params"] = {
+						["Threshold"] = 0.1;
+					};
+				};
+			};
+			["id"] = "gate";
+			["control"] = {
+				["customizations"] = {
+					["outputMode"] = 2;
+					["name"] = "gate";
+				};
+			};
+			["units"] = {
+			};
+			["type"] = "Gate";
+			["instanceKey"] = "2db99cda";
+		};
+		["width"] = {
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 0;
+			};
+			["channels"] = {
+				["inputs"] = {
+				};
+				["count"] = 1;
+			};
+			["firmwareVersion"] = shared[1];
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Bias"] = 0.008;
+						["Gain"] = 0.0;
+					};
+				};
+			};
+			["id"] = "width";
+			["control"] = {
+				["customizations"] = {
+					["biasSuperCoarseStep"] = 0.09999999;
+					["biasMin"] = 0;
+					["biasFineStep"] = 0.0009999999;
+					["biasCoarseStep"] = 0.01;
+					["biasMax"] = 1;
+					["name"] = "width";
+				};
+				["gainEncoderState"] = "Coarse";
+				["encoderState"] = "Fine";
+			};
+			["units"] = {
+			};
+			["type"] = "GainBias";
+			["instanceKey"] = "9527ffd3";
+		};
+	};
+	["branches"] = {
+	};
+	["controls"] = {
+	};
+	["instanceKey"] = "05e0184d";
+	["unitVersion"] = 1;
+	["title"] = "glitch osc";
+	["activeView"] = "expanded";
+}
+return obj1
