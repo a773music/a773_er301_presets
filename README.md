@@ -215,7 +215,8 @@ Controls:
 * wet (0-1)
 
 ### cheap reverb 4<a name="cheap_reverb_4"></a>
-Unit type: Custom Effect  
+[![Cheap reverb 4 on instagram](pix/cheap_reverb_4.jpg?raw=true)](https://www.instagram.com/p/BzrBfqWBUuk/)  
+Unit type: Delay  
 CPU usage: 0.85% (2% in stereo)  
 Wonky delay based reverb, extremely light on the CPU.  
 Controls:
