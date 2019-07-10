@@ -1,0 +1,651 @@
+-- Persistent Data
+local shared = {
+{};
+} -- shared
+shared[1]["Patch"] = 0;
+shared[1]["String"] = "0.4.20 (unstable)";
+shared[1]["Status"] = "unstable";
+shared[1]["Minor"] = 4;
+shared[1]["SimpleString"] = "0.4.20";
+shared[1]["Major"] = 0;
+shared[1]["Build"] = 20;
+shared[1]["Name"] = "Fennel (48kHz, 128smps)";
+local obj1 = {
+	["hasUserTitle"] = true;
+	["firmwareVersion"] = shared[1];
+	["objects"] = {
+	};
+	["bypass"] = false;
+	["bands"] = {
+		[1] = {
+			["instanceKey"] = "d9363c50";
+			["selection"] = {
+				["section"] = 11;
+				["view"] = "expanded";
+				["spot"] = 0;
+			};
+			["firmwareVersion"] = shared[1];
+			["units"] = {
+				[1] = {
+					["firmwareVersion"] = shared[1];
+					["objects"] = {
+					};
+					["bypass"] = false;
+					["loadInfo"] = {
+						["libraryName"] = "builtins";
+						["category"] = "Noise";
+						["keywords"] = "source, noise";
+						["id"] = "Noise.White";
+						["title"] = "White Noise";
+						["moduleName"] = "Noise.White";
+					};
+					["controlOrder"] = {
+					};
+					["branches"] = {
+					};
+					["controlBranches"] = {
+					};
+					["instanceKey"] = "9f72a638";
+					["unitVersion"] = 1;
+					["controls"] = {
+					};
+					["activeView"] = "expanded";
+				};
+				[2] = {
+					["hasUserTitle"] = true;
+					["firmwareVersion"] = shared[1];
+					["objects"] = {
+						["holdL"] = {
+							["params"] = {
+								["Value"] = 0.9547753;
+							};
+						};
+						["comparator"] = {
+							["options"] = {
+								["State"] = 0;
+							};
+							["params"] = {
+								["Threshold"] = 0.1;
+							};
+						};
+					};
+					["bypass"] = false;
+					["loadInfo"] = {
+						["libraryName"] = "builtins";
+						["category"] = "Mapping and Control";
+						["keywords"] = "utility, effect, modulate";
+						["id"] = "SampleHoldUnit";
+						["title"] = "Sample & Hold";
+						["moduleName"] = "SampleHoldUnit";
+					};
+					["controlOrder"] = {
+						[1] = "trigger";
+						[2] = "value";
+					};
+					["controlBranches"] = {
+					};
+					["branches"] = {
+						["trig"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["type"] = "local";
+										["instanceKey"] = "1b9ae7a3";
+										["name"] = "6random (trigger)";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+							};
+							["instanceKey"] = "869a40c2";
+							["firmwareVersion"] = shared[1];
+						};
+					};
+					["controls"] = {
+					};
+					["instanceKey"] = "4feea469";
+					["unitVersion"] = 1;
+					["title"] = "rand1";
+					["activeView"] = "expanded";
+				};
+				[3] = {
+					["firmwareVersion"] = shared[1];
+					["objects"] = {
+					};
+					["bypass"] = false;
+					["loadInfo"] = {
+						["libraryName"] = "builtins";
+						["category"] = "Noise";
+						["keywords"] = "source, noise";
+						["id"] = "Noise.White";
+						["title"] = "White Noise";
+						["moduleName"] = "Noise.White";
+					};
+					["controlOrder"] = {
+					};
+					["branches"] = {
+					};
+					["controlBranches"] = {
+					};
+					["instanceKey"] = "2a88e38b";
+					["unitVersion"] = 1;
+					["controls"] = {
+					};
+					["activeView"] = "expanded";
+				};
+				[4] = {
+					["hasUserTitle"] = true;
+					["firmwareVersion"] = shared[1];
+					["objects"] = {
+						["holdL"] = {
+							["params"] = {
+								["Value"] = -0.5331092;
+							};
+						};
+						["comparator"] = {
+							["options"] = {
+								["State"] = 0;
+							};
+							["params"] = {
+								["Threshold"] = 0.1;
+							};
+						};
+					};
+					["bypass"] = false;
+					["loadInfo"] = {
+						["libraryName"] = "builtins";
+						["category"] = "Mapping and Control";
+						["keywords"] = "utility, effect, modulate";
+						["id"] = "SampleHoldUnit";
+						["title"] = "Sample & Hold";
+						["moduleName"] = "SampleHoldUnit";
+					};
+					["controlOrder"] = {
+						[1] = "trigger";
+						[2] = "value";
+					};
+					["controlBranches"] = {
+					};
+					["branches"] = {
+						["trig"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["type"] = "local";
+										["instanceKey"] = "1b9ae7a3";
+										["name"] = "6random (trigger)";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+							};
+							["instanceKey"] = "3bc4cd4f";
+							["firmwareVersion"] = shared[1];
+						};
+					};
+					["controls"] = {
+					};
+					["instanceKey"] = "a12d9be0";
+					["unitVersion"] = 1;
+					["title"] = "rand2";
+					["activeView"] = "expanded";
+				};
+				[5] = {
+					["firmwareVersion"] = shared[1];
+					["objects"] = {
+					};
+					["bypass"] = false;
+					["loadInfo"] = {
+						["libraryName"] = "builtins";
+						["category"] = "Noise";
+						["keywords"] = "source, noise";
+						["id"] = "Noise.White";
+						["title"] = "White Noise";
+						["moduleName"] = "Noise.White";
+					};
+					["controlOrder"] = {
+					};
+					["branches"] = {
+					};
+					["controlBranches"] = {
+					};
+					["instanceKey"] = "cd1ed4c0";
+					["unitVersion"] = 1;
+					["controls"] = {
+					};
+					["activeView"] = "expanded";
+				};
+				[6] = {
+					["hasUserTitle"] = true;
+					["firmwareVersion"] = shared[1];
+					["objects"] = {
+						["holdL"] = {
+							["params"] = {
+								["Value"] = -0.4017117;
+							};
+						};
+						["comparator"] = {
+							["options"] = {
+								["State"] = 0;
+							};
+							["params"] = {
+								["Threshold"] = 0.1;
+							};
+						};
+					};
+					["bypass"] = false;
+					["loadInfo"] = {
+						["libraryName"] = "builtins";
+						["category"] = "Mapping and Control";
+						["keywords"] = "utility, effect, modulate";
+						["id"] = "SampleHoldUnit";
+						["title"] = "Sample & Hold";
+						["moduleName"] = "SampleHoldUnit";
+					};
+					["controlOrder"] = {
+						[1] = "trigger";
+						[2] = "value";
+					};
+					["controlBranches"] = {
+					};
+					["branches"] = {
+						["trig"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["type"] = "local";
+										["instanceKey"] = "1b9ae7a3";
+										["name"] = "6random (trigger)";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+							};
+							["instanceKey"] = "778e684a";
+							["firmwareVersion"] = shared[1];
+						};
+					};
+					["controls"] = {
+					};
+					["instanceKey"] = "ce9d8437";
+					["unitVersion"] = 1;
+					["title"] = "rand3";
+					["activeView"] = "expanded";
+				};
+				[7] = {
+					["firmwareVersion"] = shared[1];
+					["objects"] = {
+					};
+					["bypass"] = false;
+					["loadInfo"] = {
+						["libraryName"] = "builtins";
+						["category"] = "Noise";
+						["keywords"] = "source, noise";
+						["id"] = "Noise.White";
+						["title"] = "White Noise";
+						["moduleName"] = "Noise.White";
+					};
+					["controlOrder"] = {
+					};
+					["branches"] = {
+					};
+					["controlBranches"] = {
+					};
+					["instanceKey"] = "1ce68a6d";
+					["unitVersion"] = 1;
+					["controls"] = {
+					};
+					["activeView"] = "expanded";
+				};
+				[8] = {
+					["hasUserTitle"] = true;
+					["firmwareVersion"] = shared[1];
+					["objects"] = {
+						["holdL"] = {
+							["params"] = {
+								["Value"] = 0.8726453;
+							};
+						};
+						["comparator"] = {
+							["options"] = {
+								["State"] = 0;
+							};
+							["params"] = {
+								["Threshold"] = 0.1;
+							};
+						};
+					};
+					["bypass"] = false;
+					["loadInfo"] = {
+						["libraryName"] = "builtins";
+						["category"] = "Mapping and Control";
+						["keywords"] = "utility, effect, modulate";
+						["id"] = "SampleHoldUnit";
+						["title"] = "Sample & Hold";
+						["moduleName"] = "SampleHoldUnit";
+					};
+					["controlOrder"] = {
+						[1] = "trigger";
+						[2] = "value";
+					};
+					["controlBranches"] = {
+					};
+					["branches"] = {
+						["trig"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["type"] = "local";
+										["instanceKey"] = "1b9ae7a3";
+										["name"] = "6random (trigger)";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+							};
+							["instanceKey"] = "c9cd7b12";
+							["firmwareVersion"] = shared[1];
+						};
+					};
+					["controls"] = {
+					};
+					["instanceKey"] = "1b18bc25";
+					["unitVersion"] = 1;
+					["title"] = "rand4";
+					["activeView"] = "expanded";
+				};
+				[9] = {
+					["firmwareVersion"] = shared[1];
+					["objects"] = {
+					};
+					["bypass"] = false;
+					["loadInfo"] = {
+						["libraryName"] = "builtins";
+						["category"] = "Noise";
+						["keywords"] = "source, noise";
+						["id"] = "Noise.White";
+						["title"] = "White Noise";
+						["moduleName"] = "Noise.White";
+					};
+					["controlOrder"] = {
+					};
+					["branches"] = {
+					};
+					["controlBranches"] = {
+					};
+					["instanceKey"] = "495715e4";
+					["unitVersion"] = 1;
+					["controls"] = {
+					};
+					["activeView"] = "expanded";
+				};
+				[10] = {
+					["hasUserTitle"] = true;
+					["firmwareVersion"] = shared[1];
+					["objects"] = {
+						["holdL"] = {
+							["params"] = {
+								["Value"] = -0.1467948;
+							};
+						};
+						["comparator"] = {
+							["options"] = {
+								["State"] = 0;
+							};
+							["params"] = {
+								["Threshold"] = 0.1;
+							};
+						};
+					};
+					["bypass"] = false;
+					["loadInfo"] = {
+						["libraryName"] = "builtins";
+						["category"] = "Mapping and Control";
+						["keywords"] = "utility, effect, modulate";
+						["id"] = "SampleHoldUnit";
+						["title"] = "Sample & Hold";
+						["moduleName"] = "SampleHoldUnit";
+					};
+					["controlOrder"] = {
+						[1] = "trigger";
+						[2] = "value";
+					};
+					["controlBranches"] = {
+					};
+					["branches"] = {
+						["trig"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["type"] = "local";
+										["instanceKey"] = "1b9ae7a3";
+										["name"] = "6random (trigger)";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+							};
+							["instanceKey"] = "e008f284";
+							["firmwareVersion"] = shared[1];
+						};
+					};
+					["controls"] = {
+					};
+					["instanceKey"] = "59db0631";
+					["unitVersion"] = 1;
+					["title"] = "rand5";
+					["activeView"] = "expanded";
+				};
+				[11] = {
+					["firmwareVersion"] = shared[1];
+					["objects"] = {
+					};
+					["bypass"] = false;
+					["loadInfo"] = {
+						["libraryName"] = "builtins";
+						["category"] = "Noise";
+						["keywords"] = "source, noise";
+						["id"] = "Noise.White";
+						["title"] = "White Noise";
+						["moduleName"] = "Noise.White";
+					};
+					["controlOrder"] = {
+					};
+					["branches"] = {
+					};
+					["controlBranches"] = {
+					};
+					["instanceKey"] = "fa4e5710";
+					["unitVersion"] = 1;
+					["controls"] = {
+					};
+					["activeView"] = "expanded";
+				};
+				[12] = {
+					["hasUserTitle"] = true;
+					["firmwareVersion"] = shared[1];
+					["objects"] = {
+						["holdL"] = {
+							["params"] = {
+								["Value"] = 0.5046952;
+							};
+						};
+						["comparator"] = {
+							["options"] = {
+								["State"] = 0;
+							};
+							["params"] = {
+								["Threshold"] = 0.1;
+							};
+						};
+					};
+					["bypass"] = false;
+					["loadInfo"] = {
+						["libraryName"] = "builtins";
+						["category"] = "Mapping and Control";
+						["keywords"] = "utility, effect, modulate";
+						["id"] = "SampleHoldUnit";
+						["title"] = "Sample & Hold";
+						["moduleName"] = "SampleHoldUnit";
+					};
+					["controlOrder"] = {
+						[1] = "trigger";
+						[2] = "value";
+					};
+					["controlBranches"] = {
+					};
+					["branches"] = {
+						["trig"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["type"] = "local";
+										["instanceKey"] = "1b9ae7a3";
+										["name"] = "6random (trigger)";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+							};
+							["instanceKey"] = "b7166e29";
+							["firmwareVersion"] = shared[1];
+						};
+					};
+					["controls"] = {
+					};
+					["instanceKey"] = "f5e57dbe";
+					["unitVersion"] = 1;
+					["title"] = "rand6";
+					["activeView"] = "expanded";
+				};
+			};
+		};
+	};
+	["loadInfo"] = {
+		["libraryName"] = "builtins";
+		["category"] = "Containers";
+		["keywords"] = "utility, source, container";
+		["id"] = "Container.Source";
+		["title"] = "Custom Source";
+		["moduleName"] = "Container.Source";
+	};
+	["controlOrder"] = {
+		[1] = "trigger";
+		[2] = "meter";
+	};
+	["controlBranches"] = {
+		["trigger"] = {
+			["selection"] = {
+				["section"] = 1;
+				["view"] = "expanded";
+				["spot"] = 0;
+			};
+			["channels"] = {
+				["inputs"] = {
+				};
+				["count"] = 1;
+			};
+			["firmwareVersion"] = shared[1];
+			["objects"] = {
+				[1] = {
+					["options"] = {
+						["State"] = 0;
+					};
+					["params"] = {
+						["Threshold"] = 0.1;
+					};
+				};
+			};
+			["id"] = "trigger";
+			["control"] = {
+				["customizations"] = {
+					["name"] = "trigger";
+				};
+			};
+			["units"] = {
+				[1] = {
+					["firmwareVersion"] = shared[1];
+					["objects"] = {
+						["port"] = {
+							["params"] = {
+								["Bias"] = 1.0;
+								["Gain"] = 0.0;
+							};
+						};
+					};
+					["bypass"] = false;
+					["loadInfo"] = {
+						["libraryName"] = "Teletype";
+						["category"] = "Teletype";
+						["keywords"] = "utility, timing, source, teletype";
+						["id"] = "TR";
+						["title"] = "SC.TR";
+						["moduleName"] = "TR";
+					};
+					["controlOrder"] = {
+						[1] = "port";
+					};
+					["branches"] = {
+					};
+					["controlBranches"] = {
+					};
+					["instanceKey"] = "b86cff41";
+					["unitVersion"] = 1;
+					["controls"] = {
+						["port"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["activeView"] = "expanded";
+				};
+			};
+			["type"] = "Gate";
+			["instanceKey"] = "1b9ae7a3";
+		};
+	};
+	["branches"] = {
+	};
+	["controls"] = {
+	};
+	["instanceKey"] = "1dc56e01";
+	["unitVersion"] = 1;
+	["title"] = "6random";
+	["activeView"] = "expanded";
+}
+return obj1
