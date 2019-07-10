@@ -10,7 +10,6 @@ used as container):
 1) press “enter” to load
 
 ##### Synth building blocks
-* [6random](#6random) - 6x stepped random
 * [ad](#ad) - AD envelope
 * [ad exp](#ad_exp) - Exponential AD envelope
 * [ad exp var](#ad_exp_var) - AD envelope with variable exponential response
@@ -18,6 +17,7 @@ used as container):
 * [glitch osc](#glitch_osc) - Glitchy, circuit bend style oscillator
 * [sloth](#sloth) - Slow random/chaos
 * [stepped random](#stepped_random)
+* [stepped random x6](#stepped_random_x6) - 6x stepped random
 
 ##### Voices
 * [2op-fm](#2op-fm) - Two operator fm voice
@@ -50,19 +50,6 @@ used as container):
 
 
 ## Synth building blocks
-### 6random<a name="6random"></a>
-6x stepped random in one. One random value is the actual output, the
-others can be reached inside the unit as rand1-5. Advantages over
-stepped random is: 
-1) a bit lighter on the CPU pr random (0.78% vs 0.9% for stepped random)
-1) convenient if you need lots of random  
-
-Unit type: Custom Source  
-CPU:4.7%  
-Controls:
-* trigger
-
-
 ### ad <a name="ad"></a>
 AD envelope with variable attack and decay, works with short triggers as input.  
 Unit type: custom-unit  
@@ -119,15 +106,28 @@ CPU: 3.84%
 Controls:
 * slowness: (0-1)
 
-
-
-
 ### stepped random<a name="stepped_random"></a>
 Generte random value on trigger.  
 Unit type: Custom Source  
 CPU: 0.9%  
 Controls:
 * trigger
+
+
+### stepped random x6<a name="stepped_random_x6"></a>
+6x stepped random in one. One random value is the actual output, the
+others can be reached inside the unit as rand1-5. Advantages over
+stepped random is: 
+1) a bit lighter on the CPU pr random (0.78% vs 0.9% for stepped random)
+1) convenient if you need lots of random  
+
+Unit type: Custom Source  
+CPU:4.7%  
+Controls:
+* trigger
+
+
+
 
 ## Voices
 ### 2op-fm<a name="2op-fm"></a>
