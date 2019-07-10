@@ -65,7 +65,6 @@ Controls:
 * attack (0-5s)
 * decay (0-5s)
 
-
 ### ad exp var<a name="ad_exp_var"></a>
 AD envelope (variable exponential response) with variable attack and decay, works with short triggers as input.  
 Unit type: custom-unit  
@@ -104,7 +103,7 @@ Controls:
 
 ## Voices
 ### 2op-fm<a name="2op-fm"></a>
-[![2op-fm demo on instagram](pix/2op-fm.png)](https://www.instagram.com/p/BzLa0WuBjBB)  
+[![2op-fm demo on instagram](https://www.dropbox.com/s/x4j22gshjoptobn/2op-fm.png?raw=1)](https://www.instagram.com/p/BzLa0WuBjBB)  
 Percussive FM voice inspired by [the 2opfm module by Super Synthesis](https://www.supersynthesis.com/products/2opfm?variant=3710980620328)  
 Unit type: mixer-channel  
 CPU: 8.4%  
@@ -162,7 +161,7 @@ Controls:
 
 ## Trigger/gate
 ### gated burst<a name="gated_burst"></a>
-![gated burst screenshot](pix/gated_burst.png?raw=true)  
+![gated burst screenshot](https://www.dropbox.com/s/vmn27169oup4s3s/gated_burst.png?raw=1)  
 Emits bursts while receiving a gate. The bursts are pulses with intervals of "burst time" and length "burst time/2".  
 Unit type: custom-unit  
 Controls:
@@ -170,7 +169,7 @@ Controls:
 
 
 ### gate to trigger<a name="gate_to_trigger"></a>
-![gate to trigger screenshot](pix/gate_to_trigger.png?raw=true)  
+![gate to trigger screenshot](https://www.dropbox.com/s/jf2uykexkvd0rv1/gate_to_trigger.png?raw=1)  
 Converts incomming gates to triggers of selected length.  
 Unit type: custom-unit  
 Controls:
@@ -200,7 +199,7 @@ Controls:
 
 ## Effects
 ### cheap reverb 1 + 2<a name="cheap_reverb_1"></a><a name="cheap_reverb_2"></a>
-[![Cheap reverb demo on instagram](pix/cheap_reverb.jpg?raw=true)](https://www.instagram.com/p/BxetV5FhZKT)  
+[![Cheap reverb demo on instagram](https://www.dropbox.com/s/rmiqyzhux5fnle1/cheap_reverb.jpg?raw=1)](https://www.instagram.com/p/BxetV5FhZKT)  
 Unit type: six-bands  
 CPU usage: 7.2%  
 Room size reverb that doesn't tax the CPU. Works on stereo channel, but is mono in, mono out.  
@@ -215,7 +214,7 @@ Controls:
 * wet (0-1)
 
 ### cheap reverb 4<a name="cheap_reverb_4"></a>
-[![Cheap reverb 4 on instagram](pix/cheap_reverb_4.jpg?raw=true)](https://www.instagram.com/p/BzrBfqWBUuk/)  
+[![Cheap reverb 4 on instagram](https://www.dropbox.com/s/ina5lrauh9vw5os/cheap_reverb_4.jpg?raw=1)](https://www.instagram.com/p/BzrBfqWBUuk/)  
 Unit type: Delay  
 CPU usage: 0.85% (2% in stereo)  
 Wonky delay based reverb, extremely light on the CPU.  
@@ -235,7 +234,7 @@ Controls:
 
 
 ### poor mans reverb 1<a name="poor_mans_reverb_1"></a>
-[![Poor mans reverb demo on instagram](pix/poor_mans_reverb_1.jpg?raw=true)](https://www.instagram.com/p/BvUDRwlF5Ic)  
+[![Poor mans reverb demo on instagram](https://www.dropbox.com/s/lnljtk90a9yrt26/poor_mans_reverb_1.jpg?raw=1)](https://www.instagram.com/p/BvUDRwlF5Ic)  
 Granular reverb based on [Neil Parfitts reverb idea](https://www.youtube.com/watch?v=swXpnqot4-Q), recording with a Dub Looper, with dub controlled by incoming signal.  
 Unit type: two-bands  
 CPU: ~24%  
