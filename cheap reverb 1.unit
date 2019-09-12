@@ -1,0 +1,1049 @@
+-- Persistent Data
+local shared = {
+{};
+} -- shared
+shared[1]["SimpleString"] = "0.4.11";
+shared[1]["Major"] = 0;
+shared[1]["Patch"] = 0;
+shared[1]["Status"] = "unstable";
+shared[1]["Minor"] = 4;
+shared[1]["Name"] = "Fennel (48kHz, 128smps)";
+shared[1]["Build"] = 11;
+shared[1]["String"] = "0.4.11 (unstable)";
+local obj1 = {
+	["instanceKey"] = "4004b895";
+	["controls"] = {
+	};
+	["controlOrder"] = {
+		[1] = "size";
+		[2] = "band1";
+		[3] = "band2";
+		[4] = "band3";
+		[5] = "band4";
+		[6] = "band5";
+		[7] = "band6";
+	};
+	["controlBranches"] = {
+		["size"] = {
+			["units"] = {
+			};
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Bias"] = 0.0;
+						["Gain"] = 0.0;
+					};
+				};
+			};
+			["id"] = "size";
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 0;
+			};
+			["control"] = {
+				["customizations"] = {
+					["name"] = "size";
+					["biasMin"] = 0;
+					["biasMax"] = 1;
+				};
+				["gainEncoderState"] = "Coarse";
+			};
+			["instanceKey"] = "e69d6aaf";
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["type"] = "GainBias";
+			["firmwareVersion"] = shared[1];
+		};
+	};
+	["lastPresetPath"] = "1:/ER-301/v0.4/presets/six-bands";
+	["objects"] = {
+	};
+	["branches"] = {
+	};
+	["title"] = "cheap reverb 1";
+	["hasUserTitle"] = true;
+	["bypass"] = false;
+	["unitVersion"] = 1;
+	["lastPresetFilename"] = "cheap reverb 1.unit";
+	["firmwareVersion"] = shared[1];
+	["activeView"] = "expanded";
+	["bands"] = {
+		[1] = {
+			["firmwareVersion"] = shared[1];
+			["selection"] = {
+				["section"] = 1;
+				["view"] = "expanded";
+				["spot"] = 2;
+			};
+			["units"] = {
+				[1] = {
+					["controls"] = {
+					};
+					["branches"] = {
+						["input"] = {
+							["selection"] = {
+								["section"] = 1;
+								["view"] = "expanded";
+								["spot"] = 2;
+							};
+							["instanceKey"] = "a9c21ff6";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["channel"] = 1;
+										["name"] = "delay";
+										["type"] = "local";
+										["instanceKey"] = "95fb5fff";
+									};
+								};
+							};
+							["units"] = {
+								[1] = {
+									["controls"] = {
+										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["objects"] = {
+										["level"] = {
+											["params"] = {
+												["Bias"] = 0.6;
+												["Gain"] = 0.3;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "level";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "bcb7cfa9";
+									["loadInfo"] = {
+										["keywords"] = "modulate, utility";
+										["category"] = "Essentials";
+										["title"] = "Linear Bipolar VCA";
+										["moduleName"] = "VCA.LinearBipolar";
+										["id"] = "VCA.LinearBipolar";
+										["libraryName"] = "builtins";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+										["level"] = {
+											["selection"] = {
+												["section"] = 0;
+												["view"] = "default";
+												["spot"] = 1;
+											};
+											["instanceKey"] = "8f0814b9";
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["count"] = 1;
+												["inputs"] = {
+													[1] = {
+														["name"] = "cheap reverb 1 (size)";
+														["type"] = "local";
+														["instanceKey"] = "e69d6aaf";
+													};
+												};
+											};
+											["units"] = {
+											};
+										};
+									};
+									["firmwareVersion"] = shared[1];
+								};
+								[2] = {
+									["controls"] = {
+									};
+									["objects"] = {
+										["delayL"] = {
+											["params"] = {
+												["Delay"] = 0.07;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "delay";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "e0806d44";
+									["loadInfo"] = {
+										["keywords"] = "delay, utility";
+										["category"] = "Delays and Reverb";
+										["title"] = "Micro Delay";
+										["moduleName"] = "Delay.MicroDelay";
+										["id"] = "Delay.MicroDelay";
+										["libraryName"] = "builtins";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+									};
+									["firmwareVersion"] = shared[1];
+								};
+							};
+						};
+					};
+					["mute"] = false;
+					["controlOrder"] = {
+						[1] = "gain";
+					};
+					["objects"] = {
+						["gain"] = {
+							["params"] = {
+								["Gain"] = 1.0;
+							};
+						};
+					};
+					["controlBranches"] = {
+					};
+					["solo"] = false;
+					["title"] = "delay";
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "95fb5fff";
+					["loadInfo"] = {
+						["keywords"] = "mixing, routing";
+						["category"] = "Essentials";
+						["title"] = "Mixer Channel";
+						["moduleName"] = "MixerUnit";
+						["id"] = "MixerUnit";
+						["libraryName"] = "builtins";
+					};
+					["hasUserTitle"] = true;
+					["firmwareVersion"] = shared[1];
+					["activeView"] = "expanded";
+				};
+			};
+			["instanceKey"] = "d87ed3df";
+		};
+		[2] = {
+			["firmwareVersion"] = shared[1];
+			["selection"] = {
+				["section"] = 1;
+				["view"] = "expanded";
+				["spot"] = 2;
+			};
+			["units"] = {
+				[1] = {
+					["controls"] = {
+					};
+					["branches"] = {
+						["input"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["instanceKey"] = "fdf3cfe3";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["channel"] = 1;
+										["name"] = "delay";
+										["type"] = "local";
+										["instanceKey"] = "367b85a7";
+									};
+								};
+							};
+							["units"] = {
+								[1] = {
+									["controls"] = {
+										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["objects"] = {
+										["level"] = {
+											["params"] = {
+												["Bias"] = 0.5;
+												["Gain"] = 0.3;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "level";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "00a0650c";
+									["loadInfo"] = {
+										["keywords"] = "modulate, utility";
+										["category"] = "Essentials";
+										["title"] = "Linear Bipolar VCA";
+										["moduleName"] = "VCA.LinearBipolar";
+										["id"] = "VCA.LinearBipolar";
+										["libraryName"] = "builtins";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+										["level"] = {
+											["selection"] = {
+												["section"] = 0;
+												["view"] = "default";
+												["spot"] = 1;
+											};
+											["instanceKey"] = "96ba348d";
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["count"] = 1;
+												["inputs"] = {
+													[1] = {
+														["name"] = "cheap reverb 1 (size)";
+														["type"] = "local";
+														["instanceKey"] = "e69d6aaf";
+													};
+												};
+											};
+											["units"] = {
+											};
+										};
+									};
+									["firmwareVersion"] = shared[1];
+								};
+								[2] = {
+									["controls"] = {
+									};
+									["objects"] = {
+										["delayL"] = {
+											["params"] = {
+												["Delay"] = 0.09;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "delay";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "b643e8c4";
+									["loadInfo"] = {
+										["keywords"] = "delay, utility";
+										["category"] = "Delays and Reverb";
+										["title"] = "Micro Delay";
+										["moduleName"] = "Delay.MicroDelay";
+										["id"] = "Delay.MicroDelay";
+										["libraryName"] = "builtins";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+									};
+									["firmwareVersion"] = shared[1];
+								};
+							};
+						};
+					};
+					["mute"] = false;
+					["controlOrder"] = {
+						[1] = "gain";
+					};
+					["objects"] = {
+						["gain"] = {
+							["params"] = {
+								["Gain"] = 1.0;
+							};
+						};
+					};
+					["controlBranches"] = {
+					};
+					["solo"] = false;
+					["title"] = "delay";
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "367b85a7";
+					["loadInfo"] = {
+						["keywords"] = "mixing, routing";
+						["category"] = "Essentials";
+						["title"] = "Mixer Channel";
+						["moduleName"] = "MixerUnit";
+						["id"] = "MixerUnit";
+						["libraryName"] = "builtins";
+					};
+					["hasUserTitle"] = true;
+					["firmwareVersion"] = shared[1];
+					["activeView"] = "expanded";
+				};
+			};
+			["instanceKey"] = "4814282d";
+		};
+		[3] = {
+			["firmwareVersion"] = shared[1];
+			["selection"] = {
+				["section"] = 1;
+				["view"] = "expanded";
+				["spot"] = 2;
+			};
+			["units"] = {
+				[1] = {
+					["controls"] = {
+					};
+					["branches"] = {
+						["input"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["instanceKey"] = "de7738ed";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["channel"] = 1;
+										["name"] = "delay";
+										["type"] = "local";
+										["instanceKey"] = "2ca68d8a";
+									};
+								};
+							};
+							["units"] = {
+								[1] = {
+									["controls"] = {
+										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["objects"] = {
+										["level"] = {
+											["params"] = {
+												["Bias"] = 0.1;
+												["Gain"] = 0.1;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "level";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "2d961bf6";
+									["loadInfo"] = {
+										["keywords"] = "modulate, utility";
+										["category"] = "Essentials";
+										["title"] = "Linear Bipolar VCA";
+										["moduleName"] = "VCA.LinearBipolar";
+										["id"] = "VCA.LinearBipolar";
+										["libraryName"] = "builtins";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+										["level"] = {
+											["selection"] = {
+												["section"] = 0;
+												["view"] = "default";
+												["spot"] = 1;
+											};
+											["instanceKey"] = "16f1f02a";
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["count"] = 1;
+												["inputs"] = {
+													[1] = {
+														["name"] = "cheap reverb 1 (size)";
+														["type"] = "local";
+														["instanceKey"] = "e69d6aaf";
+													};
+												};
+											};
+											["units"] = {
+											};
+										};
+									};
+									["firmwareVersion"] = shared[1];
+								};
+								[2] = {
+									["controls"] = {
+									};
+									["objects"] = {
+										["delayL"] = {
+											["params"] = {
+												["Delay"] = 0.1;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "delay";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "adb6d582";
+									["loadInfo"] = {
+										["keywords"] = "delay, utility";
+										["category"] = "Delays and Reverb";
+										["title"] = "Micro Delay";
+										["moduleName"] = "Delay.MicroDelay";
+										["id"] = "Delay.MicroDelay";
+										["libraryName"] = "builtins";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+									};
+									["firmwareVersion"] = shared[1];
+								};
+							};
+						};
+					};
+					["mute"] = false;
+					["controlOrder"] = {
+						[1] = "gain";
+					};
+					["objects"] = {
+						["gain"] = {
+							["params"] = {
+								["Gain"] = 1.0;
+							};
+						};
+					};
+					["controlBranches"] = {
+					};
+					["solo"] = false;
+					["title"] = "delay";
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "2ca68d8a";
+					["loadInfo"] = {
+						["keywords"] = "mixing, routing";
+						["category"] = "Essentials";
+						["title"] = "Mixer Channel";
+						["moduleName"] = "MixerUnit";
+						["id"] = "MixerUnit";
+						["libraryName"] = "builtins";
+					};
+					["hasUserTitle"] = true;
+					["firmwareVersion"] = shared[1];
+					["activeView"] = "expanded";
+				};
+			};
+			["instanceKey"] = "db555a69";
+		};
+		[4] = {
+			["firmwareVersion"] = shared[1];
+			["selection"] = {
+				["section"] = 1;
+				["view"] = "expanded";
+				["spot"] = 2;
+			};
+			["units"] = {
+				[1] = {
+					["controls"] = {
+					};
+					["branches"] = {
+						["input"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["instanceKey"] = "88b0a742";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["channel"] = 1;
+										["name"] = "delay";
+										["type"] = "local";
+										["instanceKey"] = "6f91824e";
+									};
+								};
+							};
+							["units"] = {
+								[1] = {
+									["controls"] = {
+										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["objects"] = {
+										["level"] = {
+											["params"] = {
+												["Bias"] = 0.7;
+												["Gain"] = 0.2;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "level";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "5669a2a4";
+									["loadInfo"] = {
+										["keywords"] = "modulate, utility";
+										["category"] = "Essentials";
+										["title"] = "Linear Bipolar VCA";
+										["moduleName"] = "VCA.LinearBipolar";
+										["id"] = "VCA.LinearBipolar";
+										["libraryName"] = "builtins";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+										["level"] = {
+											["selection"] = {
+												["section"] = 0;
+												["view"] = "default";
+												["spot"] = 1;
+											};
+											["instanceKey"] = "084ca526";
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["count"] = 1;
+												["inputs"] = {
+													[1] = {
+														["name"] = "cheap reverb 1 (size)";
+														["type"] = "local";
+														["instanceKey"] = "e69d6aaf";
+													};
+												};
+											};
+											["units"] = {
+											};
+										};
+									};
+									["firmwareVersion"] = shared[1];
+								};
+								[2] = {
+									["controls"] = {
+									};
+									["objects"] = {
+										["delayL"] = {
+											["params"] = {
+												["Delay"] = 0.04;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "delay";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "7f6338e6";
+									["loadInfo"] = {
+										["keywords"] = "delay, utility";
+										["category"] = "Delays and Reverb";
+										["title"] = "Micro Delay";
+										["moduleName"] = "Delay.MicroDelay";
+										["id"] = "Delay.MicroDelay";
+										["libraryName"] = "builtins";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+									};
+									["firmwareVersion"] = shared[1];
+								};
+							};
+						};
+					};
+					["mute"] = false;
+					["controlOrder"] = {
+						[1] = "gain";
+					};
+					["objects"] = {
+						["gain"] = {
+							["params"] = {
+								["Gain"] = 1.0;
+							};
+						};
+					};
+					["controlBranches"] = {
+					};
+					["solo"] = false;
+					["title"] = "delay";
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "6f91824e";
+					["loadInfo"] = {
+						["keywords"] = "mixing, routing";
+						["category"] = "Essentials";
+						["title"] = "Mixer Channel";
+						["moduleName"] = "MixerUnit";
+						["id"] = "MixerUnit";
+						["libraryName"] = "builtins";
+					};
+					["hasUserTitle"] = true;
+					["firmwareVersion"] = shared[1];
+					["activeView"] = "expanded";
+				};
+			};
+			["instanceKey"] = "755f5d8a";
+		};
+		[5] = {
+			["firmwareVersion"] = shared[1];
+			["selection"] = {
+				["section"] = 1;
+				["view"] = "expanded";
+				["spot"] = 2;
+			};
+			["units"] = {
+				[1] = {
+					["controls"] = {
+					};
+					["branches"] = {
+						["input"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["instanceKey"] = "64616057";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["channel"] = 1;
+										["name"] = "delay";
+										["type"] = "local";
+										["instanceKey"] = "20c31aeb";
+									};
+								};
+							};
+							["units"] = {
+								[1] = {
+									["controls"] = {
+										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["objects"] = {
+										["level"] = {
+											["params"] = {
+												["Bias"] = 0.5;
+												["Gain"] = 0.3;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "level";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "665d3f4d";
+									["loadInfo"] = {
+										["keywords"] = "modulate, utility";
+										["category"] = "Essentials";
+										["title"] = "Linear Bipolar VCA";
+										["moduleName"] = "VCA.LinearBipolar";
+										["id"] = "VCA.LinearBipolar";
+										["libraryName"] = "builtins";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+										["level"] = {
+											["selection"] = {
+												["section"] = 0;
+												["view"] = "default";
+												["spot"] = 1;
+											};
+											["instanceKey"] = "e872c8cf";
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["count"] = 1;
+												["inputs"] = {
+													[1] = {
+														["name"] = "cheap reverb 1 (size)";
+														["type"] = "local";
+														["instanceKey"] = "e69d6aaf";
+													};
+												};
+											};
+											["units"] = {
+											};
+										};
+									};
+									["firmwareVersion"] = shared[1];
+								};
+								[2] = {
+									["controls"] = {
+										["delay"] = {
+											["encoderState"] = "Fine";
+										};
+									};
+									["objects"] = {
+										["delayL"] = {
+											["params"] = {
+												["Delay"] = 0.068;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "delay";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "758fc739";
+									["loadInfo"] = {
+										["keywords"] = "delay, utility";
+										["category"] = "Delays and Reverb";
+										["title"] = "Micro Delay";
+										["moduleName"] = "Delay.MicroDelay";
+										["id"] = "Delay.MicroDelay";
+										["libraryName"] = "builtins";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+									};
+									["firmwareVersion"] = shared[1];
+								};
+							};
+						};
+					};
+					["mute"] = false;
+					["controlOrder"] = {
+						[1] = "gain";
+					};
+					["objects"] = {
+						["gain"] = {
+							["params"] = {
+								["Gain"] = 1.0;
+							};
+						};
+					};
+					["controlBranches"] = {
+					};
+					["solo"] = false;
+					["title"] = "delay";
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "20c31aeb";
+					["loadInfo"] = {
+						["keywords"] = "mixing, routing";
+						["category"] = "Essentials";
+						["title"] = "Mixer Channel";
+						["moduleName"] = "MixerUnit";
+						["id"] = "MixerUnit";
+						["libraryName"] = "builtins";
+					};
+					["hasUserTitle"] = true;
+					["firmwareVersion"] = shared[1];
+					["activeView"] = "expanded";
+				};
+			};
+			["instanceKey"] = "2203b5d5";
+		};
+		[6] = {
+			["firmwareVersion"] = shared[1];
+			["selection"] = {
+				["section"] = 1;
+				["view"] = "expanded";
+				["spot"] = 2;
+			};
+			["units"] = {
+				[1] = {
+					["controls"] = {
+					};
+					["branches"] = {
+						["input"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["instanceKey"] = "48faa945";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["channel"] = 1;
+										["name"] = "delay";
+										["type"] = "local";
+										["instanceKey"] = "310254f9";
+									};
+								};
+							};
+							["units"] = {
+								[1] = {
+									["controls"] = {
+										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["objects"] = {
+										["level"] = {
+											["params"] = {
+												["Bias"] = 0.4;
+												["Gain"] = 0.3;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "level";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "b5e71615";
+									["loadInfo"] = {
+										["keywords"] = "modulate, utility";
+										["category"] = "Essentials";
+										["title"] = "Linear Bipolar VCA";
+										["moduleName"] = "VCA.LinearBipolar";
+										["id"] = "VCA.LinearBipolar";
+										["libraryName"] = "builtins";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+										["level"] = {
+											["selection"] = {
+												["section"] = 0;
+												["view"] = "default";
+												["spot"] = 1;
+											};
+											["instanceKey"] = "db2e0144";
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["count"] = 1;
+												["inputs"] = {
+													[1] = {
+														["name"] = "cheap reverb 1 (size)";
+														["type"] = "local";
+														["instanceKey"] = "e69d6aaf";
+													};
+												};
+											};
+											["units"] = {
+											};
+										};
+									};
+									["firmwareVersion"] = shared[1];
+								};
+								[2] = {
+									["controls"] = {
+									};
+									["objects"] = {
+										["delayL"] = {
+											["params"] = {
+												["Delay"] = 0.1;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "delay";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "a7ab5df8";
+									["loadInfo"] = {
+										["keywords"] = "delay, utility";
+										["category"] = "Delays and Reverb";
+										["title"] = "Micro Delay";
+										["moduleName"] = "Delay.MicroDelay";
+										["id"] = "Delay.MicroDelay";
+										["libraryName"] = "builtins";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+									};
+									["firmwareVersion"] = shared[1];
+								};
+								[3] = {
+									["controls"] = {
+									};
+									["objects"] = {
+										["delayL"] = {
+											["params"] = {
+												["Delay"] = 0.03;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "delay";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "7cab98ed";
+									["loadInfo"] = {
+										["keywords"] = "delay, utility";
+										["category"] = "Delays and Reverb";
+										["title"] = "Micro Delay";
+										["moduleName"] = "Delay.MicroDelay";
+										["id"] = "Delay.MicroDelay";
+										["libraryName"] = "builtins";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+									};
+									["firmwareVersion"] = shared[1];
+								};
+							};
+						};
+					};
+					["mute"] = false;
+					["controlOrder"] = {
+						[1] = "gain";
+					};
+					["objects"] = {
+						["gain"] = {
+							["params"] = {
+								["Gain"] = 1.0;
+							};
+						};
+					};
+					["controlBranches"] = {
+					};
+					["solo"] = false;
+					["title"] = "delay";
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "310254f9";
+					["loadInfo"] = {
+						["keywords"] = "mixing, routing";
+						["category"] = "Essentials";
+						["title"] = "Mixer Channel";
+						["moduleName"] = "MixerUnit";
+						["id"] = "MixerUnit";
+						["libraryName"] = "builtins";
+					};
+					["hasUserTitle"] = true;
+					["firmwareVersion"] = shared[1];
+					["activeView"] = "expanded";
+				};
+			};
+			["instanceKey"] = "d773044d";
+		};
+	};
+	["loadInfo"] = {
+		["keywords"] = "utility, effect, source, custom";
+		["category"] = "Containers";
+		["title"] = "6 Bands";
+		["moduleName"] = "Custom.SixBands";
+		["id"] = "Custom.SixBands";
+		["libraryName"] = "builtins";
+	};
+}
+return obj1

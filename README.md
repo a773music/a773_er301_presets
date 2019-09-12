@@ -41,7 +41,6 @@ used as container):
 * [cheap reverb 1](#cheap_reverb_1)
 * [cheap reverb 2](#cheap_reverb_2)
 * [cheap reverb 3](#cheap_reverb_3)
-* [cheap reverb 4](#cheap_reverb_4)
 * [mono to stereo 1](#mono_to_stereo_1)
 * [mono to stereo 2](#mono_to_stereo_2)
 * [poor mans reverb 1](#poor_mans_reverb_1)
@@ -241,15 +240,6 @@ Wonky delay based reverb, very light on the CPU.
 Controls:
 * wet (0-1)
 
-### cheap reverb 4<a name="cheap_reverb_4"></a>
-[![Cheap reverb 4 on instagram](https://www.dropbox.com/s/ina5lrauh9vw5os/cheap_reverb_4.jpg?raw=1)](https://www.instagram.com/p/BzrBfqWBUuk/)  
-Unit type: Delay  
-CPU usage: 0.85% (2% in stereo)  
-Wonky delay based reverb, extremely light on the CPU.  
-Controls:
-* delay (0-1s)
-* feedback(-inf-0dB)
-* wet (0-1)
 
 ### mono to stereo 2<a name="mono_to_stereo_2"></a>
 More sophisticated (using comb filters), better mono compatibility, but more
