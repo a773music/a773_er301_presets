@@ -1,0 +1,175 @@
+-- Persistent Data
+local shared = {
+{};
+} -- shared
+shared[1]["Name"] = "Fennel (48kHz, 128smps)";
+shared[1]["SimpleString"] = "0.4.25";
+shared[1]["String"] = "0.4.25 (stable)";
+shared[1]["Build"] = 25;
+shared[1]["Patch"] = 0;
+shared[1]["Major"] = 0;
+shared[1]["Status"] = "stable";
+shared[1]["Minor"] = 4;
+local obj1 = {
+	["firmwareVersion"] = shared[1];
+	["maximumDelayTime"] = 1.002667;
+	["controlOrder"] = {
+		[1] = "delayL";
+		[2] = "feedback";
+		[3] = "wet";
+		[4] = "delayR";
+	};
+	["controlBranches"] = {
+	};
+	["bypass"] = false;
+	["loadInfo"] = {
+		["keywords"] = "delay, effect";
+		["title"] = "Delay";
+		["id"] = "Delay.DelayUnit";
+		["category"] = "Delays and Reverb";
+		["moduleName"] = "Delay.DelayUnit";
+		["libraryName"] = "builtins";
+	};
+	["controls"] = {
+		["feedback"] = {
+			["encoderState"] = "Fine";
+			["gainEncoderState"] = "Coarse";
+		};
+		["delayR"] = {
+			["encoderState"] = "Fine";
+			["gainEncoderState"] = "Coarse";
+		};
+		["delayL"] = {
+			["encoderState"] = "Fine";
+			["gainEncoderState"] = "Coarse";
+		};
+		["wet"] = {
+			["gainEncoderState"] = "Coarse";
+		};
+	};
+	["objects"] = {
+		["secsL"] = {
+			["params"] = {
+				["Gain"] = 1.2;
+				["Bias"] = 0.009000001;
+			};
+		};
+		["fader"] = {
+			["params"] = {
+				["Gain"] = 0.0;
+				["Bias"] = 0.24;
+			};
+		};
+		["secsR"] = {
+			["params"] = {
+				["Gain"] = 1.2;
+				["Bias"] = 0.01;
+			};
+		};
+		["feedback"] = {
+			["params"] = {
+				["Gain"] = 0.0;
+				["Bias"] = 0.9885531;
+			};
+		};
+	};
+	["title"] = "cheap reverb 4";
+	["instanceKey"] = "7dd4865e";
+	["activeView"] = "expanded";
+	["lastPresetFilename"] = "chear reverb 4.unit";
+	["hasUserTitle"] = true;
+	["lastPresetPath"] = "1:/ER-301/v0.4/presets";
+	["unitVersion"] = 1;
+	["branches"] = {
+		["delayL"] = {
+			["firmwareVersion"] = shared[1];
+			["instanceKey"] = "5e2018a8";
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+					[1] = {
+						["name"] = "cheap reverb 4";
+						["instanceKey"] = "7dd4865e";
+						["channel"] = 1;
+						["type"] = "local";
+					};
+				};
+			};
+			["units"] = {
+				[1] = {
+					["controls"] = {
+						["release"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["attack"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["bypass"] = true;
+					["objects"] = {
+						["release"] = {
+							["params"] = {
+								["Gain"] = 0.0;
+								["Bias"] = 0.13;
+							};
+						};
+						["attack"] = {
+							["params"] = {
+								["Gain"] = 0.0;
+								["Bias"] = 0.0;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "attack";
+						[2] = "release";
+					};
+					["instanceKey"] = "13919562";
+					["activeView"] = "expanded";
+					["loadInfo"] = {
+						["keywords"] = "modulate, measure";
+						["title"] = "Envelope Follower";
+						["id"] = "Envelopes.Follower";
+						["category"] = "Envelopes";
+						["moduleName"] = "Envelopes.Follower";
+						["libraryName"] = "builtins";
+					};
+					["controlBranches"] = {
+					};
+					["firmwareVersion"] = shared[1];
+					["unitVersion"] = 1;
+					["branches"] = {
+					};
+				};
+			};
+			["selection"] = {
+				["section"] = 1;
+				["view"] = "expanded";
+				["spot"] = 1;
+			};
+		};
+		["delayR"] = {
+			["firmwareVersion"] = shared[1];
+			["instanceKey"] = "f8474137";
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+					[1] = {
+						["name"] = "cheap reverb 4";
+						["instanceKey"] = "7dd4865e";
+						["channel"] = 1;
+						["type"] = "local";
+					};
+				};
+			};
+			["units"] = {
+			};
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 1;
+			};
+		};
+	};
+}
+return obj1
