@@ -1,0 +1,1288 @@
+-- Persistent Data
+local shared = {
+{};
+} -- shared
+shared[1]["Build"] = 3;
+shared[1]["String"] = "0.5.03 (unstable)";
+shared[1]["SimpleString"] = "0.5.03";
+shared[1]["Minor"] = 5;
+shared[1]["Status"] = "unstable";
+shared[1]["Name"] = "Myrrh (48kHz, 128smps)";
+shared[1]["Patch"] = 0;
+shared[1]["Major"] = 0;
+local obj1 = {
+	["title"] = "rce triangle";
+	["bypass"] = false;
+	["firmwareVersion"] = shared[1];
+	["branches"] = {
+	};
+	["unitVersion"] = 1;
+	["instanceKey"] = "3d702fb1";
+	["controlBranches"] = {
+		["positive"] = {
+			["control"] = {
+				["customizations"] = {
+					["name"] = "positive";
+				};
+				["gainEncoderState"] = "Neutral";
+			};
+			["firmwareVersion"] = shared[1];
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Offset"] = 0.0;
+					};
+				};
+			};
+			["instanceKey"] = "72498149";
+			["selection"] = {
+				["view"] = "default";
+				["spot"] = 0;
+				["section"] = 0;
+			};
+			["id"] = "positive";
+			["type"] = "Pitch";
+			["channels"] = {
+				["inputs"] = {
+				};
+				["count"] = 1;
+			};
+			["units"] = {
+			};
+		};
+		["pos off"] = {
+			["control"] = {
+				["customizations"] = {
+					["biasSuperCoarseStep"] = 0.09999999;
+					["biasMin"] = -0.5;
+					["biasMax"] = 0.5;
+					["name"] = "pos off";
+					["biasCoarseStep"] = 0.01;
+					["biasFineStep"] = 0.0009999999;
+				};
+				["gainEncoderState"] = "Coarse";
+			};
+			["firmwareVersion"] = shared[1];
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Gain"] = 0.0;
+						["Bias"] = 0.0;
+					};
+				};
+			};
+			["instanceKey"] = "3cfe9885";
+			["selection"] = {
+				["view"] = "default";
+				["spot"] = 0;
+				["section"] = 0;
+			};
+			["id"] = "pos off";
+			["type"] = "GainBias";
+			["channels"] = {
+				["inputs"] = {
+				};
+				["count"] = 1;
+			};
+			["units"] = {
+			};
+		};
+		["width"] = {
+			["control"] = {
+				["customizations"] = {
+					["biasSuperCoarseStep"] = 0.09999999;
+					["biasMin"] = 0;
+					["biasMax"] = 1;
+					["name"] = "width";
+					["biasCoarseStep"] = 0.01;
+					["biasFineStep"] = 0.0009999999;
+				};
+				["gainEncoderState"] = "Coarse";
+			};
+			["firmwareVersion"] = shared[1];
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Gain"] = 0.0;
+						["Bias"] = 0.5;
+					};
+				};
+			};
+			["instanceKey"] = "f979ef63";
+			["selection"] = {
+				["view"] = "default";
+				["spot"] = 0;
+				["section"] = 0;
+			};
+			["id"] = "width";
+			["type"] = "GainBias";
+			["channels"] = {
+				["inputs"] = {
+				};
+				["count"] = 1;
+			};
+			["units"] = {
+			};
+		};
+		["fade"] = {
+			["control"] = {
+				["customizations"] = {
+					["biasSuperCoarseStep"] = 0.09999999;
+					["biasMin"] = 0;
+					["biasMax"] = 1;
+					["name"] = "fade";
+					["biasCoarseStep"] = 0.01;
+					["biasFineStep"] = 0.0009999999;
+				};
+				["gainEncoderState"] = "Coarse";
+			};
+			["firmwareVersion"] = shared[1];
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Gain"] = 0.0;
+						["Bias"] = 0.0;
+					};
+				};
+			};
+			["instanceKey"] = "cd8e1bf1";
+			["selection"] = {
+				["view"] = "default";
+				["spot"] = 0;
+				["section"] = 0;
+			};
+			["id"] = "fade";
+			["type"] = "GainBias";
+			["channels"] = {
+				["inputs"] = {
+				};
+				["count"] = 1;
+			};
+			["units"] = {
+			};
+		};
+		["scissor"] = {
+			["control"] = {
+				["customizations"] = {
+					["name"] = "scissor";
+				};
+				["gainEncoderState"] = "Neutral";
+			};
+			["firmwareVersion"] = shared[1];
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Offset"] = 0.0;
+					};
+				};
+			};
+			["instanceKey"] = "03937e9e";
+			["selection"] = {
+				["view"] = "default";
+				["spot"] = 0;
+				["section"] = 0;
+			};
+			["id"] = "scissor";
+			["type"] = "Pitch";
+			["channels"] = {
+				["inputs"] = {
+				};
+				["count"] = 1;
+			};
+			["units"] = {
+			};
+		};
+		["center"] = {
+			["control"] = {
+				["customizations"] = {
+					["biasSuperCoarseStep"] = 0.09999999;
+					["biasMin"] = -1;
+					["biasMax"] = 1;
+					["name"] = "center";
+					["biasCoarseStep"] = 0.01;
+					["biasFineStep"] = 0.0009999999;
+				};
+				["gainEncoderState"] = "Coarse";
+			};
+			["firmwareVersion"] = shared[1];
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Gain"] = 0.0;
+						["Bias"] = 0.0;
+					};
+				};
+			};
+			["instanceKey"] = "3187f487";
+			["selection"] = {
+				["view"] = "default";
+				["spot"] = 0;
+				["section"] = 0;
+			};
+			["id"] = "center";
+			["type"] = "GainBias";
+			["channels"] = {
+				["inputs"] = {
+				};
+				["count"] = 1;
+			};
+			["units"] = {
+			};
+		};
+		["negative"] = {
+			["control"] = {
+				["customizations"] = {
+					["name"] = "negative";
+				};
+				["gainEncoderState"] = "Neutral";
+			};
+			["firmwareVersion"] = shared[1];
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Offset"] = 0.0;
+					};
+				};
+			};
+			["instanceKey"] = "065c55a4";
+			["selection"] = {
+				["view"] = "default";
+				["spot"] = 0;
+				["section"] = 0;
+			};
+			["id"] = "negative";
+			["type"] = "Pitch";
+			["channels"] = {
+				["inputs"] = {
+				};
+				["count"] = 1;
+			};
+			["units"] = {
+			};
+		};
+		["neg off"] = {
+			["control"] = {
+				["customizations"] = {
+					["biasSuperCoarseStep"] = 0.09999999;
+					["biasMin"] = -0.5;
+					["biasMax"] = 0.5;
+					["name"] = "neg off";
+					["biasCoarseStep"] = 0.01;
+					["biasFineStep"] = 0.0009999999;
+				};
+				["gainEncoderState"] = "Coarse";
+			};
+			["firmwareVersion"] = shared[1];
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Gain"] = 0.0;
+						["Bias"] = 0.0;
+					};
+				};
+			};
+			["instanceKey"] = "79a2ec89";
+			["selection"] = {
+				["view"] = "default";
+				["spot"] = 0;
+				["section"] = 0;
+			};
+			["id"] = "neg off";
+			["type"] = "GainBias";
+			["channels"] = {
+				["inputs"] = {
+				};
+				["count"] = 1;
+			};
+			["units"] = {
+			};
+		};
+	};
+	["bands"] = {
+		[1] = {
+			["selection"] = {
+				["view"] = "expanded";
+				["spot"] = 2;
+				["section"] = 7;
+			};
+			["instanceKey"] = "57b2e30e";
+			["firmwareVersion"] = shared[1];
+			["units"] = {
+				[1] = {
+					["bypass"] = false;
+					["firmwareVersion"] = shared[1];
+					["branches"] = {
+						["tune"] = {
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["name"] = "rce triangle (positive)";
+										["type"] = "local";
+										["instanceKey"] = "72498149";
+									};
+								};
+								["count"] = 1;
+							};
+							["selection"] = {
+								["view"] = "default";
+								["spot"] = 1;
+								["section"] = 0;
+							};
+							["instanceKey"] = "6fa6461c";
+							["units"] = {
+							};
+						};
+					};
+					["unitVersion"] = 1;
+					["instanceKey"] = "64f18825";
+					["controlBranches"] = {
+					};
+					["activeView"] = "expanded";
+					["loadInfo"] = {
+						["title"] = "Aliasing Triangle";
+						["category"] = "Oscillators";
+						["id"] = "Oscillators.AliasingTriangle";
+						["moduleName"] = "Oscillators.AliasingTriangle";
+						["libraryName"] = "builtins";
+						["keywords"] = "source, pitch, modulate";
+					};
+					["controlOrder"] = {
+						[1] = "tune";
+						[2] = "freq";
+						[3] = "sync";
+						[4] = "level";
+					};
+					["objects"] = {
+						["osc"] = {
+							["params"] = {
+								["Phase"] = 0.9904411;
+							};
+						};
+						["level"] = {
+							["params"] = {
+								["Gain"] = 0.0;
+								["Bias"] = 0.5;
+							};
+						};
+						["f0"] = {
+							["params"] = {
+								["Gain"] = 0.0;
+								["Bias"] = 32.703;
+							};
+						};
+						["tune"] = {
+							["params"] = {
+								["Offset"] = 0.1;
+							};
+						};
+						["sync"] = {
+							["options"] = {
+								["State"] = 0;
+							};
+							["params"] = {
+								["Threshold"] = 0.1;
+							};
+						};
+					};
+					["controls"] = {
+						["freq"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["tune"] = {
+							["gainEncoderState"] = "Neutral";
+						};
+						["level"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+				};
+				[2] = {
+					["bypass"] = false;
+					["firmwareVersion"] = shared[1];
+					["branches"] = {
+						["offset"] = {
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["name"] = "rce triangle (pos off)";
+										["type"] = "local";
+										["instanceKey"] = "3cfe9885";
+									};
+								};
+								["count"] = 1;
+							};
+							["selection"] = {
+								["view"] = "default";
+								["spot"] = 1;
+								["section"] = 0;
+							};
+							["instanceKey"] = "a9d3fb5d";
+							["units"] = {
+							};
+						};
+					};
+					["unitVersion"] = 1;
+					["instanceKey"] = "1bf3e86a";
+					["controlBranches"] = {
+					};
+					["activeView"] = "expanded";
+					["loadInfo"] = {
+						["title"] = "Offset";
+						["category"] = "Essentials";
+						["id"] = "OffsetUnit";
+						["moduleName"] = "OffsetUnit";
+						["libraryName"] = "builtins";
+						["keywords"] = "utility";
+					};
+					["controlOrder"] = {
+						[1] = "offset";
+					};
+					["objects"] = {
+						["gainbias"] = {
+							["params"] = {
+								["Gain"] = 1.0;
+								["Bias"] = 0.0;
+							};
+						};
+					};
+					["controls"] = {
+						["offset"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+				};
+				[3] = {
+					["bypass"] = false;
+					["firmwareVersion"] = shared[1];
+					["branches"] = {
+					};
+					["unitVersion"] = 1;
+					["instanceKey"] = "0c826c66";
+					["controlBranches"] = {
+					};
+					["activeView"] = "expanded";
+					["loadInfo"] = {
+						["title"] = "Rectify";
+						["category"] = "Mapping and Control";
+						["id"] = "RectifierUnit";
+						["moduleName"] = "RectifierUnit";
+						["libraryName"] = "builtins";
+						["keywords"] = "utility";
+					};
+					["controlOrder"] = {
+						[1] = "type";
+					};
+					["objects"] = {
+						["rectify"] = {
+							["options"] = {
+								["Type"] = 1;
+							};
+						};
+					};
+					["controls"] = {
+					};
+				};
+				[4] = {
+					["bypass"] = false;
+					["firmwareVersion"] = shared[1];
+					["branches"] = {
+						["tune"] = {
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["name"] = "rce triangle (negative)";
+										["type"] = "local";
+										["instanceKey"] = "065c55a4";
+									};
+								};
+								["count"] = 1;
+							};
+							["selection"] = {
+								["view"] = "default";
+								["spot"] = 1;
+								["section"] = 0;
+							};
+							["instanceKey"] = "bf0eb73a";
+							["units"] = {
+							};
+						};
+					};
+					["unitVersion"] = 1;
+					["instanceKey"] = "54824772";
+					["controlBranches"] = {
+					};
+					["activeView"] = "expanded";
+					["loadInfo"] = {
+						["title"] = "Aliasing Triangle";
+						["category"] = "Oscillators";
+						["id"] = "Oscillators.AliasingTriangle";
+						["moduleName"] = "Oscillators.AliasingTriangle";
+						["libraryName"] = "builtins";
+						["keywords"] = "source, pitch, modulate";
+					};
+					["controlOrder"] = {
+						[1] = "tune";
+						[2] = "freq";
+						[3] = "sync";
+						[4] = "level";
+					};
+					["objects"] = {
+						["osc"] = {
+							["params"] = {
+								["Phase"] = 0.9426541;
+							};
+						};
+						["level"] = {
+							["params"] = {
+								["Gain"] = 0.0;
+								["Bias"] = 0.5;
+							};
+						};
+						["f0"] = {
+							["params"] = {
+								["Gain"] = 0.0;
+								["Bias"] = 32.703;
+							};
+						};
+						["tune"] = {
+							["params"] = {
+								["Offset"] = 0.1;
+							};
+						};
+						["sync"] = {
+							["options"] = {
+								["State"] = 0;
+							};
+							["params"] = {
+								["Threshold"] = 0.1;
+							};
+						};
+					};
+					["controls"] = {
+						["freq"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["tune"] = {
+							["gainEncoderState"] = "Neutral";
+						};
+						["level"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+				};
+				[5] = {
+					["bypass"] = false;
+					["firmwareVersion"] = shared[1];
+					["branches"] = {
+						["offset"] = {
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["name"] = "rce triangle (neg off)";
+										["type"] = "local";
+										["instanceKey"] = "79a2ec89";
+									};
+								};
+								["count"] = 1;
+							};
+							["selection"] = {
+								["view"] = "default";
+								["spot"] = 1;
+								["section"] = 0;
+							};
+							["instanceKey"] = "367e280a";
+							["units"] = {
+							};
+						};
+					};
+					["unitVersion"] = 1;
+					["instanceKey"] = "121fb25b";
+					["controlBranches"] = {
+					};
+					["activeView"] = "expanded";
+					["loadInfo"] = {
+						["title"] = "Offset";
+						["category"] = "Essentials";
+						["id"] = "OffsetUnit";
+						["moduleName"] = "OffsetUnit";
+						["libraryName"] = "builtins";
+						["keywords"] = "utility";
+					};
+					["controlOrder"] = {
+						[1] = "offset";
+					};
+					["objects"] = {
+						["gainbias"] = {
+							["params"] = {
+								["Gain"] = 1.0;
+								["Bias"] = 0.0;
+							};
+						};
+					};
+					["controls"] = {
+						["offset"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+				};
+				[6] = {
+					["bypass"] = false;
+					["firmwareVersion"] = shared[1];
+					["branches"] = {
+					};
+					["unitVersion"] = 1;
+					["instanceKey"] = "c8bcbd93";
+					["controlBranches"] = {
+					};
+					["activeView"] = "expanded";
+					["loadInfo"] = {
+						["title"] = "Rectify";
+						["category"] = "Mapping and Control";
+						["id"] = "RectifierUnit";
+						["moduleName"] = "RectifierUnit";
+						["libraryName"] = "builtins";
+						["keywords"] = "utility";
+					};
+					["controlOrder"] = {
+						[1] = "type";
+					};
+					["objects"] = {
+						["rectify"] = {
+							["options"] = {
+								["Type"] = 2;
+							};
+						};
+					};
+					["controls"] = {
+					};
+				};
+				[7] = {
+					["bypass"] = false;
+					["firmwareVersion"] = shared[1];
+					["branches"] = {
+					};
+					["unitVersion"] = 1;
+					["instanceKey"] = "4b239197";
+					["controlBranches"] = {
+					};
+					["activeView"] = "expanded";
+					["loadInfo"] = {
+						["title"] = "Custom Source";
+						["category"] = "Containers";
+						["id"] = "Container.Source";
+						["moduleName"] = "Container.Source";
+						["libraryName"] = "builtins";
+						["keywords"] = "utility, source, container";
+					};
+					["bands"] = {
+						[1] = {
+							["selection"] = {
+								["view"] = "expanded";
+								["spot"] = 2;
+								["section"] = 3;
+							};
+							["instanceKey"] = "82205847";
+							["firmwareVersion"] = shared[1];
+							["units"] = {
+								[1] = {
+									["bypass"] = false;
+									["firmwareVersion"] = shared[1];
+									["branches"] = {
+										["tune"] = {
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["inputs"] = {
+													[1] = {
+														["name"] = "rce triangle (scissor)";
+														["type"] = "local";
+														["instanceKey"] = "03937e9e";
+													};
+												};
+												["count"] = 1;
+											};
+											["selection"] = {
+												["view"] = "default";
+												["spot"] = 1;
+												["section"] = 0;
+											};
+											["instanceKey"] = "92d09a67";
+											["units"] = {
+											};
+										};
+									};
+									["unitVersion"] = 1;
+									["instanceKey"] = "cb2fc7b2";
+									["controlBranches"] = {
+									};
+									["activeView"] = "expanded";
+									["loadInfo"] = {
+										["title"] = "Aliasing Triangle";
+										["category"] = "Oscillators";
+										["id"] = "Oscillators.AliasingTriangle";
+										["moduleName"] = "Oscillators.AliasingTriangle";
+										["libraryName"] = "builtins";
+										["keywords"] = "source, pitch, modulate";
+									};
+									["controlOrder"] = {
+										[1] = "tune";
+										[2] = "freq";
+										[3] = "sync";
+										[4] = "level";
+									};
+									["objects"] = {
+										["osc"] = {
+											["params"] = {
+												["Phase"] = 0.2382236;
+											};
+										};
+										["level"] = {
+											["params"] = {
+												["Gain"] = 0.0;
+												["Bias"] = 0.5;
+											};
+										};
+										["f0"] = {
+											["params"] = {
+												["Gain"] = 0.0;
+												["Bias"] = 32.703;
+											};
+										};
+										["tune"] = {
+											["params"] = {
+												["Offset"] = 0.0;
+											};
+										};
+										["sync"] = {
+											["options"] = {
+												["State"] = 0;
+											};
+											["params"] = {
+												["Threshold"] = 0.1;
+											};
+										};
+									};
+									["controls"] = {
+										["freq"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["tune"] = {
+											["gainEncoderState"] = "Neutral";
+										};
+										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+								};
+								[2] = {
+									["bypass"] = false;
+									["firmwareVersion"] = shared[1];
+									["branches"] = {
+									};
+									["unitVersion"] = 1;
+									["instanceKey"] = "aa7363e7";
+									["controlBranches"] = {
+									};
+									["activeView"] = "expanded";
+									["loadInfo"] = {
+										["title"] = "Linear Bipolar VCA";
+										["category"] = "Essentials";
+										["id"] = "VCA.LinearBipolar";
+										["moduleName"] = "VCA.LinearBipolar";
+										["libraryName"] = "builtins";
+										["keywords"] = "modulate, utility";
+									};
+									["controlOrder"] = {
+										[1] = "level";
+									};
+									["objects"] = {
+										["level"] = {
+											["params"] = {
+												["Gain"] = 0.0;
+												["Bias"] = 0.0;
+											};
+										};
+									};
+									["controls"] = {
+										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+								};
+								[3] = {
+									["title"] = "positive";
+									["bypass"] = false;
+									["firmwareVersion"] = shared[1];
+									["branches"] = {
+										["input"] = {
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["inputs"] = {
+													[1] = {
+														["channel"] = 1;
+														["name"] = "Rectify #1";
+														["type"] = "local";
+														["instanceKey"] = "0c826c66";
+													};
+												};
+												["count"] = 1;
+											};
+											["selection"] = {
+												["view"] = "expanded";
+												["spot"] = 2;
+												["section"] = 1;
+											};
+											["instanceKey"] = "657f9e6c";
+											["units"] = {
+												[1] = {
+													["bypass"] = false;
+													["firmwareVersion"] = shared[1];
+													["branches"] = {
+														["level"] = {
+															["firmwareVersion"] = shared[1];
+															["channels"] = {
+																["inputs"] = {
+																	[1] = {
+																		["channel"] = 1;
+																		["name"] = "Aliasing Triangle #3";
+																		["type"] = "local";
+																		["instanceKey"] = "cb2fc7b2";
+																	};
+																};
+																["count"] = 1;
+															};
+															["selection"] = {
+																["view"] = "expanded";
+																["spot"] = 3;
+																["section"] = 1;
+															};
+															["instanceKey"] = "7ee8fd02";
+															["units"] = {
+																[1] = {
+																	["bypass"] = false;
+																	["firmwareVersion"] = shared[1];
+																	["branches"] = {
+																		["width"] = {
+																			["firmwareVersion"] = shared[1];
+																			["channels"] = {
+																				["inputs"] = {
+																					[1] = {
+																						["name"] = "rce triangle (width)";
+																						["type"] = "local";
+																						["instanceKey"] = "f979ef63";
+																					};
+																				};
+																				["count"] = 1;
+																			};
+																			["selection"] = {
+																				["view"] = "default";
+																				["spot"] = 1;
+																				["section"] = 0;
+																			};
+																			["instanceKey"] = "1a545134";
+																			["units"] = {
+																			};
+																		};
+																		["center"] = {
+																			["firmwareVersion"] = shared[1];
+																			["channels"] = {
+																				["inputs"] = {
+																					[1] = {
+																						["name"] = "rce triangle (center)";
+																						["type"] = "local";
+																						["instanceKey"] = "3187f487";
+																					};
+																				};
+																				["count"] = 1;
+																			};
+																			["selection"] = {
+																				["view"] = "default";
+																				["spot"] = 1;
+																				["section"] = 0;
+																			};
+																			["instanceKey"] = "53273518";
+																			["units"] = {
+																			};
+																		};
+																		["fade"] = {
+																			["firmwareVersion"] = shared[1];
+																			["channels"] = {
+																				["inputs"] = {
+																					[1] = {
+																						["name"] = "rce triangle (fade)";
+																						["type"] = "local";
+																						["instanceKey"] = "cd8e1bf1";
+																					};
+																				};
+																				["count"] = 1;
+																			};
+																			["selection"] = {
+																				["view"] = "default";
+																				["spot"] = 1;
+																				["section"] = 0;
+																			};
+																			["instanceKey"] = "f943620b";
+																			["units"] = {
+																			};
+																		};
+																	};
+																	["unitVersion"] = 1;
+																	["instanceKey"] = "2ad937fa";
+																	["controlBranches"] = {
+																	};
+																	["activeView"] = "expanded";
+																	["loadInfo"] = {
+																		["title"] = "Bump Scanner";
+																		["category"] = "Mapping and Control";
+																		["id"] = "BumpMap";
+																		["moduleName"] = "BumpMap";
+																		["libraryName"] = "builtins";
+																		["keywords"] = "utility, effect";
+																	};
+																	["controlOrder"] = {
+																		[1] = "center";
+																		[2] = "width";
+																		[3] = "height";
+																		[4] = "fade";
+																	};
+																	["objects"] = {
+																		["width"] = {
+																			["params"] = {
+																				["Gain"] = 1.0;
+																				["Bias"] = 0.0;
+																			};
+																		};
+																		["center"] = {
+																			["params"] = {
+																				["Gain"] = 1.0;
+																				["Bias"] = 0.0;
+																			};
+																		};
+																		["height"] = {
+																			["params"] = {
+																				["Gain"] = 0.0;
+																				["Bias"] = 1.0;
+																			};
+																		};
+																		["fade"] = {
+																			["params"] = {
+																				["Gain"] = 1.0;
+																				["Bias"] = 0.0;
+																			};
+																		};
+																	};
+																	["controls"] = {
+																		["width"] = {
+																			["gainEncoderState"] = "Coarse";
+																		};
+																		["center"] = {
+																			["gainEncoderState"] = "Coarse";
+																		};
+																		["height"] = {
+																			["gainEncoderState"] = "Coarse";
+																		};
+																		["fade"] = {
+																			["gainEncoderState"] = "Coarse";
+																		};
+																	};
+																};
+															};
+														};
+													};
+													["unitVersion"] = 1;
+													["instanceKey"] = "16c115dd";
+													["controlBranches"] = {
+													};
+													["activeView"] = "expanded";
+													["loadInfo"] = {
+														["title"] = "Linear Bipolar VCA";
+														["category"] = "Essentials";
+														["id"] = "VCA.LinearBipolar";
+														["moduleName"] = "VCA.LinearBipolar";
+														["libraryName"] = "builtins";
+														["keywords"] = "modulate, utility";
+													};
+													["controlOrder"] = {
+														[1] = "level";
+													};
+													["objects"] = {
+														["level"] = {
+															["params"] = {
+																["Gain"] = 1.0;
+																["Bias"] = 0.0;
+															};
+														};
+													};
+													["controls"] = {
+														["level"] = {
+															["gainEncoderState"] = "Coarse";
+														};
+													};
+												};
+											};
+										};
+									};
+									["unitVersion"] = 1;
+									["instanceKey"] = "74de9c6e";
+									["controlOrder"] = {
+										[1] = "gain";
+									};
+									["controlBranches"] = {
+									};
+									["mute"] = false;
+									["activeView"] = "expanded";
+									["loadInfo"] = {
+										["title"] = "Stereo Mix";
+										["category"] = "Essentials";
+										["id"] = "MixerUnit";
+										["moduleName"] = "MixerUnit";
+										["libraryName"] = "builtins";
+										["channelCount"] = 2;
+										["keywords"] = "mixing, routing";
+									};
+									["hasUserTitle"] = true;
+									["solo"] = false;
+									["objects"] = {
+										["gain"] = {
+											["params"] = {
+												["Gain"] = 1.0;
+											};
+										};
+									};
+									["controls"] = {
+									};
+								};
+								[4] = {
+									["title"] = "negative";
+									["bypass"] = false;
+									["firmwareVersion"] = shared[1];
+									["branches"] = {
+										["input"] = {
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["inputs"] = {
+													[1] = {
+														["channel"] = 1;
+														["name"] = "Rectify #2";
+														["type"] = "local";
+														["instanceKey"] = "c8bcbd93";
+													};
+												};
+												["count"] = 1;
+											};
+											["selection"] = {
+												["view"] = "expanded";
+												["spot"] = 2;
+												["section"] = 1;
+											};
+											["instanceKey"] = "3c0666dc";
+											["units"] = {
+												[1] = {
+													["bypass"] = false;
+													["firmwareVersion"] = shared[1];
+													["branches"] = {
+														["level"] = {
+															["firmwareVersion"] = shared[1];
+															["channels"] = {
+																["inputs"] = {
+																	[1] = {
+																		["channel"] = 1;
+																		["name"] = "Bump Scanner #1";
+																		["type"] = "local";
+																		["instanceKey"] = "2ad937fa";
+																	};
+																};
+																["count"] = 1;
+															};
+															["selection"] = {
+																["view"] = "offset";
+																["spot"] = 6;
+																["section"] = 2;
+															};
+															["instanceKey"] = "c3d4a6f0";
+															["units"] = {
+																[1] = {
+																	["bypass"] = false;
+																	["firmwareVersion"] = shared[1];
+																	["branches"] = {
+																	};
+																	["unitVersion"] = 1;
+																	["instanceKey"] = "18dc8990";
+																	["controlBranches"] = {
+																	};
+																	["activeView"] = "expanded";
+																	["loadInfo"] = {
+																		["title"] = "Linear Bipolar VCA";
+																		["category"] = "Essentials";
+																		["id"] = "VCA.LinearBipolar";
+																		["moduleName"] = "VCA.LinearBipolar";
+																		["libraryName"] = "builtins";
+																		["keywords"] = "modulate, utility";
+																	};
+																	["controlOrder"] = {
+																		[1] = "level";
+																	};
+																	["objects"] = {
+																		["level"] = {
+																			["params"] = {
+																				["Gain"] = 0.0;
+																				["Bias"] = -1.0;
+																			};
+																		};
+																	};
+																	["controls"] = {
+																		["level"] = {
+																			["gainEncoderState"] = "Coarse";
+																		};
+																	};
+																};
+																[2] = {
+																	["bypass"] = false;
+																	["firmwareVersion"] = shared[1];
+																	["branches"] = {
+																	};
+																	["unitVersion"] = 1;
+																	["instanceKey"] = "67d2a28d";
+																	["controlBranches"] = {
+																	};
+																	["activeView"] = "offset";
+																	["loadInfo"] = {
+																		["title"] = "Offset";
+																		["category"] = "Essentials";
+																		["id"] = "OffsetUnit";
+																		["moduleName"] = "OffsetUnit";
+																		["libraryName"] = "builtins";
+																		["keywords"] = "utility";
+																	};
+																	["controlOrder"] = {
+																		[1] = "offset";
+																	};
+																	["objects"] = {
+																		["gainbias"] = {
+																			["params"] = {
+																				["Gain"] = 0.0;
+																				["Bias"] = 1.0;
+																			};
+																		};
+																	};
+																	["controls"] = {
+																		["offset"] = {
+																			["gainEncoderState"] = "Coarse";
+																		};
+																	};
+																};
+															};
+														};
+													};
+													["unitVersion"] = 1;
+													["instanceKey"] = "a65344fc";
+													["controlBranches"] = {
+													};
+													["activeView"] = "expanded";
+													["loadInfo"] = {
+														["title"] = "Linear Unipolar VCA";
+														["category"] = "Essentials";
+														["id"] = "VCA.LinearUnipolar";
+														["moduleName"] = "VCA.LinearUnipolar";
+														["libraryName"] = "builtins";
+														["keywords"] = "modulate, utility";
+													};
+													["controlOrder"] = {
+														[1] = "level";
+													};
+													["objects"] = {
+														["level"] = {
+															["params"] = {
+																["Gain"] = 1.0;
+																["Bias"] = 0.0;
+															};
+														};
+														["rectify"] = {
+															["options"] = {
+																["Type"] = 1;
+															};
+														};
+													};
+													["controls"] = {
+														["level"] = {
+															["gainEncoderState"] = "Coarse";
+														};
+													};
+												};
+											};
+										};
+									};
+									["unitVersion"] = 1;
+									["instanceKey"] = "2fc11810";
+									["controlOrder"] = {
+										[1] = "gain";
+									};
+									["controlBranches"] = {
+									};
+									["mute"] = false;
+									["activeView"] = "expanded";
+									["loadInfo"] = {
+										["title"] = "Stereo Mix";
+										["category"] = "Essentials";
+										["id"] = "MixerUnit";
+										["moduleName"] = "MixerUnit";
+										["libraryName"] = "builtins";
+										["channelCount"] = 2;
+										["keywords"] = "mixing, routing";
+									};
+									["hasUserTitle"] = true;
+									["solo"] = false;
+									["objects"] = {
+										["gain"] = {
+											["params"] = {
+												["Gain"] = 1.0;
+											};
+										};
+									};
+									["controls"] = {
+									};
+								};
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "meter";
+					};
+					["objects"] = {
+					};
+					["controls"] = {
+					};
+				};
+			};
+		};
+	};
+	["activeView"] = "expanded";
+	["loadInfo"] = {
+		["title"] = "Custom Source";
+		["category"] = "Containers";
+		["id"] = "Container.Source";
+		["moduleName"] = "Container.Source";
+		["libraryName"] = "builtins";
+		["keywords"] = "utility, source, container";
+	};
+	["hasUserTitle"] = true;
+	["controlOrder"] = {
+		[1] = "scissor";
+		[2] = "center";
+		[3] = "width";
+		[4] = "fade";
+		[5] = "positive";
+		[6] = "pos off";
+		[7] = "negative";
+		[8] = "neg off";
+		[9] = "meter";
+	};
+	["objects"] = {
+	};
+	["controls"] = {
+	};
+}
+return obj1

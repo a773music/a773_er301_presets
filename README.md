@@ -15,6 +15,8 @@ used as container):
 * [ad exp var](#ad_exp_var) - AD envelope with variable exponential response
 * [decay env](#decay_env) - Decay envelope
 * [glitch osc](#glitch_osc) - Glitchy, circuit bend style oscillator
+* [rce sine](rce) - Simple recombination engine (sine genes)
+* [rce tri](rce) - Simple recombination engine (triangle genes)
 * [sloth](#sloth) - Slow random/chaos
 * [stepped random](#stepped_random)
 * [stepped random x6](#stepped_random_x6) - 6x stepped random
@@ -35,6 +37,8 @@ used as container):
 
 ##### Audio mangling
 * [buffer player](#buffer_player)
+* [granulator 1](#granulator 1)
+* [granulator 2](#granulator 2)
 * [stutter](#stutter)
 
 ##### Effects
@@ -90,12 +94,25 @@ Glitchy, circuit bend style oscillator
 Unit type: Custom Source  
 CPU: 4.6%
 Controls:
-* v/oct
+* v/oct  
 * gate (silent when gate low)
 * center (0-1)
 * width (0-1)
 * fade (0-1)
 
+### rce<a name="rce"></a>
+Simple implementation of a [recombination engine](http://www.futuresoundsystems.co.uk/returnosc2.html). One version with triangle "DNA" the other with sine. 
+Unit-type: Custom source  
+CPU: 7%
+Controls:
+* scissor (v/oct)
+* center (-1 .. +1)
+* width (0-1)
+* fade (0-1)
+* positive (v/oct)
+* positive offset (-0.5 .. +0.5)
+* negative (v/oct)
+* negative offset (-0.5 .. +0.5)
 
 ### sloth<a name="sloth"></a>
 Inspired by the non-linear circuits
@@ -213,6 +230,22 @@ Controls:
 * grab
 * dry/wet
 
+### granulator 1<a name="granulator 1"></a>
+Plays loaded sample in granular bursts  
+Unit type: manual grains  
+CPU: 9.2%
+Controls  :
+* play trigger
+* range (0-1)
+
+
+### granulator 2<a name="granulator 2"></a>
+Mangles incomming audio and plays it in granular bursts  
+Unit type: custom effect  
+CPU: 17.8%
+Controls  :
+* play trigger
+* range (0-1)
 
 ### stutter<a name="stutter"></a>
 Repeats snip of audio on gate high.  
