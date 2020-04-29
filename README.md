@@ -1,5 +1,5 @@
 # Presets
-All presets (should be) compatible with firmware 0.4.20  
+All presets (should be) compatible with latest firmware  
 Discussion thread: https://forum.orthogonaldevices.com/t/a773-presets-unit-files
 
 Loading in the ER-301 (without having to worry about which unit was
