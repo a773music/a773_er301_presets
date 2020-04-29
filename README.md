@@ -37,8 +37,6 @@ used as container):
 
 ##### Audio mangling
 * [buffer player](#buffer_player)
-* [granulator 1](#granulator 1)
-* [granulator 2](#granulator 2)
 * [stutter](#stutter)
 
 ##### Effects
